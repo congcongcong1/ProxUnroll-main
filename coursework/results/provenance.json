@@ -1,0 +1,172 @@
+{
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "processor": "arm",
+  "device": "cpu",
+  "torch_threads": 4,
+  "seed": 2026,
+  "fista_iterations": 200,
+  "selected_lambda": 0.001,
+  "packages": {
+    "torch": "2.14.0",
+    "torchvision": "0.29.0",
+    "timm": "1.0.29",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-image": "0.26.0",
+    "opencv-python-headless": "5.0.0.93",
+    "Pillow": "12.3.0"
+  },
+  "checkpoints": {
+    "hqs": "848c263ac54d44ef74374b6fa686af6b8dfa7240720499d174ff135ab1959be6",
+    "admm": "7d06f4c83e1d187ea245e7ca7b542b0f5c2c7508af4d72968350503626d1cc7e"
+  },
+  "source_hashes": {
+    "coursework/baselines.py": "891bb958c1f960034a591a7f2d8ac911e07045b87cc381234798e156abcfeb5c",
+    "coursework/prepare_data.py": "bceca02cf475081b4a179a4730fdfdc4f4c4b4dcf9bf216ec9898f32bfe86a0d",
+    "coursework/run_experiments.py": "06e599598deb5dfb99c056cd81e4e627054fb23742679c25a4b2b50267efa8da",
+    "model/proxunroll.py": "41bc5e34c2c98694e8aa540d51800ae2ea988989e44c9423a74653dbe79e55ab"
+  },
+  "data": [
+    {
+      "name": "camera",
+      "split": "test",
+      "source": "skimage.data.camera",
+      "path": "coursework/data/camera.png",
+      "sha256": "0248060db8c91011245079d5c6ad1a8c36ada4dd70e420c64ec63bfac127b35a"
+    },
+    {
+      "name": "astronaut",
+      "split": "test",
+      "source": "skimage.data.astronaut",
+      "path": "coursework/data/astronaut.png",
+      "sha256": "fcd638823dd11d89033cd5e5e2e6185909dc25b54b51a892c8be4db986c0ed03"
+    },
+    {
+      "name": "coins",
+      "split": "test",
+      "source": "skimage.data.coins",
+      "path": "coursework/data/coins.png",
+      "sha256": "1842e2d25e05aa393e9d0e2f5ff2b1e5528d5fc099ca0c2a95d1ded638bacb83"
+    },
+    {
+      "name": "moon",
+      "split": "test",
+      "source": "skimage.data.moon",
+      "path": "coursework/data/moon.png",
+      "sha256": "ac821dc5e9191357d54753e3c5606575066f6fe2f985e7e1cc1d595efd5ff6cc"
+    },
+    {
+      "name": "page",
+      "split": "test",
+      "source": "skimage.data.page",
+      "path": "coursework/data/page.png",
+      "sha256": "e1f2f1e0f697b4845100e3ef7516c99abdd9c355e830109b0f6b90ca660bb0f8"
+    },
+    {
+      "name": "clock",
+      "split": "test",
+      "source": "skimage.data.clock",
+      "path": "coursework/data/clock.png",
+      "sha256": "c6511e718ee454bf4d0ea3c45a27636745ce38d8b7695ba237fdaca750a26692"
+    },
+    {
+      "name": "coffee",
+      "split": "validation",
+      "source": "skimage.data.coffee",
+      "path": "coursework/data/coffee.png",
+      "sha256": "0068dcb02340d3d51db80005fd36f9682e0cef73a66bffa7aa27f50c5595b65e"
+    },
+    {
+      "name": "chelsea",
+      "split": "validation",
+      "source": "skimage.data.chelsea",
+      "path": "coursework/data/chelsea.png",
+      "sha256": "2e9e6e2f0f156f13b29ce12c73e8a6cf508c425336e4cc6cb163f30cdd7cf7b3"
+    },
+    {
+      "name": "checkerboard",
+      "split": "stress",
+      "source": "procedural stress target",
+      "path": "coursework/data/checkerboard.png",
+      "sha256": "44acbce2d860bd6e646675dbab27c7fa9080f31b7a263c6c9cf4c8b816c9f6f4"
+    },
+    {
+      "name": "small_text",
+      "split": "stress",
+      "source": "procedural stress target",
+      "path": "coursework/data/small_text.png",
+      "sha256": "08af560e3476c850cd4d985b3627689798505ed1783045bd74b609741e04fe46"
+    }
+  ],
+  "conditions": [
+    [
+      0.01,
+      0.0,
+      2026
+    ],
+    [
+      0.04,
+      0.0,
+      2026
+    ],
+    [
+      0.1,
+      0.0,
+      2026
+    ],
+    [
+      0.25,
+      0.0,
+      2026
+    ],
+    [
+      0.5,
+      0.0,
+      2026
+    ],
+    [
+      0.1,
+      0.01,
+      2026
+    ],
+    [
+      0.1,
+      0.01,
+      2027
+    ],
+    [
+      0.1,
+      0.01,
+      2028
+    ],
+    [
+      0.1,
+      0.05,
+      2026
+    ],
+    [
+      0.1,
+      0.05,
+      2027
+    ],
+    [
+      0.1,
+      0.05,
+      2028
+    ]
+  ],
+  "checkpoint_operator_max_differences": {
+    "H_256_256": 0.055620744824409485,
+    "W_256_256": 0.06172485649585724
+  },
+  "common_operator": "measurement_matrix/blind_learned_256_256_matrices.mat",
+  "common_operator_sha256": "f143332cb20b8d4cf139f46ad066597b47aa4f48bfe50c19cb97d3170b3af75b",
+  "common_operator_note": "Main results use the same external MAT-file factors for both networks. Checkpoint factors differ. This tests transfer to a common operator; native-operator results are recorded separately.",
+  "max_row_orthogonality_error": {
+    "H": 0.0011914968490600586,
+    "W": 0.0008926422451622784
+  },
+  "timing": "Wall time after one full warmup per neural solver. Excludes measurement generation and device transfer. Neural times synchronize the device. One timed execution per input. FISTA on CPU includes spectral norm estimation.",
+  "noise": "E = sigma * RMS(Y_clean) * N(0,1); no measurement clipping; identical Y for all solvers.",
+  "smoke": false
+}

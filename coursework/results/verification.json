@@ -1,0 +1,23 @@
+{
+  "metric_rows": 352,
+  "stage_rows": 1056,
+  "native_rows": 32,
+  "split_rows": {
+    "test": 264,
+    "stress": 88
+  },
+  "pdf_pages": {
+    "technical_report.pdf": 6,
+    "literature_review.pdf": 3
+  },
+  "provenance_hashes_verified": true,
+  "paired_conditions_verified": true,
+  "aggregation_verified": true,
+  "presentation": {
+    "slides": 12,
+    "notes": 12,
+    "speaking_seconds": 600,
+    "chart_source_values_verified": true,
+    "sha256": "eb38fdb5783c5e32c872dc443f74c5d5c7823884130923d104cb80c76dd59054"
+  }
+}

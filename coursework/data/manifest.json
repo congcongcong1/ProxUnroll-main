@@ -1,0 +1,72 @@
+[
+  {
+    "name": "camera",
+    "split": "test",
+    "source": "skimage.data.camera",
+    "path": "coursework/data/camera.png",
+    "sha256": "0248060db8c91011245079d5c6ad1a8c36ada4dd70e420c64ec63bfac127b35a"
+  },
+  {
+    "name": "astronaut",
+    "split": "test",
+    "source": "skimage.data.astronaut",
+    "path": "coursework/data/astronaut.png",
+    "sha256": "fcd638823dd11d89033cd5e5e2e6185909dc25b54b51a892c8be4db986c0ed03"
+  },
+  {
+    "name": "coins",
+    "split": "test",
+    "source": "skimage.data.coins",
+    "path": "coursework/data/coins.png",
+    "sha256": "1842e2d25e05aa393e9d0e2f5ff2b1e5528d5fc099ca0c2a95d1ded638bacb83"
+  },
+  {
+    "name": "moon",
+    "split": "test",
+    "source": "skimage.data.moon",
+    "path": "coursework/data/moon.png",
+    "sha256": "ac821dc5e9191357d54753e3c5606575066f6fe2f985e7e1cc1d595efd5ff6cc"
+  },
+  {
+    "name": "page",
+    "split": "test",
+    "source": "skimage.data.page",
+    "path": "coursework/data/page.png",
+    "sha256": "e1f2f1e0f697b4845100e3ef7516c99abdd9c355e830109b0f6b90ca660bb0f8"
+  },
+  {
+    "name": "clock",
+    "split": "test",
+    "source": "skimage.data.clock",
+    "path": "coursework/data/clock.png",
+    "sha256": "c6511e718ee454bf4d0ea3c45a27636745ce38d8b7695ba237fdaca750a26692"
+  },
+  {
+    "name": "coffee",
+    "split": "validation",
+    "source": "skimage.data.coffee",
+    "path": "coursework/data/coffee.png",
+    "sha256": "0068dcb02340d3d51db80005fd36f9682e0cef73a66bffa7aa27f50c5595b65e"
+  },
+  {
+    "name": "chelsea",
+    "split": "validation",
+    "source": "skimage.data.chelsea",
+    "path": "coursework/data/chelsea.png",
+    "sha256": "2e9e6e2f0f156f13b29ce12c73e8a6cf508c425336e4cc6cb163f30cdd7cf7b3"
+  },
+  {
+    "name": "checkerboard",
+    "split": "stress",
+    "source": "procedural stress target",
+    "path": "coursework/data/checkerboard.png",
+    "sha256": "44acbce2d860bd6e646675dbab27c7fa9080f31b7a263c6c9cf4c8b816c9f6f4"
+  },
+  {
+    "name": "small_text",
+    "split": "stress",
+    "source": "procedural stress target",
+    "path": "coursework/data/small_text.png",
+    "sha256": "08af560e3476c850cd4d985b3627689798505ed1783045bd74b609741e04fe46"
+  }
+]

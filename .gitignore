@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+tmp/
+node_modules/
+.chart-data-*/
+output/*.zip
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
