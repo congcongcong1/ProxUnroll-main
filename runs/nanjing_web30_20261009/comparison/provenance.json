@@ -1,0 +1,1265 @@
+{
+  "arguments": {
+    "manifest": "runs/nanjing_web30_20261009/data/test.json",
+    "data_dir": "runs/nanjing_web30_20261009/data",
+    "output": "runs/nanjing_web30_20261009/comparison",
+    "device": "cuda",
+    "hqs_checkpoint": "/workspace/ProxUnroll-main/weight/hqs_proxunroll.pth",
+    "admm_checkpoint": "/workspace/ProxUnroll-main/weight/admm_proxunroll.pth",
+    "extra_checkpoint": [
+      "hqs_round1=runs/lab220_20261009/finetune/best.pth",
+      "hqs_5000=runs/lab244_5000_20261009/finetune/best.pth",
+      "hqs_10000=runs/lab244_10000_20261009/finetune/best.pth"
+    ],
+    "methods": "adjoint,fista_dct,hqs,admm,hqs_round1,hqs_5000,hqs_10000",
+    "rates": "0.01,0.04,0.1,0.25,0.5",
+    "noise": "0.01,0.05",
+    "seeds": "2026,2027,2028",
+    "smoke": false,
+    "threads": 4
+  },
+  "platform": "Linux-6.5.0-18-generic-x86_64-with-glibc2.35",
+  "device": "cuda",
+  "torch_version": "2.6.0+cu124",
+  "cuda_version": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "packages": {
+    "tifffile": "2026.3.3",
+    "pluggy": "1.6.0",
+    "nvidia-cuda-runtime-cu12": "12.4.127",
+    "torchvision": "0.21.0+cu124",
+    "Jinja2": "3.1.6",
+    "fonttools": "4.66.1",
+    "hf-xet": "1.7.0",
+    "pypdf": "5.6.0",
+    "nvidia-nvjitlink-cu12": "12.4.127",
+    "nvidia-cudnn-cu12": "9.1.0.70",
+    "contourpy": "1.3.3",
+    "iniconfig": "2.3.1",
+    "pillow": "11.2.1",
+    "six": "1.17.0",
+    "nvidia-cuda-cupti-cu12": "12.4.127",
+    "h11": "0.16.0",
+    "opencv-python-headless": "4.11.0.86",
+    "nvidia-nvtx-cu12": "12.4.127",
+    "packaging": "26.3",
+    "kiwisolver": "1.5.1",
+    "setuptools": "65.5.0",
+    "scipy": "1.15.3",
+    "reportlab": "4.4.1",
+    "pytest": "8.3.5",
+    "pyparsing": "3.3.3",
+    "timm": "1.0.16",
+    "anyio": "4.15.1",
+    "httpcore2": "2.13.1",
+    "lazy-loader": "0.6",
+    "cycler": "0.12.1",
+    "nvidia-cuda-nvrtc-cu12": "12.4.127",
+    "scikit-image": "0.25.2",
+    "tqdm": "4.70.1",
+    "nvidia-cublas-cu12": "12.4.5.8",
+    "nvidia-curand-cu12": "10.3.5.147",
+    "pip": "24.0",
+    "httpx2": "2.13.1",
+    "PyYAML": "6.0.3",
+    "mpmath": "1.3.0",
+    "einops": "0.8.1",
+    "truststore": "0.10.4",
+    "networkx": "3.6.1",
+    "filelock": "3.32.3",
+    "chardet": "7.6.0",
+    "idna": "3.20",
+    "nvidia-cusparselt-cu12": "0.6.2",
+    "nvidia-cusparse-cu12": "12.3.1.170",
+    "fsspec": "2026.7.0",
+    "typing_extensions": "4.16.0",
+    "huggingface_hub": "2.1.1",
+    "MarkupSafe": "3.0.3",
+    "nvidia-cufft-cu12": "11.2.1.3",
+    "triton": "3.2.0",
+    "python-dateutil": "2.9.0.post0",
+    "ImageIO": "2.38.1",
+    "numpy": "1.26.4",
+    "nvidia-cusolver-cu12": "11.6.1.9",
+    "nvidia-nccl-cu12": "2.21.5",
+    "matplotlib": "3.10.3",
+    "safetensors": "0.8.0",
+    "torch": "2.6.0+cu124",
+    "click": "8.5.0",
+    "sympy": "1.13.1"
+  },
+  "manifest_sha256": "a24b59416aa43158a1c9c975e3a837a94092ddb07e5ece339c689b2b3664d123",
+  "data": [
+    {
+      "name": "web_nju_gulou_01",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing uni vegetation.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_uni_vegetation.jpg",
+      "author": "Kevin Dooley\u2020www.flickr.com from Chander, AZ, USA",
+      "date": "11 June 2013, 19:49",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        4884,
+        3256
+      ],
+      "sequence": "web_nju_gulou_01",
+      "path": "web_nju_gulou_01.png",
+      "sha256": "873fbc3baa6057447338f2d2cb66f28281b4d298a44a253e63020aadc9f1f204",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Nanjing_uni_vegetation.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb5%2FNanjing_uni_vegetation.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_gulou_01.png",
+      "downloaded_source_sha256": "36bed1e3713cddd31bfd89bc8c718243e98509b8402fc404c43b0513f867b183",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4884,
+        3256
+      ],
+      "crop_xywh": [
+        814,
+        0,
+        3256,
+        3256
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_gulou_02",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Main Gate of Nanjing University Gulou Campus 2012-11.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Main_Gate_of_Nanjing_University_Gulou_Campus_2012-11.JPG",
+      "author": "\u732b\u732b\u7684\u65e5\u8bb0\u672c",
+      "date": "17 November 2012, 16:24:13",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        4320,
+        3240
+      ],
+      "sequence": "web_nju_gulou_02",
+      "path": "web_nju_gulou_02.png",
+      "sha256": "3e732b846a79c3a952efffe6bbc0b13dbef0fce63891819d073d8d076e738c30",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Main_Gate_of_Nanjing_University_Gulou_Campus_2012-11.JPG",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F20%2FMain_Gate_of_Nanjing_University_Gulou_Campus_2012-11.JPG&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_gulou_02.png",
+      "downloaded_source_sha256": "b27c349e84c981f9b2735a224bd31ae52f9a1335474761e67b75331d763231e9",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4320,
+        3240
+      ],
+      "crop_xywh": [
+        540,
+        0,
+        3240,
+        3240
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_gulou_03",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing University - Jasminum nudiflorum - P1040710.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_-_Jasminum_nudiflorum_-_P1040710.JPG",
+      "author": "Vmenkov",
+      "date": "14 January 2011",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        2048,
+        1536
+      ],
+      "sequence": "web_nju_gulou_03",
+      "path": "web_nju_gulou_03.png",
+      "sha256": "aec9a7ce47761c9df8de363f33122504a47ecca29d1cfba7459597162d1bceee",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Nanjing_University_-_Jasminum_nudiflorum_-_P1040710.JPG",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F4a%2FNanjing_University_-_Jasminum_nudiflorum_-_P1040710.JPG&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_gulou_03.png",
+      "downloaded_source_sha256": "963527c0d0fe35dfb392f84662f18284d4e4f70975db5368a043f12a0e6cffa0",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        2048,
+        1536
+      ],
+      "crop_xywh": [
+        256,
+        0,
+        1536,
+        1536
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_gulou_04",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Zhongshan Building in Nanjing University Gulou Campus 01 2012-11.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Zhongshan_Building_in_Nanjing_University_Gulou_Campus_01_2012-11.JPG",
+      "author": "\u732b\u732b\u7684\u65e5\u8bb0\u672c",
+      "date": "17 November 2012, 16:24:55",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        4320,
+        3240
+      ],
+      "sequence": "web_nju_gulou_04",
+      "path": "web_nju_gulou_04.png",
+      "sha256": "bc850b95d014593fb4f91b0532c0ee7601ca7288703e13f361c19b9bf1bf3bce",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Zhongshan_Building_in_Nanjing_University_Gulou_Campus_01_2012-11.JPG",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F24%2FZhongshan_Building_in_Nanjing_University_Gulou_Campus_01_2012-11.JPG&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_gulou_04.png",
+      "downloaded_source_sha256": "03204883e3c030c167a07de8eb0ce5cca4dd5450fe10b784277801508dad9d50",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4320,
+        3240
+      ],
+      "crop_xywh": [
+        540,
+        0,
+        3240,
+        3240
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_gulou_05",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Direction Signs in NJU Gulou Campus (5851382558).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Direction_Signs_in_NJU_Gulou_Campus_(5851382558).jpg",
+      "author": "bfishadow\u2020www.flickr.com from Beijing, China",
+      "date": "19 June 2011, 10:34",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        2592,
+        1936
+      ],
+      "sequence": "web_nju_gulou_05",
+      "path": "web_nju_gulou_05.png",
+      "sha256": "90f8f47d361b64a8e388cbd2de98390e93a1b8db5d7376f28177121d067fea8b",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Direction_Signs_in_NJU_Gulou_Campus_(5851382558).jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F6%2F67%2FDirection_Signs_in_NJU_Gulou_Campus_%285851382558%29.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_gulou_05.png",
+      "downloaded_source_sha256": "5c3bf590afa6629f713ba69b27f21b4168713a4da5225ea1a557fe062612ab6e",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        2592,
+        1936
+      ],
+      "crop_xywh": [
+        328,
+        0,
+        1936,
+        1936
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_gulou_06",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "NJU small auditoria.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:NJU_small_auditoria.jpg",
+      "author": "Flsxx",
+      "date": "1 September 2011",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        2048,
+        1536
+      ],
+      "sequence": "web_nju_gulou_06",
+      "path": "web_nju_gulou_06.png",
+      "sha256": "68c0c750c58ec28d1d79ff98a74e7f446d37c35a5c1ee4f6d68c03704ee5be1c",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/NJU_small_auditoria.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F5c%2FNJU_small_auditoria.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_gulou_06.png",
+      "downloaded_source_sha256": "950f5f3322eb43074c1f60efeb5df969a6263ed25d844b02583ffe080e639e42",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        2048,
+        1536
+      ],
+      "crop_xywh": [
+        256,
+        0,
+        1536,
+        1536
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_gulou_07",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing University 20160714.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_20160714.jpg",
+      "author": "Gmbsfd",
+      "date": "14 July 2016, 17:14:20",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        4000,
+        2992
+      ],
+      "sequence": "web_nju_gulou_07",
+      "path": "web_nju_gulou_07.png",
+      "sha256": "dcd8c697f045e73cfb554283e25df5d80f513207aea52c4c53c096de264fec6a",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Nanjing_University_20160714.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F6%2F6a%2FNanjing_University_20160714.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_gulou_07.png",
+      "downloaded_source_sha256": "acbcf9d055581101aa980ea2a96eaa826883820cc893e9fea1c8247af5604f95",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4000,
+        2992
+      ],
+      "crop_xywh": [
+        504,
+        0,
+        2992,
+        2992
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_gulou_08",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing University northwestern corner.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_northwestern_corner.jpg",
+      "author": "Haha169",
+      "date": "14 December 2016, 15:24:58",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        3551,
+        2368
+      ],
+      "sequence": "web_nju_gulou_08",
+      "path": "web_nju_gulou_08.png",
+      "sha256": "60e48b6ba61c495b6d0c7266888c26d3ca198ac1f76bdacb21608a86a4d9ff74",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Nanjing_University_northwestern_corner.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F6%2F6b%2FNanjing_University_northwestern_corner.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_gulou_08.png",
+      "downloaded_source_sha256": "e3e056dacca03e3734f6a8a269c12c44ff5abd09616e55b854734dc1daf83779",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        3551,
+        2368
+      ],
+      "crop_xywh": [
+        591,
+        0,
+        2368,
+        2368
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_gulou_09",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing University Gulou Campus 2010-11.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_Gulou_Campus_2010-11.jpg",
+      "author": "\u732b\u732b\u7684\u65e5\u8bb0\u672c",
+      "date": "19 November 2010",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        6794,
+        2070
+      ],
+      "sequence": "web_nju_gulou_09",
+      "path": "web_nju_gulou_09.png",
+      "sha256": "c5844fcb78f2ffe330b5b9d8cfe146950f22c848a85249ba9644a917586f8885",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Nanjing_University_Gulou_Campus_2010-11.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F5e%2FNanjing_University_Gulou_Campus_2010-11.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_gulou_09.png",
+      "downloaded_source_sha256": "818470e03fd89b07738dc3bd33d8202f58ecfc498fa5bb084fcdf7ec1feb3645",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        6794,
+        2070
+      ],
+      "crop_xywh": [
+        2362,
+        0,
+        2070,
+        2070
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_xianlin_01",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "Nanjing University Xianlin Campus Main Entrance.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_Xianlin_Campus_Main_Entrance.jpg",
+      "author": "Zhou Guanhuai",
+      "date": "10 July 2019, 16:18:57",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        2272,
+        1704
+      ],
+      "sequence": "web_nju_xianlin_01",
+      "path": "web_nju_xianlin_01.png",
+      "sha256": "3350522069a323e6c4534a78d9fa4e2f55532ac318eafa1d40a17229fc8c26cc",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Nanjing_University_Xianlin_Campus_Main_Entrance.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb5%2FNanjing_University_Xianlin_Campus_Main_Entrance.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_xianlin_01.png",
+      "downloaded_source_sha256": "987657d395746721f90c1d43f3e615e03febabff0e4966fa0581489d5e4bb70a",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        2272,
+        1704
+      ],
+      "crop_xywh": [
+        284,
+        0,
+        1704,
+        1704
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_xianlin_02",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "Du Xia Library in Nanjing University Xianlin Campus 01 2013-05.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Du_Xia_Library_in_Nanjing_University_Xianlin_Campus_01_2013-05.JPG",
+      "author": "\u732b\u732b\u7684\u65e5\u8bb0\u672c",
+      "date": "5 May 2013, 15:59:42",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        4320,
+        3240
+      ],
+      "sequence": "web_nju_xianlin_02",
+      "path": "web_nju_xianlin_02.png",
+      "sha256": "5964e5c5e213290bcacacd839dc5b8516fbd40f106bb88db1714f40196b009dd",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Du_Xia_Library_in_Nanjing_University_Xianlin_Campus_01_2013-05.JPG",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F0b%2FDu_Xia_Library_in_Nanjing_University_Xianlin_Campus_01_2013-05.JPG&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_xianlin_02.png",
+      "downloaded_source_sha256": "d94d4a9e20b08dd05364e17747c8ce41d91bfd626114ce51d00c52a73df72d8d",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4320,
+        3240
+      ],
+      "crop_xywh": [
+        540,
+        0,
+        3240,
+        3240
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_xianlin_03",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "\u5357\u5927\u4ed9\u6797\u6559\u5b66\u697c.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E6%95%99%E5%AD%A6%E6%A5%BC.jpg",
+      "author": "panoramio\u7528\u6237KrUDSO4\u2020www.panoramio.com",
+      "date": "3 June 2010, 02:39:15",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        3648,
+        2736
+      ],
+      "sequence": "web_nju_xianlin_03",
+      "path": "web_nju_xianlin_03.png",
+      "sha256": "e7ee8c3cf6e42c5abfd65f8e4d957c5a87d33f8542aacc62a5c4839db5a60056",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E6%95%99%E5%AD%A6%E6%A5%BC.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fbf%2F%25E5%258D%2597%25E5%25A4%25A7%25E4%25BB%2599%25E6%259E%2597%25E6%2595%2599%25E5%25AD%25A6%25E6%25A5%25BC.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_xianlin_03.png",
+      "downloaded_source_sha256": "10fe02dbb39d40904852074104d45e6c2fa91ac0af29175e78a3f2b73649df2c",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        3648,
+        2736
+      ],
+      "crop_xywh": [
+        456,
+        0,
+        2736,
+        2736
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_xianlin_04",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "\u5357\u5927\u4ed9\u6797\u4f53\u80b2\u9986.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E4%BD%93%E8%82%B2%E9%A6%86.jpg",
+      "author": "panoramio\u7528\u6237KrUDSO4\u2020www.panoramio.com",
+      "date": "3 June 2010, 02:36:44",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        3648,
+        2736
+      ],
+      "sequence": "web_nju_xianlin_04",
+      "path": "web_nju_xianlin_04.png",
+      "sha256": "a0a01cc1b60528102787e9721099f7f0bdde528844e9107bca19e5a4c9af8b00",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E4%BD%93%E8%82%B2%E9%A6%86.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F3%2F3f%2F%25E5%258D%2597%25E5%25A4%25A7%25E4%25BB%2599%25E6%259E%2597%25E4%25BD%2593%25E8%2582%25B2%25E9%25A6%2586.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_xianlin_04.png",
+      "downloaded_source_sha256": "1ee7bb6975d58e9a9ef8a32bc0c6d1e315d6e7f69c3473ed5437cdb53c19c05f",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        3648,
+        2736
+      ],
+      "crop_xywh": [
+        456,
+        0,
+        2736,
+        2736
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_xianlin_05",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "\u5357\u5927\u4ed9\u6797\u5929\u6587\u53f0.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E5%A4%A9%E6%96%87%E5%8F%B0.jpg",
+      "author": "panoramio\u7528\u6237KrUDSO4\u2020www.panoramio.com",
+      "date": "3 June 2010, 01:11:46",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        3648,
+        2736
+      ],
+      "sequence": "web_nju_xianlin_05",
+      "path": "web_nju_xianlin_05.png",
+      "sha256": "212bd7de581b063b34805731b1ff929ee9f93bae7b46004c1fa70cd0aec9adbc",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E5%A4%A9%E6%96%87%E5%8F%B0.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F2c%2F%25E5%258D%2597%25E5%25A4%25A7%25E4%25BB%2599%25E6%259E%2597%25E5%25A4%25A9%25E6%2596%2587%25E5%258F%25B0.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_xianlin_05.png",
+      "downloaded_source_sha256": "51f878a4cb901fb6c3b198614164f7f4e78b07b2caa1eca64d84f4e66ab97ce8",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        3648,
+        2736
+      ],
+      "crop_xywh": [
+        456,
+        0,
+        2736,
+        2736
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_xianlin_06",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "\u5357\u5927\u4ed9\u6797\u672c\u79d1\u5bbf\u820d.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E6%9C%AC%E7%A7%91%E5%AE%BF%E8%88%8D.jpg",
+      "author": "Li3939108",
+      "date": "21 October 2012, 12:44:44",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        3264,
+        1836
+      ],
+      "sequence": "web_nju_xianlin_06",
+      "path": "web_nju_xianlin_06.png",
+      "sha256": "5a0b137554cd4048f947d4e8be9a33c57d406cb218173b93a28132469e13714d",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E6%9C%AC%E7%A7%91%E5%AE%BF%E8%88%8D.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F83%2F%25E5%258D%2597%25E5%25A4%25A7%25E4%25BB%2599%25E6%259E%2597%25E6%259C%25AC%25E7%25A7%2591%25E5%25AE%25BF%25E8%2588%258D.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_xianlin_06.png",
+      "downloaded_source_sha256": "413b77c3d18b23580a3df026b8c49a49e3db1091caacadab9a37fb9ce9f5d036",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        3264,
+        1836
+      ],
+      "crop_xywh": [
+        714,
+        0,
+        1836,
+        1836
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_xianlin_07",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "NJU Students Activity Center.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:NJU_Students_Activity_Center.jpg",
+      "author": "panoramio\u7528\u6237\u53f2\u6c0f\u2020www.panoramio.com",
+      "date": "17 August 2009, 16:41:52",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source_dimensions": [
+        2560,
+        1920
+      ],
+      "sequence": "web_nju_xianlin_07",
+      "path": "web_nju_xianlin_07.png",
+      "sha256": "c75f0889c797c0f4bf24ad08149772c8d83baecb725994f59094568c181a9a4f",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/NJU_Students_Activity_Center.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fc%2Fcb%2FNJU_Students_Activity_Center.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_xianlin_07.png",
+      "downloaded_source_sha256": "73cf349c7466d681891a63a876d8377fce31e6a9333d582232da7fcd882497e1",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        2560,
+        1920
+      ],
+      "crop_xywh": [
+        320,
+        0,
+        1920,
+        1920
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_xianlin_08",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "\u5357\u5927\u4ed9\u6797\u5b9e\u9a8c\u697c.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E5%AE%9E%E9%AA%8C%E6%A5%BC.jpg",
+      "author": "Li3939108",
+      "date": "7 November 2009, 12:10:41",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        2592,
+        1944
+      ],
+      "sequence": "web_nju_xianlin_08",
+      "path": "web_nju_xianlin_08.png",
+      "sha256": "67e8e1b12a30edfb22c7998b1484fa8f921bf10def58995818ae32b7c472087b",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E5%AE%9E%E9%AA%8C%E6%A5%BC.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F00%2F%25E5%258D%2597%25E5%25A4%25A7%25E4%25BB%2599%25E6%259E%2597%25E5%25AE%259E%25E9%25AA%258C%25E6%25A5%25BC.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_xianlin_08.png",
+      "downloaded_source_sha256": "0959c2cb8e3e2d3437c571a8405d50ebd142dcc1541599c7d63c57265e1ca6a7",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        2592,
+        1944
+      ],
+      "crop_xywh": [
+        324,
+        0,
+        1944,
+        1944
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_nju_xianlin_09",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "\u5357\u5927\u4ed9\u6797\u6821\u533a\u822a\u62cd20211219 01.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E6%A0%A1%E5%8C%BA%E8%88%AA%E6%8B%8D20211219_01.jpg",
+      "author": "\u897f\u5b89\u5175\u9a6c\u4fd1",
+      "date": "19 December 2021, 13:59:33",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        4000,
+        3000
+      ],
+      "sequence": "web_nju_xianlin_09",
+      "path": "web_nju_xianlin_09.png",
+      "sha256": "869c00f521325ca0d181490c0ed2c9a238fa74d7a8186633d6e142a2d9b4f568",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E6%A0%A1%E5%8C%BA%E8%88%AA%E6%8B%8D20211219_01.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F59%2F%25E5%258D%2597%25E5%25A4%25A7%25E4%25BB%2599%25E6%259E%2597%25E6%25A0%25A1%25E5%258C%25BA%25E8%2588%25AA%25E6%258B%258D20211219_01.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_nju_xianlin_09.png",
+      "downloaded_source_sha256": "d12200542073d1bfd167b38a227eafacb5fdb2d763f6ed43834a8f67cd8d817d",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4000,
+        3000
+      ],
+      "crop_xywh": [
+        500,
+        0,
+        3000,
+        3000
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_xuanwu_lake_01",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Xuanwu_Lake",
+      "split": "test",
+      "title": "View of Xuanwu Lake from the city wall, Nanjing, Apr 2021.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:View_of_Xuanwu_Lake_from_the_city_wall%2C_Nanjing%2C_Apr_2021.jpg",
+      "author": "HMGiovanniV",
+      "date": "29 April 2021, 13:37:21",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        4000,
+        2250
+      ],
+      "sequence": "web_xuanwu_lake_01",
+      "path": "web_xuanwu_lake_01.png",
+      "sha256": "13a55dae76928ba97dcb522ef11c80e83b47f4170eb5b72a550ab5c166bc8391",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/View_of_Xuanwu_Lake_from_the_city_wall,_Nanjing,_Apr_2021.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F26%2FView_of_Xuanwu_Lake_from_the_city_wall%2C_Nanjing%2C_Apr_2021.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_xuanwu_lake_01.png",
+      "downloaded_source_sha256": "ee5cb8bac2f0dc1ff9ca32f66db89251b630865dd6955a815cae2b13a63eb578",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4000,
+        2250
+      ],
+      "crop_xywh": [
+        875,
+        0,
+        2250,
+        2250
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_xuanwu_lake_02",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Xuanwu_Lake",
+      "split": "test",
+      "title": "View from Jiming Temple, Nanjing City Wall & Lake Xuanwu (10150627454).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:View_from_Jiming_Temple%2C_Nanjing_City_Wall_%26_Lake_Xuanwu_(10150627454).jpg",
+      "author": "Gary Todd\u2020www.flickr.com from Xinzheng, China",
+      "date": "14 June 2009, 13:36",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_dimensions": [
+        3888,
+        2592
+      ],
+      "sequence": "web_xuanwu_lake_02",
+      "path": "web_xuanwu_lake_02.png",
+      "sha256": "47c331e84a6ee2a0dc89dc4fd551a7b545647abe2732d0597e8060767cf79c21",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/View_from_Jiming_Temple,_Nanjing_City_Wall_%26_Lake_Xuanwu_(10150627454).jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff0%2FView_from_Jiming_Temple%2C_Nanjing_City_Wall_%2526_Lake_Xuanwu_%2810150627454%29.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_xuanwu_lake_02.png",
+      "downloaded_source_sha256": "fe4d346e83427e6752609be9eadae837026fe5cd8a3420a63bda9fd62c4bd1af",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        3888,
+        2592
+      ],
+      "crop_xywh": [
+        648,
+        0,
+        2592,
+        2592
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_xuanwu_lake_03",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Xuanwu_Lake",
+      "split": "test",
+      "title": "\u7384\u6b66\u6e5613.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%84%E6%AD%A6%E6%B9%9613.jpg",
+      "author": "\u897f\u5b89\u5175\u9a6c\u4fd1",
+      "date": "21 July 2018, 14:43:23",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        4000,
+        3000
+      ],
+      "sequence": "web_xuanwu_lake_03",
+      "path": "web_xuanwu_lake_03.png",
+      "sha256": "4522b64342151d9662f4a04d93f07b4616bf31013a9081720273e8cc318e348b",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/%E7%8E%84%E6%AD%A6%E6%B9%9613.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F86%2F%25E7%258E%2584%25E6%25AD%25A6%25E6%25B9%259613.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_xuanwu_lake_03.png",
+      "downloaded_source_sha256": "c75ae53e677e6f405fa64dc9ca86fe227f4a6b78b09e6a6b1d8ec19ccb31c03a",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4000,
+        3000
+      ],
+      "crop_xywh": [
+        500,
+        0,
+        3000,
+        3000
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_sun_yat_sen_mausoleum_01",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Sun_Yat_sen_Mausoleum",
+      "split": "test",
+      "title": "Up the stairs, Sun Yat-sens Mausoleum.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Up_the_stairs%2C_Sun_Yat-sens_Mausoleum.jpg",
+      "author": "Rich Summers\u2020www.flickr.com from Shanghai, China",
+      "date": "4 December 2010, 16:14",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        1280,
+        855
+      ],
+      "sequence": "web_sun_yat_sen_mausoleum_01",
+      "path": "web_sun_yat_sen_mausoleum_01.png",
+      "sha256": "73d3f99f8d2bd270c4c2add1af4f8e7840bdb97b68de529ee0b8717609c5af24",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Up_the_stairs,_Sun_Yat-sens_Mausoleum.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb6%2FUp_the_stairs%2C_Sun_Yat-sens_Mausoleum.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_sun_yat_sen_mausoleum_01.png",
+      "downloaded_source_sha256": "4a17a195b71937bb037659352a6acfbb067e1454344354a7d286326a11747a03",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        1280,
+        855
+      ],
+      "crop_xywh": [
+        212,
+        0,
+        855,
+        855
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_sun_yat_sen_mausoleum_02",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Sun_Yat_sen_Mausoleum",
+      "split": "test",
+      "title": "Gate of Sun Yat-sen's Mausoleum.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gate_of_Sun_Yat-sen's_Mausoleum.jpg",
+      "author": "Patrick\u2020www.flickr.com from Beijing, China",
+      "date": "1 December 2007, 09:47",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        960,
+        640
+      ],
+      "sequence": "web_sun_yat_sen_mausoleum_02",
+      "path": "web_sun_yat_sen_mausoleum_02.png",
+      "sha256": "8974e4424741e17a58663166ed23917c8648acd0969ffc1418724822371e9ef9",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Gate_of_Sun_Yat-sen's_Mausoleum.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ffb%2FGate_of_Sun_Yat-sen%27s_Mausoleum.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_sun_yat_sen_mausoleum_02.png",
+      "downloaded_source_sha256": "cb8b76fe4785fe421f8152561b2f10229e0183572d894e0caa50055b763500be",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        960,
+        640
+      ],
+      "crop_xywh": [
+        160,
+        0,
+        640,
+        640
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_sun_yat_sen_mausoleum_03",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Sun_Yat_sen_Mausoleum",
+      "split": "test",
+      "title": "Sun Yat-sen Mausoleum, August 2016.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Sun_Yat-sen_Mausoleum%2C_August_2016.jpg",
+      "author": "Jason Zhang",
+      "date": "2 August 2016, 15:58:47",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_dimensions": [
+        4208,
+        2368
+      ],
+      "sequence": "web_sun_yat_sen_mausoleum_03",
+      "path": "web_sun_yat_sen_mausoleum_03.png",
+      "sha256": "c3a88ec7b532d86611142976f7ca9c62c804977aff0656c07b8bb8c0ce4bcb4b",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Sun_Yat-sen_Mausoleum,_August_2016.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F6%2F6c%2FSun_Yat-sen_Mausoleum%2C_August_2016.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_sun_yat_sen_mausoleum_03.png",
+      "downloaded_source_sha256": "c0a79b3e6e7b9fc309af5045b83c91b9be960fd7cb95c5b3a82ca56f42c07f40",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4208,
+        2368
+      ],
+      "crop_xywh": [
+        920,
+        0,
+        2368,
+        2368
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_ming_xiaoling_01",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Ming_Xiaoling",
+      "split": "test",
+      "title": "Ming Xiaoling - grounds - P1060495.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ming_Xiaoling_-_grounds_-_P1060495.JPG",
+      "author": "Vmenkov",
+      "date": null,
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        2048,
+        1536
+      ],
+      "sequence": "web_ming_xiaoling_01",
+      "path": "web_ming_xiaoling_01.png",
+      "sha256": "9031c28d5fb22162d3c7f850c1a790842ec10f07e332584cb3f2f9cfc4076f9e",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Ming_Xiaoling_-_grounds_-_P1060495.JPG",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb9%2FMing_Xiaoling_-_grounds_-_P1060495.JPG&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_ming_xiaoling_01.png",
+      "downloaded_source_sha256": "a4d1c3fcf7233f5398766d9104f66409a4d7cb59e08d2c4694577aa962f40689",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        2048,
+        1536
+      ],
+      "crop_xywh": [
+        256,
+        0,
+        1536,
+        1536
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_ming_xiaoling_02",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Ming_Xiaoling",
+      "split": "test",
+      "title": "China-Nanjing (2024) Ming Xiaoling \u660e\u5b5d\u9675 - img 09.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:China-Nanjing_(2024)_Ming_Xiaoling_%E6%98%8E%E5%AD%9D%E9%99%B5_-_img_09.jpg",
+      "author": "Chainwit.",
+      "date": "26 April 2024, 15:39:52",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_dimensions": [
+        2776,
+        3702
+      ],
+      "sequence": "web_ming_xiaoling_02",
+      "path": "web_ming_xiaoling_02.png",
+      "sha256": "5f24697fe59c14effea8e58b8c3c9c5c3df0e2edd9c66f4eddbe50671f4ba155",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/China-Nanjing_(2024)_Ming_Xiaoling_%E6%98%8E%E5%AD%9D%E9%99%B5_-_img_09.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F7%2F70%2FChina-Nanjing_%282024%29_Ming_Xiaoling_%25E6%2598%258E%25E5%25AD%259D%25E9%2599%25B5_-_img_09.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_ming_xiaoling_02.png",
+      "downloaded_source_sha256": "7b71c268e4d77714e3369b30634de51990951885b758e31e07039c5b3427310c",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        2776,
+        3702
+      ],
+      "crop_xywh": [
+        0,
+        463,
+        2776,
+        2776
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_ming_xiaoling_03",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Ming_Xiaoling",
+      "split": "test",
+      "title": "Ming Xiaoling Mausoleum (54437902496).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ming_Xiaoling_Mausoleum_(54437902496).jpg",
+      "author": "xiquinhosilva\u2020www.flickr.com",
+      "date": "16 April 2012, 15:22",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        2560,
+        1656
+      ],
+      "sequence": "web_ming_xiaoling_03",
+      "path": "web_ming_xiaoling_03.png",
+      "sha256": "45b1ac8d16d865d4b5c54143068e56a7557e85dca7fa4d68dce47d8545fee7bd",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Ming_Xiaoling_Mausoleum_(54437902496).jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F6%2F6d%2FMing_Xiaoling_Mausoleum_%2854437902496%29.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_ming_xiaoling_03.png",
+      "downloaded_source_sha256": "531e795b5805f077c94bd6a62b004d0defadac6768a0eada782ab65be2020628",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        2560,
+        1656
+      ],
+      "crop_xywh": [
+        452,
+        0,
+        1656,
+        1656
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_qinhuai_fuzimiao_01",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Qinhuai_Fuzimiao",
+      "split": "test",
+      "title": "Confucius Temple and Qinhuai River, Nanjing Night.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Confucius_Temple_and_Qinhuai_River%2C_Nanjing_Night.jpg",
+      "author": "Dick Rochester\u2020flickr.com",
+      "date": "25 March 2009, 13:25:41",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source_dimensions": [
+        3872,
+        2592
+      ],
+      "sequence": "web_qinhuai_fuzimiao_01",
+      "path": "web_qinhuai_fuzimiao_01.png",
+      "sha256": "b2eec32031d33b930f69414b608fae09a4fe00a0a01e71c43fd9c19f94f62814",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Confucius_Temple_and_Qinhuai_River,_Nanjing_Night.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F4c%2FConfucius_Temple_and_Qinhuai_River%2C_Nanjing_Night.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_qinhuai_fuzimiao_01.png",
+      "downloaded_source_sha256": "6e535e803bc04e704e1d9890f5b735fdfc5881e613f57994cc13d7f7e95cd687",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        3872,
+        2592
+      ],
+      "crop_xywh": [
+        640,
+        0,
+        2592,
+        2592
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_qinhuai_fuzimiao_02",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Qinhuai_Fuzimiao",
+      "split": "test",
+      "title": "Fuzi Miao \u592b\u5b50\u5e99 (5811359497).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Fuzi_Miao_%E5%A4%AB%E5%AD%90%E5%BA%99_(5811359497).jpg",
+      "author": "Caitriana Nicholson\u2020www.flickr.com from \u5317\u4eac ~ Beijing, \u4e2d\u56fd ~ China",
+      "date": "2 June 2011, 21:02",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source_dimensions": [
+        1600,
+        1200
+      ],
+      "sequence": "web_qinhuai_fuzimiao_02",
+      "path": "web_qinhuai_fuzimiao_02.png",
+      "sha256": "f79c44faa4929213858daa4d1fa529ca9bbbdae978aeff64e152f464aa2c4070",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Fuzi_Miao_%E5%A4%AB%E5%AD%90%E5%BA%99_(5811359497).jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F08%2FFuzi_Miao_%25E5%25A4%25AB%25E5%25AD%2590%25E5%25BA%2599_%285811359497%29.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_qinhuai_fuzimiao_02.png",
+      "downloaded_source_sha256": "26a615f3c1529545081c943204adb8fc7b326dffc915a3f7be176d5d63cc141d",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        1600,
+        1200
+      ],
+      "crop_xywh": [
+        200,
+        0,
+        1200,
+        1200
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    },
+    {
+      "name": "web_qinhuai_fuzimiao_03",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Qinhuai_Fuzimiao",
+      "split": "test",
+      "title": "Night View of Qinhuai River with Scenic Cruise in Fuzi Miao 20170519.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Night_View_of_Qinhuai_River_with_Scenic_Cruise_in_Fuzi_Miao_20170519.jpg",
+      "author": "4084470 0.smil",
+      "date": "19 May 2017, 19:49:12",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_dimensions": [
+        4160,
+        2336
+      ],
+      "sequence": "web_qinhuai_fuzimiao_03",
+      "path": "web_qinhuai_fuzimiao_03.png",
+      "sha256": "66f160ec233c44261883598ade21bad30c3b3902d9223bb41acadb647c134183",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Night_View_of_Qinhuai_River_with_Scenic_Cruise_in_Fuzi_Miao_20170519.jpg",
+      "downloaded_url": "https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F55%2FNight_View_of_Qinhuai_River_with_Scenic_Cruise_in_Fuzi_Miao_20170519.jpg&output=png",
+      "downloaded_source_path": "runs/nanjing_web30_20261009/source_png/web_qinhuai_fuzimiao_03.png",
+      "downloaded_source_sha256": "18d490e384aabadd8d2bce42f2be875baea741debd06937dfa7415ddc8c9e094",
+      "download_representation": "full-resolution lossless PNG transcode via wsrv.nl; not original JPEG bytes",
+      "downloaded_dimensions": [
+        4160,
+        2336
+      ],
+      "crop_xywh": [
+        912,
+        0,
+        2336,
+        2336
+      ],
+      "preprocessing": "EXIF orientation; center square; OpenCV RGB2YCrCb Y; INTER_AREA to 256x256; uint8 PNG then /255 at evaluation",
+      "source_role": "external author web photo; collected and prepared by team; never used for training or checkpoint selection"
+    }
+  ],
+  "checkpoints": {
+    "hqs": {
+      "path": "/workspace/ProxUnroll-main/weight/hqs_proxunroll.pth",
+      "sha256": "848c263ac54d44ef74374b6fa686af6b8dfa7240720499d174ff135ab1959be6"
+    },
+    "admm": {
+      "path": "/workspace/ProxUnroll-main/weight/admm_proxunroll.pth",
+      "sha256": "7d06f4c83e1d187ea245e7ca7b542b0f5c2c7508af4d72968350503626d1cc7e"
+    },
+    "hqs_round1": {
+      "path": "runs/lab220_20261009/finetune/best.pth",
+      "sha256": "0252b7188b86e1f424a11ab65639e53bb769436ebec16555ea62938b26e7c1cf"
+    },
+    "hqs_5000": {
+      "path": "runs/lab244_5000_20261009/finetune/best.pth",
+      "sha256": "3e85cbd683c10487104f39978abb325f3fb935052e9a0fc669aad1af6f7d95cb"
+    },
+    "hqs_10000": {
+      "path": "runs/lab244_10000_20261009/finetune/best.pth",
+      "sha256": "78601d24cabff4dc884c1b129a0643491098cf84bf54dc5c93dbf02e38fd2ed3"
+    }
+  },
+  "conditions": [
+    [
+      0.01,
+      0.0,
+      2026
+    ],
+    [
+      0.04,
+      0.0,
+      2026
+    ],
+    [
+      0.1,
+      0.0,
+      2026
+    ],
+    [
+      0.25,
+      0.0,
+      2026
+    ],
+    [
+      0.5,
+      0.0,
+      2026
+    ],
+    [
+      0.1,
+      0.01,
+      2026
+    ],
+    [
+      0.1,
+      0.01,
+      2027
+    ],
+    [
+      0.1,
+      0.01,
+      2028
+    ],
+    [
+      0.1,
+      0.05,
+      2026
+    ],
+    [
+      0.1,
+      0.05,
+      2027
+    ],
+    [
+      0.1,
+      0.05,
+      2028
+    ]
+  ],
+  "source_hashes": {
+    "coursework/evaluate_manifest.py": "25341c2e497848fd0a0893191008e4084d1f1c4eeed4d9e7c39b9b39c403eecd",
+    "coursework/run_experiments.py": "1fee5f2cf74878acf409ac05a91d6e6ec53066ad018c81f79ab8dcf0aba5eff7",
+    "coursework/baselines.py": "891bb958c1f960034a591a7f2d8ac911e07045b87cc381234798e156abcfeb5c",
+    "model/proxunroll.py": "41bc5e34c2c98694e8aa540d51800ae2ea988989e44c9423a74653dbe79e55ab"
+  },
+  "matrix_sha256": "f143332cb20b8d4cf139f46ad066597b47aa4f48bfe50c19cb97d3170b3af75b",
+  "fista_lambda": 0.001,
+  "fista_lambda_source": "original disjoint skimage validation; frozen before external test",
+  "metric_contract": "clip predictions [0,1]; data_range=1; skimage PSNR/SSIM; no border crop; float metrics before PNG; relative RMS measurement noise",
+  "model_scope": "single-image reconstruction on independent frames; no temporal model",
+  "timing": "synchronized wall time after warmup; FISTA/adjoint CPU, neural CUDA; one sample per condition"
+}

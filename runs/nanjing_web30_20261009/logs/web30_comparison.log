@@ -1,0 +1,68 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+web_nju_gulou_01: 77 rows, 25.1s
+web_nju_gulou_02: 154 rows, 50.4s
+web_nju_gulou_03: 231 rows, 75.6s
+web_nju_gulou_04: 308 rows, 100.8s
+web_nju_gulou_05: 385 rows, 126.7s
+web_nju_gulou_06: 462 rows, 152.0s
+web_nju_gulou_07: 539 rows, 178.1s
+web_nju_gulou_08: 616 rows, 203.8s
+web_nju_gulou_09: 693 rows, 229.6s
+web_nju_xianlin_01: 770 rows, 255.3s
+web_nju_xianlin_02: 847 rows, 281.1s
+web_nju_xianlin_03: 924 rows, 307.1s
+web_nju_xianlin_04: 1001 rows, 333.4s
+web_nju_xianlin_05: 1078 rows, 359.5s
+web_nju_xianlin_06: 1155 rows, 385.4s
+web_nju_xianlin_07: 1232 rows, 411.8s
+web_nju_xianlin_08: 1309 rows, 438.5s
+web_nju_xianlin_09: 1386 rows, 465.3s
+web_xuanwu_lake_01: 1463 rows, 491.8s
+web_xuanwu_lake_02: 1540 rows, 518.4s
+web_xuanwu_lake_03: 1617 rows, 545.3s
+web_sun_yat_sen_mausoleum_01: 1694 rows, 571.7s
+web_sun_yat_sen_mausoleum_02: 1771 rows, 598.4s
+web_sun_yat_sen_mausoleum_03: 1848 rows, 625.4s
+web_ming_xiaoling_01: 1925 rows, 652.3s
+web_ming_xiaoling_02: 2002 rows, 679.0s
+web_ming_xiaoling_03: 2079 rows, 705.7s
+web_qinhuai_fuzimiao_01: 2156 rows, 732.3s
+web_qinhuai_fuzimiao_02: 2233 rows, 759.5s
+web_qinhuai_fuzimiao_03: 2310 rows, 786.6s
+COMPLETE
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"rows": 2310, "stages": 9900, "paired_conditions": 330, "float_arrays_recomputed": 2310, "max_metric_error": 0.0, "data_checkpoint_matrix_source_hashes_verified": true, "measurement_hashes_recomputed": true}
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/ProxUnroll-main/coursework/analyze_nanjing_web30.py", line 80, in <module>
+    analyze(p.parse_args().output)
+  File "/workspace/ProxUnroll-main/coursework/analyze_nanjing_web30.py", line 74, in analyze
+    (output/'mse_analysis.json').write_text(json.dumps(result, indent=2)+'\n')
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable

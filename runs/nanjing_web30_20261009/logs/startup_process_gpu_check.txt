@@ -1,0 +1,10 @@
+    PID     ELAPSED COMMAND
+   7002       00:18 bash -c export CUDA_VISIBLE_DEVICES=GPU-16f6ac58-4d8c-8845-0886-1dc146a0327e CUDA_DEVICE_ORDER=PCI_BUS_ID CUBLAS_WORKSPACE_CONFIG=:4096:8 OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MPLCONFIGDIR="$PWD/.cache-linux/matplotlib"; set +e; timeout 1800 bash -lc '.venv-linux/bin/python -m coursework.evaluate_manifest --manifest runs/nanjing_web30_20261009/data/test.json --data-dir runs/nanjing_web30_20261009/data --methods adjoint,fista_dct,hqs,admm,hqs_round1,hqs_5000,hqs_10000 --extra-checkpoint hqs_round1=runs/lab220_20261009/finetune/best.pth --extra-checkpoint hqs_5000=runs/lab244_5000_20261009/finetune/best.pth --extra-checkpoint hqs_10000=runs/lab244_10000_20261009/finetune/best.pth --output runs/nanjing_web30_20261009/comparison && .venv-linux/bin/python -m coursework.verify_lab_run runs/nanjing_web30_20261009/comparison && .venv-linux/bin/python -m coursework.analyze_nanjing_web30 runs/nanjing_web30_20261009/comparison'; status=$?; echo "$status" > runs/nanjing_web30_20261009/logs/web30_comparison.exit; exit "$status"
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+gpu_uuid, pid, process_name, used_gpu_memory [MiB]
+GPU-5c29e362-93ff-356b-1b27-82ef64ea1327, 3213805, [Not Found], 7148 MiB
+GPU-16f6ac58-4d8c-8845-0886-1dc146a0327e, 1786021, [Not Found], 976 MiB
+GPU-3ebe0de4-666f-0c3f-9cda-dbc45965e57b, 3197433, [Not Found], 1448 MiB

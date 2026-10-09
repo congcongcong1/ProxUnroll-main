@@ -1,0 +1,57 @@
+{
+  "locked_before_any_web_inference_utc": "2026-10-09T07:37:42.005921+00:00",
+  "catalog_sha256": "f85d9b838f06a173f34bf4a9ced87f96c232d0448658109886de01b0b49e1d06",
+  "manifest_sha256": "a24b59416aa43158a1c9c975e3a837a94092ddb07e5ece339c689b2b3664d123",
+  "checkpoints": {
+    "hqs": {
+      "path": "weight/hqs_proxunroll.pth",
+      "sha256": "848c263ac54d44ef74374b6fa686af6b8dfa7240720499d174ff135ab1959be6"
+    },
+    "admm": {
+      "path": "weight/admm_proxunroll.pth",
+      "sha256": "7d06f4c83e1d187ea245e7ca7b542b0f5c2c7508af4d72968350503626d1cc7e"
+    },
+    "hqs_round1": {
+      "path": "runs/lab220_20261009/finetune/best.pth",
+      "sha256": "0252b7188b86e1f424a11ab65639e53bb769436ebec16555ea62938b26e7c1cf"
+    },
+    "hqs_5000": {
+      "path": "runs/lab244_5000_20261009/finetune/best.pth",
+      "sha256": "3e85cbd683c10487104f39978abb325f3fb935052e9a0fc669aad1af6f7d95cb"
+    },
+    "hqs_10000": {
+      "path": "runs/lab244_10000_20261009/finetune/best.pth",
+      "sha256": "78601d24cabff4dc884c1b129a0643491098cf84bf54dc5c93dbf02e38fd2ed3"
+    }
+  },
+  "methods": [
+    "adjoint",
+    "fista_dct",
+    "hqs",
+    "admm",
+    "hqs_round1",
+    "hqs_5000",
+    "hqs_10000"
+  ],
+  "rates": [
+    0.01,
+    0.04,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "relative_noise": [
+    0,
+    0.01,
+    0.05
+  ],
+  "noise_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "training_or_model_selection_use": false,
+  "source_review_sha256": "fc96f54da1041e1087df8f72eb7479482437ea6276f9b346af4f1c05890a7070",
+  "matrix_sha256": "f143332cb20b8d4cf139f46ad066597b47aa4f48bfe50c19cb97d3170b3af75b",
+  "comparison_primary": "MSE ratio of means vs 100-step HQS; continuation separately vs step-4500 selection at budget 5000"
+}

@@ -1,0 +1,5 @@
+{
+  "old_sha256": "350704a6279b3dc609c32bb334f63c40252ecc814d7498e0aea21776c437464f",
+  "new_sha256": "712d27a01a5a129e0632875141263953a701c1d933b97762af6624dce19def5b",
+  "reason": "convert numpy integer to Python int for JSON serialization; no metric or model changes"
+}

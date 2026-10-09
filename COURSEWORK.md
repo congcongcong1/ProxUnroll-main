@@ -10,9 +10,14 @@
 
 ## Deliverables
 
-The latest completed extension is the verified 5000-step experiment, with
-`output/pdf/technical_report_5000_20261009.pdf` and
-`output/presentation/course_presentation_5000_20261009.pptx`.
+The latest extension completes 10000 total HQS updates and evaluates 30
+team-curated Nanjing web photographs. The new six-page English report is
+`output/pdf/technical_report_nanjing_20261009.pdf`, with the 12-slide
+`output/presentation/course_presentation_nanjing_20261009.pptx`.
+See [NANJING_WEB30.md](coursework/NANJING_WEB30.md) for sources, exact commands,
+per-location scores and all weak/negative outcomes. These are externally authored
+web photographs, not photographs captured by our team. The optional self-capture
+item remains open.
 The original deliverables listed below remain preserved. Teacher-requirement status
 is recorded in [REQUIREMENTS_STATUS_20261009.md](coursework/REQUIREMENTS_STATUS_20261009.md).
 The GitHub evidence snapshot, external data/checkpoint locations, and offline checks
@@ -182,11 +187,29 @@ Kodak/HEVC 是回归测试，干净条件提升也有限；各视频和所有退
 新版英文技术报告六页：`output/pdf/technical_report_5000_20261009.pdf`；PPT 十二页：`output/presentation/course_presentation_5000_20261009.pptx`。
 中文答辩补充见 [DEFENSE_5000_ZH.md](coursework/DEFENSE_5000_ZH.md)，逐页讲稿见 [PRESENTATION_GUIDE_5000.md](coursework/PRESENTATION_GUIDE_5000.md)。
 
-### 总计 10000 步的续训启动（2026-10-09）
+### 总计 10000 步的续训完成（2026-10-09）
 
 用户授权进一步训练后，已于北京时间 13:16 在 244 / luozc_mlvc 的空闲 GPU5 启动独立续训。
 目录 `runs/lab244_10000_20261009`，从完整第 5000 步状态继续到总计最多 10000 步（新增 5000）。
 保持梯度规则、数据、损失、学习率、验证选择和冻结矩阵不变；真实恢复一致性与首个第 5001 步 checkpoint 已验证。
-预计约两小时，正式续训上限 150 分钟；启动和回访命令见 [ROUND10000.md](coursework/ROUND10000.md)。
-预先固定剩余 52 张新测试原图，旧 80 张明确为回归测试。本次不自动测试；用户回来后核对完成状态，再公平评测。
-现有报告/PPT 仍是已完成的 5000 步结果；不宣称尚未评测的续训有提升。
+正式续训实际耗时 125.16 分钟，在 150 分钟预算内完成；退出码 0，验证选中第 10000 步。
+启动、完成审计和回访命令见 [ROUND10000.md](coursework/ROUND10000.md)。
+预先固定剩余 52 张新测试原图，旧 80 张明确为回归测试；该独立测试仍待用户回访时进行。
+本次南京网络场景另作测试，实际结果已加入新版报告/PPT，不能替代原定的 DIV2K52 评测。
+
+## Nanjing web-scene and completed continuation extension
+
+At clean 10% sampling, the selected 10000-step HQS reduces mean MSE by 1.73%
+on 18 campus photographs and 1.91% on 12 scenic photographs versus the 100-step
+model. Relative to the validation-selected model at a 5000-step budget, gains are
+0.37% and 0.47%; continued training adds little. Strong-noise results are reported
+separately. The 5–10% clean-error target is not met on these new subsets.
+
+The fixed collection preserves original authors, source URLs, licenses, full-size
+PNG transcode hashes and exact 256×256 grayscale test inputs. It remains test-only.
+Seven method/model states produce 2310 main rows and 9900 stage rows under identical
+measurements; every floating reconstruction metric is independently recomputed.
+All six locations and all negative conditions remain in the evidence.
+`coursework/DEFENSE_NANJING_ZH.md` and `PRESENTATION_GUIDE_NANJING.md` support
+the presentation. The separately locked DIV2K52 holdout still awaits evaluation.
+No new training is chosen from these web-test results.

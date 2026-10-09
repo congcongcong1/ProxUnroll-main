@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-09T07:34:40.774294+00:00",
+  "catalog_sha256": "f85d9b838f06a173f34bf4a9ced87f96c232d0448658109886de01b0b49e1d06",
+  "count": 30,
+  "campus_images": 18,
+  "scenic_images": 12,
+  "training_or_selection_use": false,
+  "grouping": "each original photo is one equal-weight unit; campus/scenic and all six locations reported separately",
+  "collection_type": "team-curated web images, not team-captured photographs",
+  "transport": "direct Wikimedia retrieval timed out; wsrv.nl full-size PNG transcode, no requested resize, crop or filter; codec/color-profile handling can differ from original JPEG decoding",
+  "manifest_sha256": "a24b59416aa43158a1c9c975e3a837a94092ddb07e5ece339c689b2b3664d123",
+  "visual_source_review_required_before_evaluation": true
+}

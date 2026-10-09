@@ -1,0 +1,13 @@
+{
+  "purpose": "post-test diagnostic illustrations; no training or checkpoint selection",
+  "lowest_official_hqs_clean10_percent_photo_per_location": [
+    "web_ming_xiaoling_01",
+    "web_nju_gulou_04",
+    "web_nju_xianlin_09",
+    "web_qinhuai_fuzimiao_01",
+    "web_sun_yat_sen_mausoleum_03",
+    "web_xuanwu_lake_02"
+  ],
+  "all_330_conditions_in_csv": true,
+  "complete_npy_and_png_retention": "local and remote run, outside Git"
+}

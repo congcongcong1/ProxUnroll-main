@@ -1,0 +1,7 @@
+{
+  "path": "runs/lab220_20261009/logs/gpu_smoke.log",
+  "remote_sha256_before_sync": "32aa8ac20531628d45fba3bc72250754456f8514677c01a0e44c3be4ad0902e9",
+  "preserved_full_remote_log": "runs/nanjing_web30_20261009/source_archive/lab220_gpu_smoke_remote_preserved.log",
+  "repository_frozen_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reason": "Remote smoke log contains the completed original kodim01 GPU smoke run; local frozen evidence indexed an empty captured stdout. Preserve the complete remote log before reconciling the tracked frozen repository snapshot. No experiment or checkpoint is removed."
+}

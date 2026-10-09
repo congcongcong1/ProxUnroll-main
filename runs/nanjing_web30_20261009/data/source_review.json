@@ -1,0 +1,62 @@
+{
+  "reviewed_utc": "2026-10-09T07:37:42.004921+00:00",
+  "review_method": "Viewed all 30 standardized inputs on source-only contact sheet; checked Commons source attribution before reconstruction",
+  "all_30_accepted": true,
+  "no_performance_based_selection": true,
+  "exact_processed_duplicates": 0,
+  "exact_source_duplicates": 0,
+  "related_views": "Gulou entrance views and repeated photographers/sites remain; descriptive collection, not iid benchmark sampling",
+  "nearest_64bit_dct_hash_pairs": [
+    [
+      18,
+      "web_nju_gulou_09",
+      "web_ming_xiaoling_02"
+    ],
+    [
+      18,
+      "web_nju_xianlin_03",
+      "web_nju_xianlin_08"
+    ],
+    [
+      18,
+      "web_nju_xianlin_08",
+      "web_sun_yat_sen_mausoleum_03"
+    ],
+    [
+      22,
+      "web_nju_gulou_01",
+      "web_nju_gulou_03"
+    ],
+    [
+      22,
+      "web_nju_gulou_01",
+      "web_nju_gulou_09"
+    ],
+    [
+      22,
+      "web_nju_gulou_02",
+      "web_nju_gulou_07"
+    ],
+    [
+      22,
+      "web_nju_gulou_02",
+      "web_nju_xianlin_03"
+    ],
+    [
+      22,
+      "web_nju_gulou_02",
+      "web_nju_xianlin_05"
+    ],
+    [
+      22,
+      "web_nju_gulou_07",
+      "web_nju_xianlin_03"
+    ],
+    [
+      22,
+      "web_nju_gulou_07",
+      "web_nju_xianlin_04"
+    ]
+  ],
+  "contact_sheet_sha256": "20ef5ef0cac36397f7faac8b7ad040ac75831c1d6e0781d75a339ed88db9f9fc"
+}

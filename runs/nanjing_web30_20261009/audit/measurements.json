@@ -1,0 +1,7 @@
+{
+  "conditions": 330,
+  "every_array_matches_recorded_measurement_hash": true,
+  "archive_sha256": "4763babcbace6edc9945b1d87fb224fc3b997e979fa3e9c12874ddb386492e91",
+  "platform": "Linux-6.5.0-18-generic-x86_64-with-glibc2.35",
+  "numpy_version": "1.26.4"
+}

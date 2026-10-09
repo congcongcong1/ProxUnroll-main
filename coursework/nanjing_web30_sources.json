@@ -1,0 +1,531 @@
+{
+  "schema": 1,
+  "collection_type": "team-curated publicly licensed web photographs; not team-captured photographs",
+  "selection_basis": "location and scene coverage before reconstruction; no performance-based filtering",
+  "groups": {
+    "NJU_Gulou": [
+      "Nanjing uni vegetation.jpg",
+      "Main Gate of Nanjing University Gulou Campus 2012-11.JPG",
+      "Nanjing University - Jasminum nudiflorum - P1040710.JPG",
+      "Zhongshan Building in Nanjing University Gulou Campus 01 2012-11.JPG",
+      "Direction Signs in NJU Gulou Campus (5851382558).jpg",
+      "NJU small auditoria.jpg",
+      "Nanjing University 20160714.jpg",
+      "Nanjing University northwestern corner.jpg",
+      "Nanjing University Gulou Campus 2010-11.jpg"
+    ],
+    "NJU_Xianlin": [
+      "Nanjing University Xianlin Campus Main Entrance.jpg",
+      "Du Xia Library in Nanjing University Xianlin Campus 01 2013-05.JPG",
+      "南大仙林教学楼.jpg",
+      "南大仙林体育馆.jpg",
+      "南大仙林天文台.jpg",
+      "南大仙林本科宿舍.jpg",
+      "NJU Students Activity Center.jpg",
+      "南大仙林实验楼.jpg",
+      "南大仙林校区航拍20211219 01.jpg"
+    ],
+    "Xuanwu_Lake": [
+      "View of Xuanwu Lake from the city wall, Nanjing, Apr 2021.jpg",
+      "View from Jiming Temple, Nanjing City Wall & Lake Xuanwu (10150627454).jpg",
+      "玄武湖13.jpg"
+    ],
+    "Sun_Yat_sen_Mausoleum": [
+      "Up the stairs, Sun Yat-sens Mausoleum.jpg",
+      "Gate of Sun Yat-sen's Mausoleum.jpg",
+      "Sun Yat-sen Mausoleum, August 2016.jpg"
+    ],
+    "Ming_Xiaoling": [
+      "Ming Xiaoling - grounds - P1060495.JPG",
+      "China-Nanjing (2024) Ming Xiaoling 明孝陵 - img 09.jpg",
+      "Ming Xiaoling Mausoleum (54437902496).jpg"
+    ],
+    "Qinhuai_Fuzimiao": [
+      "Confucius Temple and Qinhuai River, Nanjing Night.jpg",
+      "Fuzi Miao 夫子庙 (5811359497).jpg",
+      "Night View of Qinhuai River with Scenic Cruise in Fuzi Miao 20170519.jpg"
+    ]
+  },
+  "images": [
+    {
+      "name": "web_nju_gulou_01",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing uni vegetation.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_uni_vegetation.jpg",
+      "author": "Kevin Dooley†www.flickr.com from Chander, AZ, USA",
+      "date": "11 June 2013, 19:49",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        4884,
+        3256
+      ]
+    },
+    {
+      "name": "web_nju_gulou_02",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Main Gate of Nanjing University Gulou Campus 2012-11.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Main_Gate_of_Nanjing_University_Gulou_Campus_2012-11.JPG",
+      "author": "猫猫的日记本",
+      "date": "17 November 2012, 16:24:13",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        4320,
+        3240
+      ]
+    },
+    {
+      "name": "web_nju_gulou_03",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing University - Jasminum nudiflorum - P1040710.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_-_Jasminum_nudiflorum_-_P1040710.JPG",
+      "author": "Vmenkov",
+      "date": "14 January 2011",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        2048,
+        1536
+      ]
+    },
+    {
+      "name": "web_nju_gulou_04",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Zhongshan Building in Nanjing University Gulou Campus 01 2012-11.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Zhongshan_Building_in_Nanjing_University_Gulou_Campus_01_2012-11.JPG",
+      "author": "猫猫的日记本",
+      "date": "17 November 2012, 16:24:55",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        4320,
+        3240
+      ]
+    },
+    {
+      "name": "web_nju_gulou_05",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Direction Signs in NJU Gulou Campus (5851382558).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Direction_Signs_in_NJU_Gulou_Campus_(5851382558).jpg",
+      "author": "bfishadow†www.flickr.com from Beijing, China",
+      "date": "19 June 2011, 10:34",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        2592,
+        1936
+      ]
+    },
+    {
+      "name": "web_nju_gulou_06",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "NJU small auditoria.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:NJU_small_auditoria.jpg",
+      "author": "Flsxx",
+      "date": "1 September 2011",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        2048,
+        1536
+      ]
+    },
+    {
+      "name": "web_nju_gulou_07",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing University 20160714.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_20160714.jpg",
+      "author": "Gmbsfd",
+      "date": "14 July 2016, 17:14:20",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        4000,
+        2992
+      ]
+    },
+    {
+      "name": "web_nju_gulou_08",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing University northwestern corner.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_northwestern_corner.jpg",
+      "author": "Haha169",
+      "date": "14 December 2016, 15:24:58",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        3551,
+        2368
+      ]
+    },
+    {
+      "name": "web_nju_gulou_09",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Gulou",
+      "split": "test",
+      "title": "Nanjing University Gulou Campus 2010-11.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_Gulou_Campus_2010-11.jpg",
+      "author": "猫猫的日记本",
+      "date": "19 November 2010",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        6794,
+        2070
+      ]
+    },
+    {
+      "name": "web_nju_xianlin_01",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "Nanjing University Xianlin Campus Main Entrance.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nanjing_University_Xianlin_Campus_Main_Entrance.jpg",
+      "author": "Zhou Guanhuai",
+      "date": "10 July 2019, 16:18:57",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        2272,
+        1704
+      ]
+    },
+    {
+      "name": "web_nju_xianlin_02",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "Du Xia Library in Nanjing University Xianlin Campus 01 2013-05.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Du_Xia_Library_in_Nanjing_University_Xianlin_Campus_01_2013-05.JPG",
+      "author": "猫猫的日记本",
+      "date": "5 May 2013, 15:59:42",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        4320,
+        3240
+      ]
+    },
+    {
+      "name": "web_nju_xianlin_03",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "南大仙林教学楼.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E6%95%99%E5%AD%A6%E6%A5%BC.jpg",
+      "author": "panoramio用户KrUDSO4†www.panoramio.com",
+      "date": "3 June 2010, 02:39:15",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        3648,
+        2736
+      ]
+    },
+    {
+      "name": "web_nju_xianlin_04",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "南大仙林体育馆.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E4%BD%93%E8%82%B2%E9%A6%86.jpg",
+      "author": "panoramio用户KrUDSO4†www.panoramio.com",
+      "date": "3 June 2010, 02:36:44",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        3648,
+        2736
+      ]
+    },
+    {
+      "name": "web_nju_xianlin_05",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "南大仙林天文台.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E5%A4%A9%E6%96%87%E5%8F%B0.jpg",
+      "author": "panoramio用户KrUDSO4†www.panoramio.com",
+      "date": "3 June 2010, 01:11:46",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        3648,
+        2736
+      ]
+    },
+    {
+      "name": "web_nju_xianlin_06",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "南大仙林本科宿舍.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E6%9C%AC%E7%A7%91%E5%AE%BF%E8%88%8D.jpg",
+      "author": "Li3939108",
+      "date": "21 October 2012, 12:44:44",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        3264,
+        1836
+      ]
+    },
+    {
+      "name": "web_nju_xianlin_07",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "NJU Students Activity Center.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:NJU_Students_Activity_Center.jpg",
+      "author": "panoramio用户史氏†www.panoramio.com",
+      "date": "17 August 2009, 16:41:52",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source_dimensions": [
+        2560,
+        1920
+      ]
+    },
+    {
+      "name": "web_nju_xianlin_08",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "南大仙林实验楼.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E5%AE%9E%E9%AA%8C%E6%A5%BC.jpg",
+      "author": "Li3939108",
+      "date": "7 November 2009, 12:10:41",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        2592,
+        1944
+      ]
+    },
+    {
+      "name": "web_nju_xianlin_09",
+      "dataset": "NJU_campus_web",
+      "location": "NJU_Xianlin",
+      "split": "test",
+      "title": "南大仙林校区航拍20211219 01.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E5%A4%A7%E4%BB%99%E6%9E%97%E6%A0%A1%E5%8C%BA%E8%88%AA%E6%8B%8D20211219_01.jpg",
+      "author": "西安兵马俑",
+      "date": "19 December 2021, 13:59:33",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        4000,
+        3000
+      ]
+    },
+    {
+      "name": "web_xuanwu_lake_01",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Xuanwu_Lake",
+      "split": "test",
+      "title": "View of Xuanwu Lake from the city wall, Nanjing, Apr 2021.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:View_of_Xuanwu_Lake_from_the_city_wall%2C_Nanjing%2C_Apr_2021.jpg",
+      "author": "HMGiovanniV",
+      "date": "29 April 2021, 13:37:21",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        4000,
+        2250
+      ]
+    },
+    {
+      "name": "web_xuanwu_lake_02",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Xuanwu_Lake",
+      "split": "test",
+      "title": "View from Jiming Temple, Nanjing City Wall & Lake Xuanwu (10150627454).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:View_from_Jiming_Temple%2C_Nanjing_City_Wall_%26_Lake_Xuanwu_(10150627454).jpg",
+      "author": "Gary Todd†www.flickr.com from Xinzheng, China",
+      "date": "14 June 2009, 13:36",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_dimensions": [
+        3888,
+        2592
+      ]
+    },
+    {
+      "name": "web_xuanwu_lake_03",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Xuanwu_Lake",
+      "split": "test",
+      "title": "玄武湖13.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%84%E6%AD%A6%E6%B9%9613.jpg",
+      "author": "西安兵马俑",
+      "date": "21 July 2018, 14:43:23",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_dimensions": [
+        4000,
+        3000
+      ]
+    },
+    {
+      "name": "web_sun_yat_sen_mausoleum_01",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Sun_Yat_sen_Mausoleum",
+      "split": "test",
+      "title": "Up the stairs, Sun Yat-sens Mausoleum.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Up_the_stairs%2C_Sun_Yat-sens_Mausoleum.jpg",
+      "author": "Rich Summers†www.flickr.com from Shanghai, China",
+      "date": "4 December 2010, 16:14",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        1280,
+        855
+      ]
+    },
+    {
+      "name": "web_sun_yat_sen_mausoleum_02",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Sun_Yat_sen_Mausoleum",
+      "split": "test",
+      "title": "Gate of Sun Yat-sen's Mausoleum.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gate_of_Sun_Yat-sen's_Mausoleum.jpg",
+      "author": "Patrick†www.flickr.com from Beijing, China",
+      "date": "1 December 2007, 09:47",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        960,
+        640
+      ]
+    },
+    {
+      "name": "web_sun_yat_sen_mausoleum_03",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Sun_Yat_sen_Mausoleum",
+      "split": "test",
+      "title": "Sun Yat-sen Mausoleum, August 2016.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Sun_Yat-sen_Mausoleum%2C_August_2016.jpg",
+      "author": "Jason Zhang",
+      "date": "2 August 2016, 15:58:47",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_dimensions": [
+        4208,
+        2368
+      ]
+    },
+    {
+      "name": "web_ming_xiaoling_01",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Ming_Xiaoling",
+      "split": "test",
+      "title": "Ming Xiaoling - grounds - P1060495.JPG",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ming_Xiaoling_-_grounds_-_P1060495.JPG",
+      "author": "Vmenkov",
+      "date": null,
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_dimensions": [
+        2048,
+        1536
+      ]
+    },
+    {
+      "name": "web_ming_xiaoling_02",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Ming_Xiaoling",
+      "split": "test",
+      "title": "China-Nanjing (2024) Ming Xiaoling 明孝陵 - img 09.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:China-Nanjing_(2024)_Ming_Xiaoling_%E6%98%8E%E5%AD%9D%E9%99%B5_-_img_09.jpg",
+      "author": "Chainwit.",
+      "date": "26 April 2024, 15:39:52",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_dimensions": [
+        2776,
+        3702
+      ]
+    },
+    {
+      "name": "web_ming_xiaoling_03",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Ming_Xiaoling",
+      "split": "test",
+      "title": "Ming Xiaoling Mausoleum (54437902496).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ming_Xiaoling_Mausoleum_(54437902496).jpg",
+      "author": "xiquinhosilva†www.flickr.com",
+      "date": "16 April 2012, 15:22",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_dimensions": [
+        2560,
+        1656
+      ]
+    },
+    {
+      "name": "web_qinhuai_fuzimiao_01",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Qinhuai_Fuzimiao",
+      "split": "test",
+      "title": "Confucius Temple and Qinhuai River, Nanjing Night.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Confucius_Temple_and_Qinhuai_River%2C_Nanjing_Night.jpg",
+      "author": "Dick Rochester†flickr.com",
+      "date": "25 March 2009, 13:25:41",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source_dimensions": [
+        3872,
+        2592
+      ]
+    },
+    {
+      "name": "web_qinhuai_fuzimiao_02",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Qinhuai_Fuzimiao",
+      "split": "test",
+      "title": "Fuzi Miao 夫子庙 (5811359497).jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Fuzi_Miao_%E5%A4%AB%E5%AD%90%E5%BA%99_(5811359497).jpg",
+      "author": "Caitriana Nicholson†www.flickr.com from 北京 ~ Beijing, 中国 ~ China",
+      "date": "2 June 2011, 21:02",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source_dimensions": [
+        1600,
+        1200
+      ]
+    },
+    {
+      "name": "web_qinhuai_fuzimiao_03",
+      "dataset": "Nanjing_scenic_web",
+      "location": "Qinhuai_Fuzimiao",
+      "split": "test",
+      "title": "Night View of Qinhuai River with Scenic Cruise in Fuzi Miao 20170519.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Night_View_of_Qinhuai_River_with_Scenic_Cruise_in_Fuzi_Miao_20170519.jpg",
+      "author": "4084470 0.smil",
+      "date": "19 May 2017, 19:49:12",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_dimensions": [
+        4160,
+        2336
+      ]
+    }
+  ]
+}

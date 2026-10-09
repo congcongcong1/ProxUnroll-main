@@ -1,0 +1,10 @@
+{
+  "verified_server_220_identity": true,
+  "verified_server_244_identity": true,
+  "new_files_uploaded_on_244_visible_with_same_hashes_on_220": {
+    "runs/nanjing_web30_20261009/data/test.json": "a24b59416aa43158a1c9c975e3a837a94092ddb07e5ece339c689b2b3664d123",
+    "runs/nanjing_web30_20261009/data/selection_lock.json": "e2e1f87a58fb4abd309cbc5123b5865488944b3e61e67b225620653b64abe91e",
+    "runs/nanjing_web30_20261009/data/web_nju_gulou_01.png": "873fbc3baa6057447338f2d2cb66f28281b4d298a44a253e63020aadc9f1f204"
+  },
+  "nfs_mount_endpoints": "220 uses .112 and 244 uses .111; shared GPFS project path verified by new-file hashes"
+}

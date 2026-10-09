@@ -1,0 +1,11 @@
+{
+  "server": "244",
+  "root": "/workspace/ProxUnroll-main",
+  "non_deleting": true,
+  "existing_different_file_policy": "abort before any write",
+  "files": {
+    "coursework/verify_nanjing_floats.py": "0a5bfe74421f67a78f79bfdb8bcaa0a316617cb61539a30ef5f37b3df1f6cfd6"
+  },
+  "compressed_bytes": 1954,
+  "archive_sha256": "11a6d39d41404d2f082483c35ef8a62f8cab859602d5de9fe1c9f48fcb2d7f46"
+}
