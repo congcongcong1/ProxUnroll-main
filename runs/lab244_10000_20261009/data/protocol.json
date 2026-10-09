@@ -1,0 +1,11 @@
+{
+  "training_originals": 800,
+  "selection_originals": 16,
+  "regression_images": 80,
+  "new_test_originals": 52,
+  "new_test_rule": "all remaining 52 DIV2K official validation originals after excluding the existing 16 selection and 32 observed originals",
+  "source_split_hashes_disjoint": true,
+  "primary_reference": "validation-selected 5000-step experiment best.pth at step 4500",
+  "test_access": "No test inference until continuation is complete and the user asks to inspect results",
+  "original_pretraining_exposure": "not fully audited"
+}

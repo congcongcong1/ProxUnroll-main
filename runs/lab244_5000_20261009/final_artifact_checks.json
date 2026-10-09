@@ -1,0 +1,25 @@
+{
+  "pdf_pages": 6,
+  "ppt_slides": 12,
+  "ppt_notes": 12,
+  "planned_speaking_seconds": 600,
+  "native_chart_values_verified": true,
+  "all_final_pages_slides_rendered_and_visually_inspected": true,
+  "original_artifacts_preserved": {
+    "output/pdf/literature_review.md": "43a268baa6497a634472acc73ad74379f98f2fb915a801af0feab1c5306eea00",
+    "output/pdf/literature_review.pdf": "c393ec2ad1b18063526c828303667a69a65ee60e4c5813c628153ccb5d458dee",
+    "output/pdf/technical_report.md": "30b9bb41d5ca76ce593c029eaf9639eedcf9a5e9246864554121282af94b26c2",
+    "output/pdf/technical_report.pdf": "7137850a125fd7510eae52b7ee519f0bc0b9910d534a3e88d0124bfc7b8a094d",
+    "output/presentation/course_presentation.pptx": "eb38fdb5783c5e32c872dc443f74c5d5c7823884130923d104cb80c76dd59054"
+  },
+  "round1_artifact_hashes_preserved": true,
+  "sha256": {
+    "output/pdf/technical_report_5000_20261009.pdf": "d0e0a946fb44561bfc49abe66a0ecd71014036cedc3083e1fe10e032fd808b61",
+    "output/presentation/course_presentation_5000_20261009.pptx": "fb9f431371bc3d34901369baf67e231f73782488c4309f08317a577c9ece60c3",
+    "runs/lab244_5000_20261009/finetune/best.pth": "3e85cbd683c10487104f39978abb325f3fb935052e9a0fc669aad1af6f7d95cb",
+    "runs/lab244_5000_20261009/finetune/last.pth": "497887636e72404b7ba472eac6001b055c3174c10364519d8b011690b5fd426d"
+  },
+  "all_four_methods_on_all_80_images_verified": true,
+  "presentation_integrity_and_layout_passed": true,
+  "native_powerpoint_application_verified": false
+}

@@ -1,0 +1,18 @@
+{
+  "total_steps": 100,
+  "selected_step": 100,
+  "validation_gain": 0.11633585736801777,
+  "unchanged_sensing_factors": [
+    "H_256_256",
+    "W_256_256",
+    "H_321_481",
+    "W_321_481",
+    "H_512_512",
+    "W_512_512"
+  ],
+  "changed_reconstruction_tensors": 427,
+  "selected_and_last_parameters_equal": true,
+  "repeated_reference_conditions": 384,
+  "max_reference_psnr_difference": 0.0,
+  "max_reference_ssim_difference": 0.0
+}

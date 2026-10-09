@@ -1,0 +1,40 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+fresh_div2k_0802: 44 rows, 13.4s
+fresh_div2k_0804: 88 rows, 26.3s
+fresh_div2k_0808: 132 rows, 39.4s
+fresh_div2k_0811: 176 rows, 52.6s
+fresh_div2k_0813: 220 rows, 65.7s
+fresh_div2k_0817: 264 rows, 78.7s
+fresh_div2k_0821: 308 rows, 91.8s
+fresh_div2k_0823: 352 rows, 105.0s
+fresh_div2k_0826: 396 rows, 118.0s
+fresh_div2k_0830: 440 rows, 131.3s
+fresh_div2k_0832: 484 rows, 144.4s
+fresh_div2k_0836: 528 rows, 157.6s
+fresh_div2k_0839: 572 rows, 171.5s
+fresh_div2k_0842: 616 rows, 184.9s
+fresh_div2k_0845: 660 rows, 198.1s
+fresh_div2k_0849: 704 rows, 211.4s
+fresh_div2k_0851: 748 rows, 225.2s
+fresh_div2k_0855: 792 rows, 238.9s
+fresh_div2k_0858: 836 rows, 252.3s
+fresh_div2k_0861: 880 rows, 265.8s
+fresh_div2k_0864: 924 rows, 279.3s
+fresh_div2k_0868: 968 rows, 292.7s
+fresh_div2k_0870: 1012 rows, 306.5s
+fresh_div2k_0874: 1056 rows, 320.2s
+fresh_div2k_0877: 1100 rows, 334.0s
+fresh_div2k_0879: 1144 rows, 347.6s
+fresh_div2k_0883: 1188 rows, 361.3s
+fresh_div2k_0887: 1232 rows, 375.0s
+fresh_div2k_0889: 1276 rows, 388.6s
+fresh_div2k_0892: 1320 rows, 402.2s
+fresh_div2k_0896: 1364 rows, 416.0s
+fresh_div2k_0899: 1408 rows, 429.8s
+COMPLETE
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"rows": 1408, "stages": 4224, "paired_conditions": 352, "float_arrays_recomputed": 1408, "max_metric_error": 0.0, "data_checkpoint_matrix_source_hashes_verified": true, "measurement_hashes_recomputed": true}

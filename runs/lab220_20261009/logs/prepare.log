@@ -1,0 +1,11 @@
+No broken requirements found.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/ProxUnroll-main/coursework/prepare_lab_data.py", line 87, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/workspace/ProxUnroll-main/coursework/prepare_lab_data.py", line 44, in main
+    if source.stat().st_size!=frame_bytes*n: raise ValueError(f'Packing/length mismatch: {source}')
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Packing/length mismatch: /datasets/HEVC_test_sequences/ClassB/BQTerrace_1920x1080_60.yuv

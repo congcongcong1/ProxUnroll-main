@@ -1,0 +1,71 @@
+{
+  "manifest_sha256": "e5ac74456d4424366f480e4fcd4552eb07b4a23d005c0b064886bdeb51be624b",
+  "matrix_sha256": "f143332cb20b8d4cf139f46ad066597b47aa4f48bfe50c19cb97d3170b3af75b",
+  "seed": 20261010,
+  "lr": 1e-05,
+  "training_rates": [
+    0.01,
+    0.04,
+    0.1,
+    0.1,
+    0.1,
+    0.25,
+    0.25,
+    0.5
+  ],
+  "training_noise": [
+    0.0,
+    0.0,
+    0.01,
+    0.05
+  ],
+  "validation_rates": [
+    0.1,
+    0.25
+  ],
+  "validation_noise": [
+    0.0,
+    0.01,
+    0.05
+  ],
+  "clean_guard_db": 0.03,
+  "patience": 5000,
+  "operator": "all six sensing factors frozen; common 256x256 MAT",
+  "loss": "direct GT weighted RMSE: .01 first five stages and .95 final",
+  "batch_size": 1,
+  "precision": "float32",
+  "initialization": "/workspace/ProxUnroll-main/runs/lab220_20261009/finetune/best.pth",
+  "initialization_sha256": "0252b7188b86e1f424a11ab65639e53bb769436ebec16555ea62938b26e7c1cf",
+  "selection": "equal-condition mean validation PSNR over 16 images, two rates and three noise levels, subject to initial clean PSNR -0.03dB guard",
+  "cropping": "step-seeded random square and flips; expanded 800 DIV2K originals; no test input",
+  "source_hashes": {
+    "coursework/finetune_round2.py": "474819b8b0ac879bd8ab8ae33b03c6342f73d789acdcff75ec6f74aeb0741c67",
+    "coursework/finetune_5000.py": "1c1a50442cc634cc108bb91e71f14264e042096c6b8fb19681e9732b719812af",
+    "coursework/finetune_10000.py": "2539c43493a9df1dc858b0c389e8a2efe7952fa44192a041f11dfca2e30c96cb",
+    "coursework/finetune.py": "436b58655f8fcadaa253f48bba8c670edc7dbb4cf0d66c1742764ba33f462e57",
+    "model/proxunroll.py": "41bc5e34c2c98694e8aa540d51800ae2ea988989e44c9423a74653dbe79e55ab",
+    "coursework/baselines.py": "891bb958c1f960034a591a7f2d8ac911e07045b87cc381234798e156abcfeb5c"
+  },
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "memory_fraction": 0.65,
+  "budget_extension_from": {
+    "source_hashes": {
+      "coursework/finetune_round2.py": "474819b8b0ac879bd8ab8ae33b03c6342f73d789acdcff75ec6f74aeb0741c67",
+      "coursework/finetune_5000.py": "1c1a50442cc634cc108bb91e71f14264e042096c6b8fb19681e9732b719812af",
+      "coursework/finetune.py": "436b58655f8fcadaa253f48bba8c670edc7dbb4cf0d66c1742764ba33f462e57",
+      "model/proxunroll.py": "41bc5e34c2c98694e8aa540d51800ae2ea988989e44c9423a74653dbe79e55ab",
+      "coursework/baselines.py": "891bb958c1f960034a591a7f2d8ac911e07045b87cc381234798e156abcfeb5c"
+    },
+    "max_steps": 5000,
+    "max_minutes": 120.0,
+    "patience": 5000,
+    "reason": "User authorized further bounded training up to 10000 total steps; 5000 additional updates; update rule unchanged"
+  },
+  "mode": "full_round2_state_resume",
+  "max_steps": 10000,
+  "max_minutes": 150.0,
+  "val_every": 250,
+  "resume": "runs/lab244_5000_20261009/finetune/last.pth"
+}

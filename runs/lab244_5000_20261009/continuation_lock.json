@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-09T02:48:01.974521+00:00",
+  "user_authorization": "5000 total steps with in-run changes authorized",
+  "resume_step": 946,
+  "sha256": {
+    "coursework/finetune_5000.py": "1c1a50442cc634cc108bb91e71f14264e042096c6b8fb19681e9732b719812af",
+    "coursework/EXTEND5000_PROTOCOL.md": "58938f53e870026b1454966fa35c13e3d6d2b49040c57df9763ead410967657a",
+    "runs/lab244_5000_20261009/data/train_val.json": "e5ac74456d4424366f480e4fcd4552eb07b4a23d005c0b064886bdeb51be624b",
+    "runs/lab244_5000_20261009/data/test.json": "dcdec5d68fd1b257e2236a2d18ec05693f3f304e466b894143885c3eb047b534",
+    "runs/lab244_round2_20261009/finetune/last.pth": "3c06bc01f81cd9735f3ddb8cb14985bc90c2af82675b725c23d7a0ff66b140f4",
+    "runs/lab244_round2_20261009/finetune/best.pth": "dd5f38717cb4fcd501e241c7098c5e4169b58d4c40b908bd83c8fc7f0755e01c",
+    "runs/lab220_20261009/finetune/best.pth": "0252b7188b86e1f424a11ab65639e53bb769436ebec16555ea62938b26e7c1cf"
+  },
+  "test_inference_has_not_started": true
+}

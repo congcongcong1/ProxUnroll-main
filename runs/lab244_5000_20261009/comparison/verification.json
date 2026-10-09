@@ -1,0 +1,9 @@
+{
+  "rows": 2640,
+  "stages": 15840,
+  "paired_conditions": 880,
+  "float_arrays_recomputed": 2640,
+  "max_metric_error": 0.0,
+  "data_checkpoint_matrix_source_hashes_verified": true,
+  "measurement_hashes_recomputed": true
+}

@@ -1,0 +1,24 @@
+{
+  "total_steps": 946,
+  "selected_step": 900,
+  "unchanged_sensing_factors": [
+    "H_256_256",
+    "W_256_256",
+    "H_321_481",
+    "W_321_481",
+    "H_512_512",
+    "W_512_512"
+  ],
+  "changed_reconstruction_tensors": 427,
+  "selected_combined_validation_gain": 0.2376489144387044,
+  "selected_clean_validation_gain": 0.0369104402514715,
+  "train_measurement_hashes_recomputed_at_steps": [
+    1,
+    2,
+    3,
+    474,
+    946
+  ],
+  "validation_selection_and_clean_guard_verified": true,
+  "selected_and_last_parameters_equal": false
+}

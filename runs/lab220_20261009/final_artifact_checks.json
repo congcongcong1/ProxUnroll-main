@@ -1,0 +1,46 @@
+{
+  "pdf_pages": 6,
+  "ppt_slides": 12,
+  "ppt_notes": 12,
+  "planned_speaking_seconds": 600,
+  "native_chart_source_checks": [
+    {
+      "part": "ppt/slides/charts/chart1.xml",
+      "values_verified_against_measured_csv_summary": true
+    },
+    {
+      "part": "ppt/slides/charts/chart2.xml",
+      "values_verified_against_measured_csv_summary": true
+    },
+    {
+      "part": "ppt/slides/charts/chart3.xml",
+      "values_verified_against_measured_csv_summary": true
+    },
+    {
+      "part": "ppt/slides/charts/chart4.xml",
+      "values_verified_against_measured_csv_summary": true
+    }
+  ],
+  "all_final_pages_slides_rendered_and_visually_inspected": true,
+  "original_artifacts_preserved": {
+    "output/pdf/literature_review.md": "43a268baa6497a634472acc73ad74379f98f2fb915a801af0feab1c5306eea00",
+    "output/pdf/literature_review.pdf": "c393ec2ad1b18063526c828303667a69a65ee60e4c5813c628153ccb5d458dee",
+    "output/pdf/technical_report.md": "30b9bb41d5ca76ce593c029eaf9639eedcf9a5e9246864554121282af94b26c2",
+    "output/pdf/technical_report.pdf": "7137850a125fd7510eae52b7ee519f0bc0b9910d534a3e88d0124bfc7b8a094d",
+    "output/presentation/course_presentation.pptx": "eb38fdb5783c5e32c872dc443f74c5d5c7823884130923d104cb80c76dd59054"
+  },
+  "run_csv_counts": {
+    "baseline/metrics.csv": 2112,
+    "baseline/stages.csv": 6336,
+    "comparison/metrics.csv": 1152,
+    "comparison/stages.csv": 6912
+  },
+  "sha256": {
+    "output/pdf/technical_report_lab220_20261009.pdf": "b019a58304d2000afbef067c0bcf6efe48e1cd92deb0383139d8878b82bca00a",
+    "output/presentation/course_presentation_lab220_20261009.pptx": "de35f04a7c880b7cbeab4a3273c03bb8e6291580b0c6e4edb7b2fb8cbc028c72",
+    "runs/lab220_20261009/finetune/best.pth": "0252b7188b86e1f424a11ab65639e53bb769436ebec16555ea62938b26e7c1cf",
+    "runs/lab220_20261009/finetune/last.pth": "476bb92b208170bbefd557cc86463e7b95206eefbdc72353621c287b7eef33eb"
+  },
+  "presentation_integrity_and_layout_passed": true,
+  "native_powerpoint_application_verified": false
+}

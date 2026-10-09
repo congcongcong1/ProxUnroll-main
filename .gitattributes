@@ -1,0 +1,10 @@
+# Preserve generated binary artifacts and exact raw CSV bytes/hash values.
+*.pdf binary
+*.pptx binary
+*.pth binary
+*.png binary
+*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# The historical snapshot must retain its original source bytes, including spaces.
+coursework/archive_original/** -text -whitespace
+# Preserve captured server identity output verbatim.
+runs/**/server-preflight.txt -text -whitespace

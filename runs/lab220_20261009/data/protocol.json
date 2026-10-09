@@ -1,0 +1,245 @@
+{
+  "seed": 20261009,
+  "training_images": 128,
+  "validation_images": 16,
+  "test_images": 48,
+  "hevc_rule": "three zero-based frames 0, floor(N/3), floor(2N/3) per whole test sequence; none used for training/selection",
+  "split_unit": "original DIV2K image or entire HEVC video; Kodak reserved for final test",
+  "attribution": "Public benchmark images and laboratory-held HEVC files; no self-capture claim",
+  "raw_video_inventory": [
+    {
+      "source": "/datasets/HEVC_test_sequences/ClassB/BQTerrace_1920x1080_60.yuv",
+      "bytes": 1869350400,
+      "sha256": "1b3be4202b8b5fb1b53afa8f4dceb3a832f0d79d5eee980d91a089501887036c",
+      "frames": 601,
+      "nominal_frames": 600,
+      "format": "8-bit planar yuv420p",
+      "metadata_evidence": "canonical filename + integral 8-bit frame packing + nominal frame count (accept one recorded trailing frame) + exact byte length; local extraction script also specifies yuv420p",
+      "sampled": [
+        {
+          "y_min": 17,
+          "y_max": 235,
+          "y_p01": 41.0,
+          "y_p99": 235.0
+        },
+        {
+          "y_min": 17,
+          "y_max": 235,
+          "y_p01": 40.0,
+          "y_p99": 232.0
+        },
+        {
+          "y_min": 17,
+          "y_max": 235,
+          "y_p01": 38.0,
+          "y_p99": 233.0
+        }
+      ]
+    },
+    {
+      "source": "/datasets/HEVC_test_sequences/ClassB/BasketballDrive_1920x1080_50.yuv",
+      "bytes": 1558310400,
+      "sha256": "9063f3ee1e8a1a466cd2e73dd32724e6449ab6751b9a2472922c77dec7b8595f",
+      "frames": 501,
+      "nominal_frames": 500,
+      "format": "8-bit planar yuv420p",
+      "metadata_evidence": "canonical filename + integral 8-bit frame packing + nominal frame count (accept one recorded trailing frame) + exact byte length; local extraction script also specifies yuv420p",
+      "sampled": [
+        {
+          "y_min": 17,
+          "y_max": 235,
+          "y_p01": 31.0,
+          "y_p99": 207.0
+        },
+        {
+          "y_min": 17,
+          "y_max": 235,
+          "y_p01": 29.0,
+          "y_p99": 210.0
+        },
+        {
+          "y_min": 17,
+          "y_max": 235,
+          "y_p01": 32.0,
+          "y_p99": 208.0
+        }
+      ]
+    },
+    {
+      "source": "/datasets/HEVC_test_sequences/ClassB/Cactus_1920x1080_50.yuv",
+      "bytes": 1555200000,
+      "sha256": "f2eb36894bdd93004a3eb02e1245f8bf26d1b945267bcabae06c2ab3854b4587",
+      "frames": 500,
+      "nominal_frames": 500,
+      "format": "8-bit planar yuv420p",
+      "metadata_evidence": "canonical filename + integral 8-bit frame packing + nominal frame count (accept one recorded trailing frame) + exact byte length; local extraction script also specifies yuv420p",
+      "sampled": [
+        {
+          "y_min": 0,
+          "y_max": 255,
+          "y_p01": 17.0,
+          "y_p99": 241.0
+        },
+        {
+          "y_min": 0,
+          "y_max": 255,
+          "y_p01": 18.0,
+          "y_p99": 242.0
+        },
+        {
+          "y_min": 0,
+          "y_max": 255,
+          "y_p01": 17.0,
+          "y_p99": 241.0
+        }
+      ]
+    },
+    {
+      "source": "/datasets/HEVC_test_sequences/ClassB/Kimono1_1920x1080_24.yuv",
+      "bytes": 746496000,
+      "sha256": "4708b443662722a081cff8eaa9fd3426be76b1f6d144c78d0d477ffd98df14c2",
+      "frames": 240,
+      "nominal_frames": 240,
+      "format": "8-bit planar yuv420p",
+      "metadata_evidence": "canonical filename + integral 8-bit frame packing + nominal frame count (accept one recorded trailing frame) + exact byte length; local extraction script also specifies yuv420p",
+      "sampled": [
+        {
+          "y_min": 18,
+          "y_max": 234,
+          "y_p01": 26.0,
+          "y_p99": 210.0
+        },
+        {
+          "y_min": 18,
+          "y_max": 234,
+          "y_p01": 26.0,
+          "y_p99": 213.0
+        },
+        {
+          "y_min": 16,
+          "y_max": 250,
+          "y_p01": 23.0,
+          "y_p99": 197.0
+        }
+      ]
+    },
+    {
+      "source": "/datasets/HEVC_test_sequences/ClassB/ParkScene_1920x1080_24.yuv",
+      "bytes": 746496000,
+      "sha256": "14de30cf0e9473bec2559149b05a0f9e6e3d1bebc837ac6d01cd80dc1bab5b79",
+      "frames": 240,
+      "nominal_frames": 240,
+      "format": "8-bit planar yuv420p",
+      "metadata_evidence": "canonical filename + integral 8-bit frame packing + nominal frame count (accept one recorded trailing frame) + exact byte length; local extraction script also specifies yuv420p",
+      "sampled": [
+        {
+          "y_min": 16,
+          "y_max": 251,
+          "y_p01": 29.0,
+          "y_p99": 156.0
+        },
+        {
+          "y_min": 21,
+          "y_max": 250,
+          "y_p01": 32.0,
+          "y_p99": 162.0
+        },
+        {
+          "y_min": 16,
+          "y_max": 251,
+          "y_p01": 33.0,
+          "y_p99": 165.0
+        }
+      ]
+    },
+    {
+      "source": "/datasets/HEVC_test_sequences/ClassE/FourPeople_1280x720_60.yuv",
+      "bytes": 829440000,
+      "sha256": "f2b3f865a1cb9c2a903abfc0c46a356a7528793ed7090530c9b0b7cea29e3b3a",
+      "frames": 600,
+      "nominal_frames": 600,
+      "format": "8-bit planar yuv420p",
+      "metadata_evidence": "canonical filename + integral 8-bit frame packing + nominal frame count (accept one recorded trailing frame) + exact byte length; local extraction script also specifies yuv420p",
+      "sampled": [
+        {
+          "y_min": 16,
+          "y_max": 236,
+          "y_p01": 22.0,
+          "y_p99": 199.0
+        },
+        {
+          "y_min": 16,
+          "y_max": 237,
+          "y_p01": 22.0,
+          "y_p99": 202.0
+        },
+        {
+          "y_min": 16,
+          "y_max": 236,
+          "y_p01": 22.0,
+          "y_p99": 201.0
+        }
+      ]
+    },
+    {
+      "source": "/datasets/HEVC_test_sequences/ClassE/Johnny_1280x720_60.yuv",
+      "bytes": 829440000,
+      "sha256": "69e56cc75d40ed9e88ce39dd7662d2cde4eab33989242894ca7dd46f24b04acb",
+      "frames": 600,
+      "nominal_frames": 600,
+      "format": "8-bit planar yuv420p",
+      "metadata_evidence": "canonical filename + integral 8-bit frame packing + nominal frame count (accept one recorded trailing frame) + exact byte length; local extraction script also specifies yuv420p",
+      "sampled": [
+        {
+          "y_min": 19,
+          "y_max": 236,
+          "y_p01": 44.0,
+          "y_p99": 229.0
+        },
+        {
+          "y_min": 20,
+          "y_max": 236,
+          "y_p01": 46.0,
+          "y_p99": 228.0
+        },
+        {
+          "y_min": 24,
+          "y_max": 235,
+          "y_p01": 46.0,
+          "y_p99": 228.0
+        }
+      ]
+    },
+    {
+      "source": "/datasets/HEVC_test_sequences/ClassE/KristenAndSara_1280x720_60.yuv",
+      "bytes": 829440000,
+      "sha256": "9ed8e1f36bf12e50912cc584e8dea241ce184ee739ed9045b2818973f18a9249",
+      "frames": 600,
+      "nominal_frames": 600,
+      "format": "8-bit planar yuv420p",
+      "metadata_evidence": "canonical filename + integral 8-bit frame packing + nominal frame count (accept one recorded trailing frame) + exact byte length; local extraction script also specifies yuv420p",
+      "sampled": [
+        {
+          "y_min": 16,
+          "y_max": 236,
+          "y_p01": 28.0,
+          "y_p99": 227.0
+        },
+        {
+          "y_min": 16,
+          "y_max": 236,
+          "y_p01": 28.0,
+          "y_p99": 227.0
+        },
+        {
+          "y_min": 16,
+          "y_max": 236,
+          "y_p01": 27.0,
+          "y_p99": 227.0
+        }
+      ]
+    }
+  ],
+  "range_limit": "Raw files do not carry self-describing range metadata. Numeric uint8 range and sampled extrema are verified; nominal TV range is a convention, not a measured provenance claim.",
+  "independent_of_released_training": "Disjoint from this fine-tuning/selection only; original pretraining exposure is not fully audited"
+}

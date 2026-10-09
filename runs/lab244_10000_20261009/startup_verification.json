@@ -1,0 +1,74 @@
+{
+  "verified_utc": "2026-10-09T05:19:07.414206+00:00",
+  "server": "192.168.1.244",
+  "container": "luozc_mlvc",
+  "gpu": "GPU-16f6ac58-4d8c-8845-0886-1dc146a0327e",
+  "started_beijing": "2026-10-09T13:16:40.126713+08:00",
+  "estimated_complete_beijing": "2026-10-09T15:15:19.282549+08:00",
+  "training_time_cap_beijing": "2026-10-09T15:46:40.126713+08:00",
+  "estimated_additional_minutes": 118.65259726218883,
+  "target_total_steps": 10000,
+  "resume_step": 5000,
+  "additional_updates": 5000,
+  "status": "running; no test results claimed",
+  "live": {
+    "run": "runs/lab244_10000_20261009",
+    "job": "finetune_10000",
+    "actual_training_processes": [
+      {
+        "container_pid": 6569,
+        "module": "coursework.finetune_10000",
+        "cuda_visible_devices": "GPU-16f6ac58-4d8c-8845-0886-1dc146a0327e"
+      }
+    ],
+    "actual_update": {
+      "step": 5092,
+      "cr": 0.1,
+      "sigma": 0.05,
+      "measurement_sha256": "de7f0f07ac3ae53393deb13dc6c716f1d02ff1d2aca2f6d9f2502ce1efdac90e",
+      "loss": 0.03399563953280449,
+      "gradient_norm": 0.04981620982289314,
+      "seconds": 1.07980405096896,
+      "peak_memory_mib": 11102.865234375,
+      "lr": 1e-05,
+      "crop": "{\"source\": \"div2k_0522\", \"xywh\": [134, 385, 1125, 1125], \"flip_h\": false, \"flip_v\": true}"
+    },
+    "latest_validation": null,
+    "startup_checkpoint": {
+      "startup_checkpoint_step": 5001,
+      "checkpoint_sha256": "0148255bc59ded72d082dff25e3878bd0675743b1cc81fca757eaf8e3c46904f"
+    },
+    "exit_code": null,
+    "checkpoint_bytes": 55537006,
+    "gpu": [
+      "0, GPU-9105f4b6-8398-fb99-3776-ee94414af818, NVIDIA GeForce RTX 2080 Ti, 9 MiB, 0 %",
+      "1, GPU-1635f93a-517b-ebd2-5444-e071a888024f, NVIDIA GeForce RTX 2080 Ti, 9 MiB, 0 %",
+      "2, GPU-af1cff47-67d9-ebb3-a315-2b965d49433b, NVIDIA GeForce RTX 2080 Ti, 9 MiB, 0 %",
+      "3, GPU-5f1768c1-8057-21f9-9775-5afebf1dd9ad, NVIDIA GeForce RTX 2080 Ti, 9 MiB, 0 %",
+      "4, GPU-5c29e362-93ff-356b-1b27-82ef64ea1327, NVIDIA GeForce RTX 3090, 7171 MiB, 93 %",
+      "5, GPU-16f6ac58-4d8c-8845-0886-1dc146a0327e, NVIDIA GeForce RTX 3090, 11911 MiB, 58 %",
+      "6, GPU-62160106-d537-698b-2e4a-94b4196592a9, NVIDIA GeForce RTX 3090, 18 MiB, 0 %",
+      "7, GPU-3ebe0de4-666f-0c3f-9cda-dbc45965e57b, NVIDIA GeForce RTX 3090, 1471 MiB, 0 %"
+    ],
+    "gpu_processes": [
+      "GPU-5c29e362-93ff-356b-1b27-82ef64ea1327, 3213805, 7148 MiB",
+      "GPU-16f6ac58-4d8c-8845-0886-1dc146a0327e, 1483382, 11888 MiB",
+      "GPU-3ebe0de4-666f-0c3f-9cda-dbc45965e57b, 3197433, 1448 MiB"
+    ]
+  },
+  "startup_checkpoint_audit": {
+    "checkpoint_step": 5001,
+    "checkpoint_sha256": "0148255bc59ded72d082dff25e3878bd0675743b1cc81fca757eaf8e3c46904f",
+    "optimizer_step_counts": [
+      5001
+    ],
+    "full_history_contiguous": true,
+    "frozen_sensing_factors": 6,
+    "reconstruction_tensors_changed_since_parent": 427,
+    "old_parent_checkpoint_unchanged": true,
+    "source_hashes_match": true,
+    "loss": 0.06175658851861954,
+    "finite_loss_and_gradient": true
+  },
+  "automatic_testing": false
+}

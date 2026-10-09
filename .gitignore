@@ -6,8 +6,14 @@ tmp/
 node_modules/
 .chart-data-*/
 output/*.zip
+ProxUnroll-coursework-submission*.zip
+ProxUnroll-coursework-submission*.zip.sha256
 *.aux
 *.log
 *.out
 *.toc
 *.synctex.gz
+.venv-linux/
+.cache-linux/
+.sync-manifest.json
+runs/

@@ -79,12 +79,20 @@ def verify_presentation(facts):
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--source-snapshot', type=Path,
+                        help='Verify historical source hashes in a preserved snapshot')
+    parser.add_argument('--output', type=Path,
+                        help='Write a fresh audit without replacing the delivered audit')
+    args = parser.parse_args()
     base = ROOT / 'coursework/results'
     assert (base / 'COMPLETE').is_file()
     meta = json.loads((base / 'provenance.json').read_text())
     assert not meta['smoke']
     for rel, expected in meta['source_hashes'].items():
-        assert hashlib.sha256((ROOT / rel).read_bytes()).hexdigest() == expected, rel
+        source_root = args.source_snapshot or ROOT
+        assert hashlib.sha256((source_root / rel).read_bytes()).hexdigest() == expected, rel
     for entry in meta['data']:
         assert hashlib.sha256((ROOT / entry['path']).read_bytes()).hexdigest() == entry['sha256']
     for method, digest in meta['checkpoints'].items():
@@ -137,7 +145,8 @@ def main():
                  split_rows=dict(expected_counts), pdf_pages=counts,
                  provenance_hashes_verified=True, paired_conditions_verified=True,
                  aggregation_verified=True, presentation=verify_presentation(facts))
-    (base / 'verification.json').write_text(json.dumps(audit, indent=2) + '\n')
+    audit['verified_source_root'] = str(args.source_snapshot or ROOT)
+    (args.output or base / 'verification.json').write_text(json.dumps(audit, indent=2) + '\n')
     print(json.dumps(audit, indent=2))
 
 

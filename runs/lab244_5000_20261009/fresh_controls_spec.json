@@ -1,0 +1,12 @@
+{
+  "purpose": "Complete all four original-method controls on the fixed fresh 32-image split; selection already frozen; no additional training or tuning",
+  "images": 32,
+  "methods": [
+    "adjoint",
+    "fista_dct",
+    "hqs",
+    "admm"
+  ],
+  "manifest_sha256": "2194aba8f91158400c24094bef36888e0099167d81c4319427c284e1bc0e410e",
+  "selected_weight_sha256": "3e85cbd683c10487104f39978abb325f3fb935052e9a0fc669aad1af6f7d95cb"
+}

@@ -1,0 +1,30 @@
+{
+  "total_steps": 5000,
+  "recorded_updates": 5000,
+  "optimizer_step_counts": [
+    5000
+  ],
+  "all_losses_gradients_finite": true,
+  "audit_source_sha256": "6cc642f6a7fec04cc7c3ee8e42ee5f5849555078e9c343e26d35e8cf7b2ec6c3",
+  "selected_step": 4500,
+  "unchanged_sensing_factors": [
+    "H_256_256",
+    "W_256_256",
+    "H_321_481",
+    "W_321_481",
+    "H_512_512",
+    "W_512_512"
+  ],
+  "changed_reconstruction_tensors": 427,
+  "selected_combined_validation_gain": 0.29479371745903293,
+  "selected_clean_validation_gain": 0.09077554571578261,
+  "train_measurement_hashes_recomputed_at_steps": [
+    1,
+    2,
+    3,
+    2501,
+    5000
+  ],
+  "validation_selection_and_clean_guard_verified": true,
+  "selected_and_last_parameters_equal": false
+}

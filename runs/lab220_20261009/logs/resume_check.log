@@ -1,0 +1,20 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{"step": 4, "cr": 0.25, "loss": 0.028934825211763382, "gradient_norm": 0.4282039701938629, "seconds": 2.330415214993991, "peak_memory_mib": 11108.6552734375, "lr": 5e-06, "crop": "{\"source\": \"div2k_0399\", \"xywh\": [174, 668, 1132, 1132], \"flip_h\": false, \"flip_v\": false}"}
+{"validation_step": 4, "psnr": 29.23387968675003}
+{"completed_steps": 4, "start_step": 3, "best_step": 4, "best_validation_psnr": 29.23387968675003, "wall_seconds": 16.018757389043458, "peak_memory_mib": 11108.6552734375, "mean_step_seconds": 2.330415214993991, "stop_reason": "step_limit", "checkpoint_sha256": {"best.pth": "050a62f4a19afb93eb852f539f4d4aa68ab3a7bdb367477f981223952dc931e8", "last.pth": "264dc9b03baf058a354b9a856bed2db4f26f8f37726e5cc2149592a0394ade3f"}, "fixed_factors_verified": true}
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{"validation_step": 0, "psnr": 29.224096557875775}
+{"step": 1, "cr": 0.01, "loss": 0.11492006480693817, "gradient_norm": 0.6512946486473083, "seconds": 1.7868193339090794, "peak_memory_mib": 11075.25, "lr": 5e-06, "crop": "{\"source\": \"div2k_0006\", \"xywh\": [115, 507, 967, 967], \"flip_h\": false, \"flip_v\": true}"}
+{"step": 2, "cr": 0.04, "loss": 0.05438213422894478, "gradient_norm": 0.5116260051727295, "seconds": 1.1194008740130812, "peak_memory_mib": 11101.65576171875, "lr": 5e-06, "crop": "{\"source\": \"div2k_0440\", \"xywh\": [1069, 650, 295, 295], \"flip_h\": true, \"flip_v\": true}"}
+{"step": 3, "cr": 0.1, "loss": 0.004158354364335537, "gradient_norm": 0.014447811059653759, "seconds": 1.1018413030542433, "peak_memory_mib": 11109.40576171875, "lr": 5e-06, "crop": "{\"source\": \"div2k_0430\", \"xywh\": [32, 523, 268, 268], \"flip_h\": true, \"flip_v\": true}"}
+{"validation_step": 3, "psnr": 29.227934110843265}
+{"step": 4, "cr": 0.25, "loss": 0.028934825211763382, "gradient_norm": 0.4282039701938629, "seconds": 1.091129616019316, "peak_memory_mib": 11109.40576171875, "lr": 5e-06, "crop": "{\"source\": \"div2k_0399\", \"xywh\": [174, 668, 1132, 1132], \"flip_h\": false, \"flip_v\": false}"}
+{"validation_step": 4, "psnr": 29.23387968675003}
+{"completed_steps": 4, "start_step": 0, "best_step": 4, "best_validation_psnr": 29.23387968675003, "wall_seconds": 45.23168484994676, "peak_memory_mib": 11109.40576171875, "mean_step_seconds": 1.27479778174893, "stop_reason": "step_limit", "checkpoint_sha256": {"best.pth": "757ddbb6c41faef2352759442c209649fa985d890344852d271c63f0af5bba78", "last.pth": "f932789423eff0bdeeae55c7263c2951f8d65c87557ee9b0c37d5c2293bfc304"}, "fixed_factors_verified": true}
+{"step": 4, "model_optimizer_scheduler_rng_bitwise_equal": true, "crop_loss_validation_equal": true, "resumed": "runs/lab220_20261009/resume_smoke/last.pth", "continuous": "runs/lab220_20261009/resume_reference/last.pth"}

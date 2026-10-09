@@ -1,0 +1,71 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import crypto from 'node:crypto';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const runtime=path.join(process.env.HOME,'.cache/codex-runtimes/codex-primary-runtime/dependencies');
+const skill=path.join(process.env.HOME,'.codex/plugins/cache/openai-primary-runtime/presentations/26.904.11930/skills/presentations');
+process.env.RUNTIME_NODE_MODULES??=path.join(runtime,'node/node_modules');
+const {PresentationFile,FileBlob}=await import(pathToFileURL(path.join(runtime,'node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs')));
+const {finalizePresentation,applyPresentationChartFont}=await import(pathToFileURL(path.join(skill,'container_tools/artifact_tool_utils.mjs')));
+const source=path.join(root,'output/presentation/course_presentation.pptx');
+const deck=await PresentationFile.importPptx(await FileBlob.load(source));
+const base=path.join(root,'runs/lab244_5000_20261009');
+const facts=JSON.parse(await fs.readFile(path.join(base,'report_facts.json'),'utf8'));
+const {analysis,training,validation_curve:curves,worst_case:worst,legacy}=facts;
+const output=path.join(root,'output/presentation',process.env.PRESENTATION_FILENAME??'course_presentation_5000_20261009.pptx');
+const tmp=await fs.mkdtemp(path.join(root,'tmp/presentation/round2-'));
+const font='Helvetica Neue',ink='#20272B',teal='#147D78',muted='#59666C';
+const times=[25,45,45,50,50,60,50,60,60,60,50,45];
+const datasets=['Kodak','HEVC_B','HEVC_E','DIV2K_fresh'],labels=['Kodak24','HEVC B','HEVC E','Fresh DIV2K'];
+const guide=['# Round-2 Presentation Guide','Planned speaking time: 600 seconds. Prior decks and reports remain preserved.'];
+const value=(d,sigma=0,reference='hqs_round1')=>analysis.datasets.find(r=>r.dataset===d&&Number(r.cr)===.1&&Number(r.sigma)===sigma&&r.reference===reference);
+function text(s,value,x,y,w,h,size=28,bold=false,color=ink){const o=s.shapes.add({geometry:'textbox',position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});o.text=value;o.text.style={typeface:font,fontSize:size,bold,color,autoFit:'none'};return o;}
+function reset(index,title,notes){const s=deck.slides.items[index-1];s.shapes.deleteAll();for(const o of [...s.images.items])s.images.deleteById(o.id);for(const o of [...s.charts.items])s.charts.deleteById(o.id);s.background.fill='#FFFFFF';text(s,title,60,36,1155,100,44,true);text(s,String(index).padStart(2,'0'),1180,673,50,24,17,false,muted);s.speakerNotes.textFrame.setText(`Planned speaking time: ${times[index-1]} seconds.\n\n${notes}`);guide.push(`## Slide ${index}: ${title}`,notes);return s;}
+function chart(s,type,categories,series,{yTitle='PSNR (dB)',xTitle='',percent=false,xMin,xMax,xMajor,yMin,yMax}={}){const c=s.charts.add(type,{position:{left:65,top:160,width:1135,height:420},categories,series:series.map(r=>({...r,values:r.values.map(v=>Number(v.toFixed(5)))})),hasLegend:true,legend:{position:'bottom',textStyle:{typeface:font,fontSize:21}},chartFill:'#FFFFFF',plotAreaFill:'#FFFFFF',xAxis:{title:xTitle,...(xMin===undefined?{}:{min:xMin}),...(xMax===undefined?{}:{max:xMax}),...(xMajor===undefined?{}:{majorUnit:xMajor}),textStyle:{typeface:font,fontSize:20}},yAxis:{title:yTitle,...(yMin===undefined?{}:{min:yMin}),...(yMax===undefined?{}:{max:yMax}),numberFormatCode:percent?'0.0%':'0.00',textStyle:{typeface:font,fontSize:20},majorGridlines:{fill:'#E3E7E7',width:1}},...(type==='bar'?{barOptions:{direction:'column',grouping:'clustered'}}:type==='scatter'?{scatterOptions:{style:'lineWithMarkers'}}:{lineOptions:{smooth:false}})});applyPresentationChartFont(c,{fontFamily:font});return c;}
+async function image(s,filename,x,y,w,h,alt){s.images.add({blob:new Uint8Array(await fs.readFile(filename)),contentType:'image/png',alt,fit:'contain',position:{left:x,top:y,width:w,height:h}});}
+deck.resolve('sh/k3yl0zql').text='Noisy measurements\nand bounded HQS fine-tuning';
+deck.resolve('sh/obq90bml').text='Official HQS and ADMM\nSix shared-weight stages\nCommon sensing operator\nNoise-aware HQS fine-tuning';
+const intro=[
+'We compare four reconstruction solvers and extend HQS fine-tuning with a bounded second round. Percentage improvement means reduction in equally weighted mean reconstruction MSE, with first-round HQS as the primary reference. Codex assisted with code, experiments, analysis and writing. Architecture and weights: https://github.com/pwangcs/ProxUnroll.',
+'Y = H X W^T + E simulates integrated single-pixel measurements from existing grayscale images. The experiment does not demonstrate optical acquisition. Source: Duarte et al., doi:10.1109/MSP.2007.914730.',
+'All four initial solvers use the same matrices and measured values. New and previous HQS variants also share the common MAT operator. DCT-FISTA lambda is fixed from the original separate validation experiment. Sources: Beck and Teboulle, doi:10.1137/080716542; Wang et al., arXiv:2505.23180.',
+'The supplied restorer uses convolution, window attention and memory between optimization stages within one image. It does not connect video frames. Source diagram and architecture: https://github.com/pwangcs/ProxUnroll.'
+];
+for(let i=0;i<4;i++){deck.slides.items[i].speakerNotes.textFrame.setText(`Planned speaking time: ${times[i]} seconds.\n\n${intro[i]}`);guide.push(`## Slide ${i+1}`,intro[i]);}
+let s=reset(5,'Training, selection and test groups','800 official DIV2K training originals, 16 unchanged validation-selection originals. 32 test originals are fixed evenly indexed samples from the 84 remaining official validation originals; no earlier evaluation or this selection used them. Kodak24 and 24 raw spaced HEVC frames were observed in round 1 and now serve as regression tests. Original pretraining exposure is not fully audited. Source: https://data.vision.ee.ethz.ch/cvl/DIV2K/.');
+text(s,'800 training originals\n16 separate selection originals\n32 previously unevaluated DIV2K test originals',65,172,1120,185,32);
+text(s,'Kodak24 + 24 spaced HEVC frames: regression tests\nCenter-square crop, then 256 × 256 grayscale',65,392,1120,125,30);
+text(s,'Source-image hashes are disjoint across groups',65,560,1120,65,29,true,teal);
+s=reset(6,'Initial four-method Kodak evaluation','Preserved round-1 four-method results on the same common MAT operator. Every curve averages all 24 originals. Full CSV: runs/lab220_20261009/baseline/metrics.csv. Higher sampling usually provides more information; this plot does not prove universal recovery.');
+const names={adjoint:'Adjoint',fista_dct:'DCT-FISTA',hqs:'HQS',admm:'ADMM'},colors={adjoint:'#777777',fista_dct:'#D78924',hqs:teal,admm:'#B74760'};
+chart(s,'scatter',[],Object.keys(names).map(m=>({name:names[m],xValues:[1,4,10,25,50],values:[.01,.04,.1,.25,.5].map(cr=>legacy.datasets.find(r=>r.dataset==='Kodak'&&r.method===m&&r.cr===cr&&r.sigma===0).psnr),fill:colors[m],line:{fill:colors[m],width:3},marker:{symbol:'circle',size:7}})),{xTitle:'Nominal clean sampling (%)',xMin:0,xMax:50,xMajor:10,yMin:0,yMax:45});
+s=reset(7,'Noise-aware fixed-operator fine-tuning','The user authorized 5,000 total updates before any test inference. The initial phase and full-state continuation share the same update rule; validation interval changes to 250. The last recovery state may differ from the validation-selected state. Round 2 starts from first-round selected weights with a new Adam optimizer at 1e-5; later round-2 resume restores full optimizer/RNG/step state. Direct GT weighted RMSE uses .01 for five intermediate outputs and .95 final. Training independently draws sampling ratios and relative measurement RMS 0,0,.01,.05. All six sensing factors stay frozen. The data, loss and noise changes are not separately attributed. Server 244 container luozc_mlvc shares the same workspace with 220.');
+text(s,'All sensing factors frozen\nReconstruction parameters trained with clean + noisy Y\nNew Adam from round-1 selected weights',65,174,1120,185,32,true,teal);
+text(s,`${training.completed_steps} total round-2 steps    Selected: ${training.best_step}\nBoth formal phases: ${(facts.total_training_wall_seconds/60).toFixed(1)} min\nPeak allocated memory: ${(training.peak_memory_mib/1024).toFixed(2)} GiB`,65,414,1120,160,29);
+s=reset(8,'Validation-only checkpoint selection','Means use 16 selection originals, 10% and 25% rates, and fixed clean/.01/.05 noise. Combined validation PSNR selects the checkpoint, subject to clean PSNR no worse than initialization minus .03 dB. Initialization participates. No test outcomes choose the checkpoint or stopping. Full trace: finetune/validation.csv.');
+chart(s,'scatter',[],['Clean','Mixed','Strong noise'].map((name,i)=>({name,xValues:curves.steps,values:curves[name],fill:[teal,'#D78924','#B74760'][i],line:{fill:[teal,'#D78924','#B74760'][i],width:3},marker:{symbol:'circle',size:6}})),{xTitle:'Round-2 optimization step',yTitle:'Selection PSNR (dB)',xMin:0,xMax:5000,xMajor:1000,yMin:26,yMax:30});
+text(s,'Clean validation guard: at most 0.03 dB below initialization',65,610,1120,45,25,false,muted);
+s=reset(9,'Clean 10% reconstruction error changes','MSE reduction = 1 - equally weighted mean new MSE / equally weighted mean reference MSE. These are ratio-of-means percentages, not percentage changes in PSNR or a conversion of mean PSNR gain. Round 1 is the requested primary reference; official HQS is separate. Each HEVC video contributes one equal-weight unit. CSV: comparison/mse_dataset_summary.csv.');
+chart(s,'bar',labels,[['hqs_round1','vs round 1',teal],['hqs','vs official','#D78924']].map(([ref,name,fill])=>({name,fill,values:datasets.map(d=>value(d,0,ref).mse_reduction_percent/100)})),{yTitle:'MSE reduction',percent:true});
+text(s,'Requested target: 5–10% less MSE than round 1',65,610,1120,45,25,false,muted);
+s=reset(10,'Measurement noise and error changes','All three noise levels at 10%, relative to first-round HQS. Noisy results average three fixed seeds within image. Negative reductions mean MSE increased. Every condition and each whole-video result remain retained. Bootstrap resamples original images or whole videos, but one training seed limits inference.');
+chart(s,'bar',labels,[0,.01,.05].map((sigma,i)=>({name:`noise ${sigma}`,fill:[teal,'#D78924','#B74760'][i],values:datasets.map(d=>value(d,sigma).mse_reduction_percent/100)})),{yTitle:'MSE reduction vs round 1',percent:true});
+text(s,'Positive: less error    Negative: more error',65,610,1120,45,25,false,muted);
+s=reset(11,'Case with the smallest MSE reduction',`Post-test diagnostic of the smallest first-seed MSE reduction vs round 1 across all images and predeclared conditions. Image ${worst.image}, sampling ${worst.cr}, noise ${worst.sigma}. This case did not choose weights or alter the recipe. All positive and negative image deltas are saved in comparison/mse_paired_deltas.csv.`);
+const manifest=JSON.parse(await fs.readFile(path.join(base,'data/test.json'),'utf8'));let gt=manifest.find(r=>r.name===worst.image).path;
+if(gt.startsWith('/workspace/ProxUnroll-main/'))gt=path.join(root,gt.slice('/workspace/ProxUnroll-main/'.length));
+const cr=Number(worst.cr),sigma=Number(worst.sigma),rec=m=>path.join(base,'comparison/reconstructions',`${worst.image}_cr${cr}_noise${sigma}_seed2026_${m}.png`);
+for(const [i,[label,file]] of [['Reference',gt],['Round 1 HQS',rec('hqs_round1')],['Round 2 HQS',rec('hqs_finetuned')]].entries()){text(s,label,65+i*390,163,365,45,27,true);await image(s,file,65+i*390,229,340,340,label);}
+text(s,`${worst.image}    ${(cr*100).toFixed(0)}% sampling    Noise ${sigma}\nMSE reduction vs round 1: ${Number(worst.mse_reduction_percent).toFixed(2)}%`,65,593,1110,66,24,false,muted);
+const fresh=value('DIV2K_fresh');
+s=reset(12,'Results and remaining limits','One bounded recipe and one training seed. Kodak and HEVC results are repeated regression tests; 32 fresh DIV2K originals were not previously evaluated or used in selection. Original released-model training exposure is not fully audited. Larger training coverage, direct GT loss and noise mixture changed together. Independent HEVC frames do not demonstrate temporal reconstruction. Codex assisted with implementation, execution, analysis, English writing and slides. Sources: https://github.com/pwangcs/ProxUnroll and https://data.vision.ee.ethz.ch/cvl/DIV2K/.');
+text(s,`Fresh DIV2K clean 10% MSE reduction: ${fresh.mse_reduction_percent.toFixed(2)}%\nRequested minimum 5% (point estimate): ${fresh.target_at_least_5_percent?'met':'not met'}`,65,180,1120,145,31,true,teal);
+text(s,'One training seed; report every dataset and noise level\nCenter cropping defines the grayscale task\nHEVC frames use single-image reconstruction',65,394,1120,150,29);
+text(s,'AI disclosure: Codex assisted with code, experiments, analysis and writing\nArchitecture and official weights: Wang et al., CVPR 2025',65,606,1120,52,19,false,muted);
+const candidate=path.join(tmp,'candidate.pptx');await(await PresentationFile.exportPptx(deck)).save(candidate);
+await finalizePresentation({workspaceDir:root,candidatePath:candidate,finalPath:output,pythonExecutable:path.join(runtime,'python/bin/python3'),integrityValidatorPath:path.join(skill,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(skill,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit'],explicitTotalSlideCount:12,requiredNativeChartOwnerSlides:[6,8,9,10],materializeLiteralChartWorkbooks:true,fontPolicy:{basis:'reference',families:[font],referencePath:source,referenceSha256:crypto.createHash('sha256').update(await fs.readFile(source)).digest('hex')},verifyArtifactToolImport:true,receiptPath:path.join(tmp,'validation.json')});
+const finalDeck=await PresentationFile.importPptx(await FileBlob.load(output));
+for(let i=0;i<12;i++){const blob=await finalDeck.export({slide:finalDeck.slides.items[i],format:'png',scale:1});await fs.writeFile(path.join(tmp,`slide-${i+1}.png`),new Uint8Array(await blob.arrayBuffer()));}
+await fs.writeFile(path.join(root,'coursework/PRESENTATION_GUIDE_5000.md'),guide.join('\n\n')+'\n');
+console.log(JSON.stringify({output,previews:tmp}));

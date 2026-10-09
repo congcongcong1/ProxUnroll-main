@@ -1,0 +1,22 @@
+{
+  "hostname": "test-SYS-4029GP-TRT2",
+  "successful_job_exit_codes": {
+    "gpu_smoke": "0",
+    "prepare2": "0",
+    "baseline": "0",
+    "train_smoke": "0",
+    "resume_check": "0",
+    "finetune": "0",
+    "comparison": "0"
+  },
+  "tests_passed": 10,
+  "retained_initial_data_probe_exit": "1",
+  "complete_markers": {
+    "baseline": true,
+    "finetune": true,
+    "comparison": true
+  },
+  "resume_verification_passed": true,
+  "owned_training_or_eval_processes": [],
+  "final_document_and_checkpoint_hashes_match": true
+}

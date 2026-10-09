@@ -1,0 +1,7 @@
+{
+  "step": 4,
+  "model_optimizer_scheduler_rng_bitwise_equal": true,
+  "crop_loss_validation_equal": true,
+  "resumed": "runs/lab244_round2_20261009/resume_smoke/last.pth",
+  "continuous": "runs/lab244_round2_20261009/resume_reference/last.pth"
+}

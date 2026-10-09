@@ -1,0 +1,37 @@
+{
+  "manifest_sha256": "80fd894c08b72003daf53a92709d5652f5064f81456c4554b211e325a280d3d9",
+  "matrix_sha256": "f143332cb20b8d4cf139f46ad066597b47aa4f48bfe50c19cb97d3170b3af75b",
+  "seed": 20261009,
+  "lr": 5e-06,
+  "training_rates": [
+    0.01,
+    0.04,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "validation_rates": [
+    0.1,
+    0.25
+  ],
+  "operator": "fixed common MAT; all six sensing factors frozen",
+  "loss": "upstream proximal trajectory weighted RMSE: five weights .01, final .95; sqrt clamp 1e-12",
+  "batch_size": 1,
+  "precision": "float32",
+  "initialization": "/workspace/ProxUnroll-main/weight/hqs_proxunroll.pth",
+  "initialization_sha256": "848c263ac54d44ef74374b6fa686af6b8dfa7240720499d174ff135ab1959be6",
+  "selection": "equal-image mean validation PSNR over two fixed clean rates; no test access",
+  "cropping": "step-seeded random square side [256,min(H,W)], valid coordinates, area resize, flips, OpenCV Y",
+  "source_hashes": {
+    "coursework/finetune.py": "436b58655f8fcadaa253f48bba8c670edc7dbb4cf0d66c1742764ba33f462e57",
+    "model/proxunroll.py": "41bc5e34c2c98694e8aa540d51800ae2ea988989e44c9423a74653dbe79e55ab"
+  },
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "mode": "full_state_resume",
+  "max_steps": 100,
+  "max_minutes": 10.0,
+  "val_every": 25,
+  "resume": "runs/lab220_20261009/resume_smoke/last.pth"
+}

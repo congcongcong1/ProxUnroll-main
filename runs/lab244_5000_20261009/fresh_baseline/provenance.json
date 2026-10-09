@@ -1,0 +1,873 @@
+{
+  "arguments": {
+    "manifest": "runs/lab244_5000_20261009/data/test_fresh_controls.json",
+    "data_dir": null,
+    "output": "runs/lab244_5000_20261009/fresh_baseline",
+    "device": "cuda",
+    "hqs_checkpoint": "/workspace/ProxUnroll-main/weight/hqs_proxunroll.pth",
+    "admm_checkpoint": "/workspace/ProxUnroll-main/weight/admm_proxunroll.pth",
+    "extra_checkpoint": [],
+    "methods": "adjoint,fista_dct,hqs,admm",
+    "rates": "0.01,0.04,0.1,0.25,0.5",
+    "noise": "0.01,0.05",
+    "seeds": "2026,2027,2028",
+    "smoke": false,
+    "threads": 4
+  },
+  "platform": "Linux-6.5.0-18-generic-x86_64-with-glibc2.35",
+  "device": "cuda",
+  "torch_version": "2.6.0+cu124",
+  "cuda_version": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "packages": {
+    "tifffile": "2026.3.3",
+    "pluggy": "1.6.0",
+    "nvidia-cuda-runtime-cu12": "12.4.127",
+    "torchvision": "0.21.0+cu124",
+    "Jinja2": "3.1.6",
+    "fonttools": "4.66.1",
+    "hf-xet": "1.7.0",
+    "pypdf": "5.6.0",
+    "nvidia-nvjitlink-cu12": "12.4.127",
+    "nvidia-cudnn-cu12": "9.1.0.70",
+    "contourpy": "1.3.3",
+    "iniconfig": "2.3.1",
+    "pillow": "11.2.1",
+    "six": "1.17.0",
+    "nvidia-cuda-cupti-cu12": "12.4.127",
+    "h11": "0.16.0",
+    "opencv-python-headless": "4.11.0.86",
+    "nvidia-nvtx-cu12": "12.4.127",
+    "packaging": "26.3",
+    "kiwisolver": "1.5.1",
+    "setuptools": "65.5.0",
+    "scipy": "1.15.3",
+    "reportlab": "4.4.1",
+    "pytest": "8.3.5",
+    "pyparsing": "3.3.3",
+    "timm": "1.0.16",
+    "anyio": "4.15.1",
+    "httpcore2": "2.13.1",
+    "lazy-loader": "0.6",
+    "cycler": "0.12.1",
+    "nvidia-cuda-nvrtc-cu12": "12.4.127",
+    "scikit-image": "0.25.2",
+    "tqdm": "4.70.1",
+    "nvidia-cublas-cu12": "12.4.5.8",
+    "nvidia-curand-cu12": "10.3.5.147",
+    "pip": "24.0",
+    "httpx2": "2.13.1",
+    "PyYAML": "6.0.3",
+    "mpmath": "1.3.0",
+    "einops": "0.8.1",
+    "truststore": "0.10.4",
+    "networkx": "3.6.1",
+    "filelock": "3.32.3",
+    "chardet": "7.6.0",
+    "idna": "3.20",
+    "nvidia-cusparselt-cu12": "0.6.2",
+    "nvidia-cusparse-cu12": "12.3.1.170",
+    "fsspec": "2026.7.0",
+    "typing_extensions": "4.16.0",
+    "huggingface_hub": "2.1.1",
+    "MarkupSafe": "3.0.3",
+    "nvidia-cufft-cu12": "11.2.1.3",
+    "triton": "3.2.0",
+    "python-dateutil": "2.9.0.post0",
+    "ImageIO": "2.38.1",
+    "numpy": "1.26.4",
+    "nvidia-cusolver-cu12": "11.6.1.9",
+    "nvidia-nccl-cu12": "2.21.5",
+    "matplotlib": "3.10.3",
+    "safetensors": "0.8.0",
+    "torch": "2.6.0+cu124",
+    "click": "8.5.0",
+    "sympy": "1.13.1"
+  },
+  "manifest_sha256": "2194aba8f91158400c24094bef36888e0099167d81c4319427c284e1bc0e410e",
+  "data": [
+    {
+      "name": "fresh_div2k_0802",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0802",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0802.png",
+      "source": "/datasets/DIV2K_valid_HR/0802.png",
+      "source_sha256": "4ad6f3ca8bf740192042978121f05ec493ddbe5a3da5584eaf0d9699c25ee431",
+      "sha256": "eac9dd149e39a73fd2dee48085f18bcb7f967931e95269be11fa8d2fa7cc059a",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0804",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0804",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0804.png",
+      "source": "/datasets/DIV2K_valid_HR/0804.png",
+      "source_sha256": "16b5fdbe808b868bed0be32f235208a1716d44e271a37b79cbc77ab53d2f6bdb",
+      "sha256": "4955b2d2e5a1ef361ab1784d988854af870a6a409ff80f1f467afbd3c228bb69",
+      "source_dimensions": [
+        2040,
+        1200
+      ],
+      "crop_xywh": [
+        420,
+        0,
+        1200,
+        1200
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0808",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0808",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0808.png",
+      "source": "/datasets/DIV2K_valid_HR/0808.png",
+      "source_sha256": "956528ab3e0fadad1ed8ce93f93a30bf9f58c36ffa9dd775e2ad362ffdcf5ace",
+      "sha256": "40673b9ccdfc30f4e383f152c5e3c730048d495c98c775ca3f62ce1fbea1d051",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0811",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0811",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0811.png",
+      "source": "/datasets/DIV2K_valid_HR/0811.png",
+      "source_sha256": "7016bcf4112049162da604772c810bed4f5983af52e07d23755ac2c3475fe8ad",
+      "sha256": "c649914065015fd0d014073038526e8bef598871b355054c06c15a0565cbbe63",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0813",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0813",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0813.png",
+      "source": "/datasets/DIV2K_valid_HR/0813.png",
+      "source_sha256": "71c06a2c36979345c99c887e7bd6aebfd0bd1648d93b7bd15f56c65e1291b37e",
+      "sha256": "7c6e1b566978d3cce4d6f8f7e53caa3a792939209ef0b2dd804cc8ff9ecc5017",
+      "source_dimensions": [
+        2040,
+        1464
+      ],
+      "crop_xywh": [
+        288,
+        0,
+        1464,
+        1464
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0817",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0817",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0817.png",
+      "source": "/datasets/DIV2K_valid_HR/0817.png",
+      "source_sha256": "fdb28a6df3408758cc6d87563a157081c22d1325ea6d8034405ce45abcfc3879",
+      "sha256": "4b798523d09806c50d88cf09ba073621c17d77b124e126c1cc64a173ca56e0f9",
+      "source_dimensions": [
+        2040,
+        1536
+      ],
+      "crop_xywh": [
+        252,
+        0,
+        1536,
+        1536
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0821",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0821",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0821.png",
+      "source": "/datasets/DIV2K_valid_HR/0821.png",
+      "source_sha256": "0eb14dfcb1d21cb5d3437dc5135c458154cd7fabed8147fbdc415d3ef671c14b",
+      "sha256": "5737c88cfb3408367de6c02daaa8762985eec29405a6839541274c6eb3a62b02",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0823",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0823",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0823.png",
+      "source": "/datasets/DIV2K_valid_HR/0823.png",
+      "source_sha256": "8db26bddf2ac9975e5227be3eb1180f6377145eee5dca1e421100014cbd7ef6e",
+      "sha256": "38b2b27b6449e1048e1749b33b3792f41183c0e24a53b0ee2b2c18f3dffe0513",
+      "source_dimensions": [
+        2040,
+        1284
+      ],
+      "crop_xywh": [
+        378,
+        0,
+        1284,
+        1284
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0826",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0826",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0826.png",
+      "source": "/datasets/DIV2K_valid_HR/0826.png",
+      "source_sha256": "b0f675a14e8fe9f2ec0b705bee98d75f8a22478eafdc1a0a0afc0f820bc5ab4d",
+      "sha256": "54a24583ebf2bf6009c28617e828d8af441ee6bea974f4f4bade161a094d50f9",
+      "source_dimensions": [
+        2040,
+        1536
+      ],
+      "crop_xywh": [
+        252,
+        0,
+        1536,
+        1536
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0830",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0830",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0830.png",
+      "source": "/datasets/DIV2K_valid_HR/0830.png",
+      "source_sha256": "4eb18566ab01447a06daf0314a3711aa78cea5ca0eaa47cfedafbceeb6dd0a3e",
+      "sha256": "ba630ff9fdb35dfc416b58bf7a07cf9ef0577faae9a5cf4c4cfdcb2372c503fc",
+      "source_dimensions": [
+        2040,
+        816
+      ],
+      "crop_xywh": [
+        612,
+        0,
+        816,
+        816
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0832",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0832",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0832.png",
+      "source": "/datasets/DIV2K_valid_HR/0832.png",
+      "source_sha256": "5c609d644b5924900e82dbecadfb85497b77d6cfad52a0c4c7e43a83f9868c33",
+      "sha256": "f14fd182bf6bbeac98e0125e6aafec3ee0eab6b6860a3e09cefef5505a223d67",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0836",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0836",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0836.png",
+      "source": "/datasets/DIV2K_valid_HR/0836.png",
+      "source_sha256": "d056c4afc22367640c8ec7a1b84c06eaa7405e29363f0e75ea824e15aec149d0",
+      "sha256": "fc512b745b054128cc4874039a9665fbabe05661f59ad312ab09762232f055fd",
+      "source_dimensions": [
+        2040,
+        1536
+      ],
+      "crop_xywh": [
+        252,
+        0,
+        1536,
+        1536
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0839",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0839",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0839.png",
+      "source": "/datasets/DIV2K_valid_HR/0839.png",
+      "source_sha256": "818abf16ba0aacc3fb6737c5ddd7c2188ca7321b6b28b7f4ba1898627387dee7",
+      "sha256": "8d1a317c24956b817cebcad9e4e9c975ae195c06af0b747dd71993b478ec0542",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0842",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0842",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0842.png",
+      "source": "/datasets/DIV2K_valid_HR/0842.png",
+      "source_sha256": "c6ec845abfd696fcf5f39beadb8632ecc56ac8416318a9dbb27c4c4d294aa592",
+      "sha256": "4c939ac0e15a243d4613ac975d2d0f3f0c1e6935de600419a625b4f81a4adebe",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0845",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0845",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0845.png",
+      "source": "/datasets/DIV2K_valid_HR/0845.png",
+      "source_sha256": "35416e153d4ffd1f83df1502dca371db2059e818b72c1e3a95fb9a9266b59172",
+      "sha256": "8070e217e2ab76452d18f7f701192e330e002181ca18cd5946175e03d3589cb1",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0849",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0849",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0849.png",
+      "source": "/datasets/DIV2K_valid_HR/0849.png",
+      "source_sha256": "1d576e20f4720050d0b7af5295b323c342a5284ed75a8ce3bae6e0cb46c89eb6",
+      "sha256": "0fbfcfee703a31c508a0590c3848fb09e5267f5d5cb8b0e8adbe07d3278f6679",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0851",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0851",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0851.png",
+      "source": "/datasets/DIV2K_valid_HR/0851.png",
+      "source_sha256": "1c4bc95887a3c06f9690fec153d5548ec52039c8ba83da749f2b5f6e0d2ecf33",
+      "sha256": "53d8cd57a8151351415128691ade6bb167ee4879c7c4456322307128f2b56749",
+      "source_dimensions": [
+        2040,
+        1344
+      ],
+      "crop_xywh": [
+        348,
+        0,
+        1344,
+        1344
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0855",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0855",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0855.png",
+      "source": "/datasets/DIV2K_valid_HR/0855.png",
+      "source_sha256": "86001004f1eb6a1e182bb2ed3c23093d2656690a61091b2822af1c9124a40141",
+      "sha256": "82bfac45b77357983cfaf6d0bc5ecbb2c81bc61e048847a04f8f5542467d9ec2",
+      "source_dimensions": [
+        2040,
+        2040
+      ],
+      "crop_xywh": [
+        0,
+        0,
+        2040,
+        2040
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0858",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0858",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0858.png",
+      "source": "/datasets/DIV2K_valid_HR/0858.png",
+      "source_sha256": "428049494acf4dadf08c5bd62c8711ac258af5fa0f008b5fb389a4fffca96c58",
+      "sha256": "3ea2b9a3b9986e4b6bab33b9ffc002f459fcfa4a0b8cf9ef87f299bfc3dc4165",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0861",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0861",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0861.png",
+      "source": "/datasets/DIV2K_valid_HR/0861.png",
+      "source_sha256": "c6fe192a3f1b702948e99c483f04edfb362d2d218082a12457a5b0f09219ffc6",
+      "sha256": "68ce48895e5995898a1bd1e6745c884eec43b7b1ffd8bdd5e8d2f88e8be00ca6",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0864",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0864",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0864.png",
+      "source": "/datasets/DIV2K_valid_HR/0864.png",
+      "source_sha256": "ca9811dd5910f947ee4dc75f709dcffe17bb7811ca562a0e4bcdefc781eadd76",
+      "sha256": "31737845b5fca8317f7b9cddb332fa602a464805a51ae09eaf8b839708966499",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0868",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0868",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0868.png",
+      "source": "/datasets/DIV2K_valid_HR/0868.png",
+      "source_sha256": "ba7de4237fa7cbdc2fff31f35015711909e501230e7c2f3f01f4e8dcf7a23c95",
+      "sha256": "bc31360126a4c27b6e376e881c9861baafd0f4fc811c761daa8f7ad66e125702",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0870",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0870",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0870.png",
+      "source": "/datasets/DIV2K_valid_HR/0870.png",
+      "source_sha256": "f03f496bb0f21d53012723782bfdbcbbde66115c45c35aa7d83373c304a9c041",
+      "sha256": "ecfceadb52947becb7d82500d1ee4fd6116a22c87418a6b26fabf040c61e9e4c",
+      "source_dimensions": [
+        2040,
+        1572
+      ],
+      "crop_xywh": [
+        234,
+        0,
+        1572,
+        1572
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0874",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0874",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0874.png",
+      "source": "/datasets/DIV2K_valid_HR/0874.png",
+      "source_sha256": "11cb511247d70d84adad5557a720254e5f73e3786dbcd399c6053a1982ce1784",
+      "sha256": "a749db84c6cb54b24a96fab71948dc9d5086185c52f489284ac357705f08011e",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0877",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0877",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0877.png",
+      "source": "/datasets/DIV2K_valid_HR/0877.png",
+      "source_sha256": "4e0fb583729accf7b93e07b2b81ce8d919f6490cee2d1f90db90b60095a59165",
+      "sha256": "489d99472388bf76a4e504af230b69025d05365edd515c3292004093bb90c05c",
+      "source_dimensions": [
+        2040,
+        1152
+      ],
+      "crop_xywh": [
+        444,
+        0,
+        1152,
+        1152
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0879",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0879",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0879.png",
+      "source": "/datasets/DIV2K_valid_HR/0879.png",
+      "source_sha256": "ad5eb9637c891994c00f44358cf0a5238f642b8796b5cacaa8b59ba8bb51553a",
+      "sha256": "4d9cda0839cc9c07aa187827854d8ae0621aecf06461a78b45bc0e23f4c82889",
+      "source_dimensions": [
+        2040,
+        1872
+      ],
+      "crop_xywh": [
+        84,
+        0,
+        1872,
+        1872
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0883",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0883",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0883.png",
+      "source": "/datasets/DIV2K_valid_HR/0883.png",
+      "source_sha256": "3355621b3d834c320a66879e6cd23988df29f504f6cdecd22f1984b432a7e55a",
+      "sha256": "aec1e19fdd9ef3c1938bdeb4c36b19d5742690b721c197632cbdde510dc4eee9",
+      "source_dimensions": [
+        2040,
+        1380
+      ],
+      "crop_xywh": [
+        330,
+        0,
+        1380,
+        1380
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0887",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0887",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0887.png",
+      "source": "/datasets/DIV2K_valid_HR/0887.png",
+      "source_sha256": "a0a893c9417fcd04067bf254512801f92ae7c795b686e05f7389853c9fb78b11",
+      "sha256": "b5f7db6030ce902fa55522b47169f748568d9f363151df57a54b4c277ffc7c06",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0889",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0889",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0889.png",
+      "source": "/datasets/DIV2K_valid_HR/0889.png",
+      "source_sha256": "a8f73c42065e3193c4deb883dcb3bc432a3f838e9be5bacea708ee39eb2c6e04",
+      "sha256": "219b8807f823e3722d9fcff0775ea3d2dd2f3f87bfa9a908f8031d7febd361fd",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0892",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0892",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0892.png",
+      "source": "/datasets/DIV2K_valid_HR/0892.png",
+      "source_sha256": "7fb05e491f00963e64b53a0f3f7a3d1af51f1434e7fd4898d4b84c479e1f66f9",
+      "sha256": "3865398c85a9febf752bf5f9bb9ab54aa1be3ddb09d833bc37d0b48833cc8c50",
+      "source_dimensions": [
+        2040,
+        1284
+      ],
+      "crop_xywh": [
+        378,
+        0,
+        1284,
+        1284
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0896",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0896",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0896.png",
+      "source": "/datasets/DIV2K_valid_HR/0896.png",
+      "source_sha256": "367c698aa344cea6e790239f04bae168ef204ae771f6ea05285e5255fad2f84f",
+      "sha256": "a1a1a0eba6de65ef44ce33f25f60a448859f9ec68b7d3bd42eed391d95201f6b",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    },
+    {
+      "name": "fresh_div2k_0899",
+      "dataset": "DIV2K_fresh",
+      "sequence": "fresh_div2k_0899",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0899.png",
+      "source": "/datasets/DIV2K_valid_HR/0899.png",
+      "source_sha256": "77e25eca6c3828abbea8f7fcf360d9be7f496513aa9ec08ff3f2e3a9c272e60e",
+      "sha256": "5d6d81b3114fa64996655b020cc4b4ba7946437cf88a97c0c5260be8f82a0e95",
+      "source_dimensions": [
+        2040,
+        1356
+      ],
+      "crop_xywh": [
+        342,
+        0,
+        1356,
+        1356
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not previously evaluated or used in this fine-tuning or selection"
+    }
+  ],
+  "checkpoints": {
+    "hqs": {
+      "path": "/workspace/ProxUnroll-main/weight/hqs_proxunroll.pth",
+      "sha256": "848c263ac54d44ef74374b6fa686af6b8dfa7240720499d174ff135ab1959be6"
+    },
+    "admm": {
+      "path": "/workspace/ProxUnroll-main/weight/admm_proxunroll.pth",
+      "sha256": "7d06f4c83e1d187ea245e7ca7b542b0f5c2c7508af4d72968350503626d1cc7e"
+    }
+  },
+  "conditions": [
+    [
+      0.01,
+      0.0,
+      2026
+    ],
+    [
+      0.04,
+      0.0,
+      2026
+    ],
+    [
+      0.1,
+      0.0,
+      2026
+    ],
+    [
+      0.25,
+      0.0,
+      2026
+    ],
+    [
+      0.5,
+      0.0,
+      2026
+    ],
+    [
+      0.1,
+      0.01,
+      2026
+    ],
+    [
+      0.1,
+      0.01,
+      2027
+    ],
+    [
+      0.1,
+      0.01,
+      2028
+    ],
+    [
+      0.1,
+      0.05,
+      2026
+    ],
+    [
+      0.1,
+      0.05,
+      2027
+    ],
+    [
+      0.1,
+      0.05,
+      2028
+    ]
+  ],
+  "source_hashes": {
+    "coursework/evaluate_manifest.py": "25341c2e497848fd0a0893191008e4084d1f1c4eeed4d9e7c39b9b39c403eecd",
+    "coursework/run_experiments.py": "1fee5f2cf74878acf409ac05a91d6e6ec53066ad018c81f79ab8dcf0aba5eff7",
+    "coursework/baselines.py": "891bb958c1f960034a591a7f2d8ac911e07045b87cc381234798e156abcfeb5c",
+    "model/proxunroll.py": "41bc5e34c2c98694e8aa540d51800ae2ea988989e44c9423a74653dbe79e55ab"
+  },
+  "matrix_sha256": "f143332cb20b8d4cf139f46ad066597b47aa4f48bfe50c19cb97d3170b3af75b",
+  "fista_lambda": 0.001,
+  "fista_lambda_source": "original disjoint skimage validation; frozen before external test",
+  "metric_contract": "clip predictions [0,1]; data_range=1; skimage PSNR/SSIM; no border crop; float metrics before PNG; relative RMS measurement noise",
+  "model_scope": "single-image reconstruction on independent frames; no temporal model",
+  "timing": "synchronized wall time after warmup; FISTA/adjoint CPU, neural CUDA; one sample per condition"
+}

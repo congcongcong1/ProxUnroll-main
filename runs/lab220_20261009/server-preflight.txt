@@ -1,0 +1,15 @@
+test-SYS-4029GP-TRT2
+10.0.0.220 192.168.1.220 172.17.0.1 
+uid=1046(LuoZicong) gid=1046(LuoZicong) groups=1046(LuoZicong),999(docker)
+[{"Type":"bind","Source":"/gpfs3/area1/luozc","Destination":"/workspace","Mode":"","RW":true,"Propagation":"rprivate"},{"Type":"bind","Source":"/gpfs3/area1/shared","Destination":"/datasets","Mode":"","RW":true,"Propagation":"rprivate"}]
+Filesystem                         Size  Used Avail Use% Mounted on
+192.168.1.112:/gpfs3/area1/luozc   250T  202T   49T  81% /workspace
+192.168.1.112:/gpfs3/area1/shared  250T  202T   49T  81% /datasets
+overlay                            879G  810G   25G  98% /
+index, uuid, name, memory.total [MiB], memory.used [MiB], utilization.gpu [%]
+0, GPU-ef1b6c49-7687-e1cd-d137-d8b4cb28dffa, NVIDIA GeForce RTX 3090, 24576 MiB, 687 MiB, 0 %
+1, GPU-4570d285-4098-c7e6-680b-8b7fb41c5b73, NVIDIA GeForce RTX 3090, 24576 MiB, 18 MiB, 0 %
+2, GPU-cc17dd86-0f9c-8aee-28f6-6dd16e9312c6, NVIDIA GeForce RTX 3090, 24576 MiB, 18 MiB, 0 %
+3, GPU-f62880ab-193e-897a-76ae-f125d3f2d1a5, NVIDIA GeForce RTX 3090, 24576 MiB, 18 MiB, 0 %
+4, GPU-acbacf33-3f8e-560f-266f-11f317543d93, NVIDIA GeForce RTX 3090, 24576 MiB, 18 MiB, 0 %
+5, GPU-7ad23367-d035-a02e-5d13-8aa855c24fb4, NVIDIA GeForce RTX 3090, 24576 MiB, 18 MiB, 0 %

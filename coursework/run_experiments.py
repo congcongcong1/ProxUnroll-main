@@ -27,9 +27,9 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def load_model(solver, device):
+def load_model(solver, device, checkpoint_path=None):
     model = ProxUnroll(solver=solver)
-    checkpoint = torch.load(ROOT / f'weight/{solver}_proxunroll.pth', map_location='cpu', weights_only=True)
+    checkpoint = torch.load(checkpoint_path or ROOT / f'weight/{solver}_proxunroll.pth', map_location='cpu', weights_only=True)
     state = checkpoint.get('state_dict', checkpoint)
     model.load_state_dict(state, strict=True)
     return model.to(device).eval()
@@ -69,6 +69,11 @@ def write_csv(path, rows):
 
 
 def main():
+    # The original coursework contract and output remain unchanged by default.
+    import sys
+    if '--manifest' in sys.argv:
+        from coursework.evaluate_manifest import main as evaluate_manifest
+        return evaluate_manifest()
     parser = argparse.ArgumentParser()
     parser.add_argument('--device', default='cpu', choices=['cpu', 'mps', 'cuda'])
     parser.add_argument('--output', type=Path, default=ROOT / 'coursework/results')

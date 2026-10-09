@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-09T05:16:40.126713+00:00",
+  "resume_step": 5000,
+  "target_total_steps": 10000,
+  "additional_updates": 5000,
+  "max_minutes": 150,
+  "outer_timeout_seconds": 9600,
+  "sha256": {
+    "coursework/finetune_round2.py": "474819b8b0ac879bd8ab8ae33b03c6342f73d789acdcff75ec6f74aeb0741c67",
+    "coursework/finetune_5000.py": "1c1a50442cc634cc108bb91e71f14264e042096c6b8fb19681e9732b719812af",
+    "coursework/finetune_10000.py": "2539c43493a9df1dc858b0c389e8a2efe7952fa44192a041f11dfca2e30c96cb",
+    "coursework/EXTEND10000_PROTOCOL.md": "abe7d9bd750f6bdcf95ff558d6fe129fa870161a4f261840c02cc41a2ed1059f",
+    "runs/lab244_5000_20261009/finetune/last.pth": "497887636e72404b7ba472eac6001b055c3174c10364519d8b011690b5fd426d",
+    "runs/lab244_5000_20261009/finetune/best.pth": "3e85cbd683c10487104f39978abb325f3fb935052e9a0fc669aad1af6f7d95cb",
+    "runs/lab244_10000_20261009/data/train_val.json": "e5ac74456d4424366f480e4fcd4552eb07b4a23d005c0b064886bdeb51be624b",
+    "runs/lab244_10000_20261009/data/test.json": "4d913eb1e0577aac1963d17065d34a824e4253a10f4446e8062d8a4ab59301cf",
+    "runs/lab244_10000_20261009/data/test_fresh.json": "9cfcbc04a8be7e94aa741244db452de431bffab1f9e657d463133db166c99384",
+    "runs/lab244_10000_20261009/data/test_regression.json": "0db1237450375e7dab14bfbf1d40fc57f574b245a778f23756065f3fbea40738",
+    "runs/lab244_10000_20261009/data/protocol.json": "6bc4574156c4ec40defa741456096bb319d9a4fa1928e60a49f0bfedd8ca5e8c"
+  },
+  "test_inference_has_not_started": true,
+  "no_automatic_testing": true,
+  "update_rule_unchanged": true,
+  "gpu_before_start": "GPU-16f6ac58-4d8c-8845-0886-1dc146a0327e, NVIDIA GeForce RTX 3090, 18, 0",
+  "source_contract_resume_verified": {
+    "step": 7,
+    "model_optimizer_scheduler_rng_bitwise_equal": true,
+    "crop_loss_validation_equal": true,
+    "resumed": "runs/lab244_10000_20261009/preflight_new7/last.pth",
+    "continuous": "runs/lab244_10000_20261009/preflight_reference7/last.pth"
+  }
+}

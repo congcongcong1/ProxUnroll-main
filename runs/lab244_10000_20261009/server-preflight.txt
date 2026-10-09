@@ -1,0 +1,25 @@
+{
+  "server": "192.168.1.244",
+  "host": "test-MCCX-D800",
+  "container": "luozc_mlvc",
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/gpfs3/area1/shared",
+      "Destination": "/datasets",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/gpfs3/area1/luozc",
+      "Destination": "/workspace",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    }
+  ],
+  "space": "Filesystem                         Size  Used Avail Use% Mounted on\n192.168.1.111:/gpfs3/area1/luozc   250T  202T   48T  81% /workspace\n192.168.1.111:/gpfs3/area1/shared  250T  202T   48T  81% /datasets",
+  "gpu": "0, GPU-9105f4b6-8398-fb99-3776-ee94414af818, NVIDIA GeForce RTX 2080 Ti, 11264 MiB, 9 MiB, 0 %\n1, GPU-1635f93a-517b-ebd2-5444-e071a888024f, NVIDIA GeForce RTX 2080 Ti, 11264 MiB, 9 MiB, 0 %\n2, GPU-af1cff47-67d9-ebb3-a315-2b965d49433b, NVIDIA GeForce RTX 2080 Ti, 11264 MiB, 9 MiB, 0 %\n3, GPU-5f1768c1-8057-21f9-9775-5afebf1dd9ad, NVIDIA GeForce RTX 2080 Ti, 11264 MiB, 9 MiB, 0 %\n4, GPU-5c29e362-93ff-356b-1b27-82ef64ea1327, NVIDIA GeForce RTX 3090, 24576 MiB, 7171 MiB, 99 %\n5, GPU-16f6ac58-4d8c-8845-0886-1dc146a0327e, NVIDIA GeForce RTX 3090, 24576 MiB, 18 MiB, 0 %\n6, GPU-62160106-d537-698b-2e4a-94b4196592a9, NVIDIA GeForce RTX 3090, 24576 MiB, 18 MiB, 0 %\n7, GPU-3ebe0de4-666f-0c3f-9cda-dbc45965e57b, NVIDIA GeForce RTX 3090, 24576 MiB, 1471 MiB, 0 %"
+}

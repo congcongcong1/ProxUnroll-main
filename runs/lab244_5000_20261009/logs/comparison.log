@@ -1,0 +1,160 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+kodim01: 33 rows, 12.4s
+kodim02: 66 rows, 24.6s
+kodim03: 99 rows, 36.8s
+kodim04: 132 rows, 49.2s
+kodim05: 165 rows, 61.7s
+kodim06: 198 rows, 74.4s
+kodim07: 231 rows, 87.1s
+kodim08: 264 rows, 99.8s
+kodim09: 297 rows, 112.6s
+kodim10: 330 rows, 126.5s
+kodim11: 363 rows, 139.5s
+kodim12: 396 rows, 152.4s
+kodim13: 429 rows, 165.0s
+kodim14: 462 rows, 177.7s
+kodim15: 495 rows, 190.4s
+kodim16: 528 rows, 203.2s
+kodim17: 561 rows, 215.9s
+kodim18: 594 rows, 228.7s
+kodim19: 627 rows, 241.8s
+kodim20: 660 rows, 255.0s
+kodim21: 693 rows, 268.2s
+kodim22: 726 rows, 281.3s
+kodim23: 759 rows, 294.6s
+kodim24: 792 rows, 307.9s
+hevc_BQTerrace_f0000: 825 rows, 321.4s
+hevc_BQTerrace_f0200: 858 rows, 334.8s
+hevc_BQTerrace_f0400: 891 rows, 348.0s
+hevc_BasketballDrive_f0000: 924 rows, 361.4s
+hevc_BasketballDrive_f0167: 957 rows, 374.7s
+hevc_BasketballDrive_f0334: 990 rows, 388.1s
+hevc_Cactus_f0000: 1023 rows, 401.5s
+hevc_Cactus_f0166: 1056 rows, 415.0s
+hevc_Cactus_f0333: 1089 rows, 429.7s
+hevc_Kimono1_f0000: 1122 rows, 444.0s
+hevc_Kimono1_f0080: 1155 rows, 457.5s
+hevc_Kimono1_f0160: 1188 rows, 471.1s
+hevc_ParkScene_f0000: 1221 rows, 484.7s
+hevc_ParkScene_f0080: 1254 rows, 498.3s
+hevc_ParkScene_f0160: 1287 rows, 512.1s
+hevc_FourPeople_f0000: 1320 rows, 525.9s
+hevc_FourPeople_f0200: 1353 rows, 539.8s
+hevc_FourPeople_f0400: 1386 rows, 553.7s
+hevc_Johnny_f0000: 1419 rows, 567.5s
+hevc_Johnny_f0200: 1452 rows, 581.5s
+hevc_Johnny_f0400: 1485 rows, 596.0s
+hevc_KristenAndSara_f0000: 1518 rows, 610.0s
+hevc_KristenAndSara_f0200: 1551 rows, 623.8s
+hevc_KristenAndSara_f0400: 1584 rows, 638.2s
+fresh_div2k_0802: 1617 rows, 653.0s
+fresh_div2k_0804: 1650 rows, 667.1s
+fresh_div2k_0808: 1683 rows, 681.6s
+fresh_div2k_0811: 1716 rows, 695.6s
+fresh_div2k_0813: 1749 rows, 709.8s
+fresh_div2k_0817: 1782 rows, 723.9s
+fresh_div2k_0821: 1815 rows, 738.0s
+fresh_div2k_0823: 1848 rows, 751.8s
+fresh_div2k_0826: 1881 rows, 765.9s
+fresh_div2k_0830: 1914 rows, 780.0s
+fresh_div2k_0832: 1947 rows, 794.1s
+fresh_div2k_0836: 1980 rows, 808.2s
+fresh_div2k_0839: 2013 rows, 822.3s
+fresh_div2k_0842: 2046 rows, 836.4s
+fresh_div2k_0845: 2079 rows, 850.6s
+fresh_div2k_0849: 2112 rows, 864.7s
+fresh_div2k_0851: 2145 rows, 879.0s
+fresh_div2k_0855: 2178 rows, 893.4s
+fresh_div2k_0858: 2211 rows, 907.6s
+fresh_div2k_0861: 2244 rows, 922.0s
+fresh_div2k_0864: 2277 rows, 936.5s
+fresh_div2k_0868: 2310 rows, 950.9s
+fresh_div2k_0870: 2343 rows, 966.0s
+fresh_div2k_0874: 2376 rows, 980.6s
+fresh_div2k_0877: 2409 rows, 995.2s
+fresh_div2k_0879: 2442 rows, 1009.8s
+fresh_div2k_0883: 2475 rows, 1024.4s
+fresh_div2k_0887: 2508 rows, 1039.1s
+fresh_div2k_0889: 2541 rows, 1053.6s
+fresh_div2k_0892: 2574 rows, 1068.1s
+fresh_div2k_0896: 2607 rows, 1082.7s
+fresh_div2k_0899: 2640 rows, 1098.3s
+COMPLETE
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"rows": 2640, "stages": 15840, "paired_conditions": 880, "float_arrays_recomputed": 2640, "max_metric_error": 0.0, "data_checkpoint_matrix_source_hashes_verified": true, "measurement_hashes_recomputed": true}
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[
+  {
+    "dataset": "DIV2K_fresh",
+    "cr": "0.1",
+    "sigma": "0.0",
+    "reference": "hqs_round1",
+    "units": 32,
+    "images": 32,
+    "old_mean_mse": 0.0025959910115396665,
+    "new_mean_mse": 0.0025482825693281877,
+    "mse_reduction_percent": 1.8377737827059426,
+    "bootstrap_low": 0.6812737781568712,
+    "bootstrap_high": 3.4836840605894217,
+    "delta_psnr": 0.08809505533401707,
+    "delta_ssim": 4.079198575587112e-06,
+    "positive_mse_units": 27,
+    "target_at_least_5_percent": false
+  },
+  {
+    "dataset": "HEVC_B",
+    "cr": "0.1",
+    "sigma": "0.0",
+    "reference": "hqs_round1",
+    "units": 5,
+    "images": 15,
+    "old_mean_mse": 0.0008503187518376567,
+    "new_mean_mse": 0.0008423517514025211,
+    "mse_reduction_percent": 0.9369428132588786,
+    "bootstrap_low": 0.40881222110514787,
+    "bootstrap_high": 1.2554490915896777,
+    "delta_psnr": 0.04158902022120827,
+    "delta_ssim": 0.00029853677709301696,
+    "positive_mse_units": 4,
+    "target_at_least_5_percent": false
+  },
+  {
+    "dataset": "HEVC_E",
+    "cr": "0.1",
+    "sigma": "0.0",
+    "reference": "hqs_round1",
+    "units": 3,
+    "images": 9,
+    "old_mean_mse": 0.0004540753614050038,
+    "new_mean_mse": 0.00043198678489471924,
+    "mse_reduction_percent": 4.864517740389596,
+    "bootstrap_low": 1.6023989506021685,
+    "bootstrap_high": 7.25690656831024,
+    "delta_psnr": 0.17132052944472145,
+    "delta_ssim": 0.001233956038236629,
+    "positive_mse_units": 3,
+    "target_at_least_5_percent": false
+  },
+  {
+    "dataset": "Kodak",
+    "cr": "0.1",
+    "sigma": "0.0",
+    "reference": "hqs_round1",
+    "units": 24,
+    "images": 24,
+    "old_mean_mse": 0.0016316587304802271,
+    "new_mean_mse": 0.0016036530125166156,
+    "mse_reduction_percent": 1.7163955575053902,
+    "bootstrap_low": 0.6592172239877786,
+    "bootstrap_high": 3.153423102508294,
+    "delta_psnr": 0.05404588665854796,
+    "delta_ssim": 5.4275120034868084e-05,
+    "positive_mse_units": 21,
+    "target_at_least_5_percent": false
+  }
+]

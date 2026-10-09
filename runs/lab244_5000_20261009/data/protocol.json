@@ -1,0 +1,10 @@
+{
+  "training_originals": 800,
+  "selection_originals": 16,
+  "regression_test_images": 48,
+  "fresh_test_originals": 32,
+  "fresh_rule": "32 evenly indexed originals among the 84 unused DIV2K validation originals",
+  "test_access": "No candidate selection or stopping based on test. Kodak/HEVC were observed in round 1 and are now regression tests.",
+  "source_split_hashes_disjoint": true,
+  "original_pretraining_exposure": "not fully audited"
+}

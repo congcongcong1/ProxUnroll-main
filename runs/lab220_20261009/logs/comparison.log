@@ -1,0 +1,56 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+kodim01: 24 rows, 9.3s
+kodim02: 48 rows, 18.7s
+kodim03: 72 rows, 28.1s
+kodim04: 96 rows, 37.4s
+kodim05: 120 rows, 46.7s
+kodim06: 144 rows, 56.1s
+kodim07: 168 rows, 65.6s
+kodim08: 192 rows, 75.0s
+kodim09: 216 rows, 84.7s
+kodim10: 240 rows, 94.4s
+kodim11: 264 rows, 104.2s
+kodim12: 288 rows, 114.1s
+kodim13: 312 rows, 123.5s
+kodim14: 336 rows, 132.8s
+kodim15: 360 rows, 142.4s
+kodim16: 384 rows, 151.8s
+kodim17: 408 rows, 161.2s
+kodim18: 432 rows, 170.9s
+kodim19: 456 rows, 180.7s
+kodim20: 480 rows, 190.4s
+kodim21: 504 rows, 200.5s
+kodim22: 528 rows, 210.9s
+kodim23: 552 rows, 221.8s
+kodim24: 576 rows, 232.6s
+hevc_BQTerrace_f0000: 600 rows, 242.8s
+hevc_BQTerrace_f0200: 624 rows, 253.0s
+hevc_BQTerrace_f0400: 648 rows, 264.0s
+hevc_BasketballDrive_f0000: 672 rows, 274.6s
+hevc_BasketballDrive_f0167: 696 rows, 285.1s
+hevc_BasketballDrive_f0334: 720 rows, 295.4s
+hevc_Cactus_f0000: 744 rows, 305.8s
+hevc_Cactus_f0166: 768 rows, 316.4s
+hevc_Cactus_f0333: 792 rows, 327.0s
+hevc_Kimono1_f0000: 816 rows, 337.9s
+hevc_Kimono1_f0080: 840 rows, 348.7s
+hevc_Kimono1_f0160: 864 rows, 359.0s
+hevc_ParkScene_f0000: 888 rows, 369.1s
+hevc_ParkScene_f0080: 912 rows, 379.8s
+hevc_ParkScene_f0160: 936 rows, 390.5s
+hevc_FourPeople_f0000: 960 rows, 401.1s
+hevc_FourPeople_f0200: 984 rows, 412.1s
+hevc_FourPeople_f0400: 1008 rows, 423.1s
+hevc_Johnny_f0000: 1032 rows, 434.3s
+hevc_Johnny_f0200: 1056 rows, 445.4s
+hevc_Johnny_f0400: 1080 rows, 456.4s
+hevc_KristenAndSara_f0000: 1104 rows, 467.6s
+hevc_KristenAndSara_f0200: 1128 rows, 478.8s
+hevc_KristenAndSara_f0400: 1152 rows, 489.9s
+COMPLETE
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"rows": 1152, "stages": 6912, "paired_conditions": 384, "float_arrays_recomputed": 1152, "max_metric_error": 0.0, "data_checkpoint_matrix_source_hashes_verified": true, "measurement_hashes_recomputed": true}

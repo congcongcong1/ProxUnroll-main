@@ -1,0 +1,2290 @@
+[
+  {
+    "name": "kodim01",
+    "dataset": "Kodak",
+    "sequence": "kodim01",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim01.png",
+    "source": "/datasets/Kodak/kodim01.png",
+    "source_sha256": "a56e27cbf5f843c048b6af1d6e090760e9c92fadba88b7dee0205918a37523bd",
+    "sha256": "915dd81e52fd91e7f45a89481b0d0f2dc3733ea7e19a34b95c37acf442e74f8d",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim02",
+    "dataset": "Kodak",
+    "sequence": "kodim02",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim02.png",
+    "source": "/datasets/Kodak/kodim02.png",
+    "source_sha256": "4f4b74a79237e311d72cad958237b5f7088d8bce1c82305ebefe1a70e3022dfd",
+    "sha256": "b796e2deee48b1289693aab6af6f844f4b424686ffd57c165617a9f98535606f",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim03",
+    "dataset": "Kodak",
+    "sequence": "kodim03",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim03.png",
+    "source": "/datasets/Kodak/kodim03.png",
+    "source_sha256": "e25ca1ff2f0c0cb5fdfd5f9b0a0bb21ac4c3de3c84a67f35b09a85d3306249db",
+    "sha256": "815bfc397884bdf5866efeb58f7453b5ae319b2daf81b0d2d53b19d64c8548d6",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim04",
+    "dataset": "Kodak",
+    "sequence": "kodim04",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim04.png",
+    "source": "/datasets/Kodak/kodim04.png",
+    "source_sha256": "e3b946107c5d3441c022f678d0c3caf1e224d81b1604ba840a4f88e562de61aa",
+    "sha256": "f4ab27a54749fa840c7cc7166828853f6263e837ee592aa3683768a124c35eb2",
+    "source_dimensions": [
+      512,
+      768
+    ],
+    "crop_xywh": [
+      0,
+      128,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim05",
+    "dataset": "Kodak",
+    "sequence": "kodim05",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim05.png",
+    "source": "/datasets/Kodak/kodim05.png",
+    "source_sha256": "10349e963c5c813d327852f82c1795fa4148d69fedffc4c589bee458e3ac3d53",
+    "sha256": "f0814d41db1fe535fede5433b525080c82c035c1263146fa83670cf7eb963378",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim06",
+    "dataset": "Kodak",
+    "sequence": "kodim06",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim06.png",
+    "source": "/datasets/Kodak/kodim06.png",
+    "source_sha256": "363510303b715d4cbc384e1ce227e466b613a09e1b71ae985882bf8e7fbd9b18",
+    "sha256": "ec290caba6264778a78622ee731a32bcb2b4cbebcdfbadf2cf95c3924b4aba5c",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim07",
+    "dataset": "Kodak",
+    "sequence": "kodim07",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim07.png",
+    "source": "/datasets/Kodak/kodim07.png",
+    "source_sha256": "b77d3f006f42414bb242222e0482e750c0fb9e5ee8d4bed2f6f11c5605fe54a4",
+    "sha256": "bea67aed805828fe2550e18aa9a36ca4df4cadc82398cb0fbb64547691a1b5b9",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim08",
+    "dataset": "Kodak",
+    "sequence": "kodim08",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim08.png",
+    "source": "/datasets/Kodak/kodim08.png",
+    "source_sha256": "ba23983c76b4832ee0e8af0592664756841a16779acd69f792e268fb6d13d6e7",
+    "sha256": "cfbefec8df1b32dfda0a822aaf24aa24a2d21503dea36da06833ba37c3655331",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim09",
+    "dataset": "Kodak",
+    "sequence": "kodim09",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim09.png",
+    "source": "/datasets/Kodak/kodim09.png",
+    "source_sha256": "6a4361c2fc194feb4edaa9f9a4a0620fb9943e460ac7fdf037fb0f6dd6607a7d",
+    "sha256": "bcca2c1b47173de71d846685eda905d486c7fb22c34bb9f92cfda5ab9552e3d0",
+    "source_dimensions": [
+      512,
+      768
+    ],
+    "crop_xywh": [
+      0,
+      128,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim10",
+    "dataset": "Kodak",
+    "sequence": "kodim10",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim10.png",
+    "source": "/datasets/Kodak/kodim10.png",
+    "source_sha256": "9dfb70f5867c29ff9ed6313683f19b3d867849e40fbc0c4c54a4a89df341cf23",
+    "sha256": "70f3f155e08b018b23bbe0c106cbb2c84842f262778c74e7a3cbd7e342b6cc92",
+    "source_dimensions": [
+      512,
+      768
+    ],
+    "crop_xywh": [
+      0,
+      128,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim11",
+    "dataset": "Kodak",
+    "sequence": "kodim11",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim11.png",
+    "source": "/datasets/Kodak/kodim11.png",
+    "source_sha256": "7936814b58b5387fce2e4e2488b4ec830dadd95fa9520f358ddb30990b50f2b6",
+    "sha256": "cb5a8bd567cfd3bc20c2de34764f0e13a99469bddfcec74b4e0ae03f1a655cfc",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim12",
+    "dataset": "Kodak",
+    "sequence": "kodim12",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim12.png",
+    "source": "/datasets/Kodak/kodim12.png",
+    "source_sha256": "d78c37c2f04f23761ed2367dd77e2db584ddd4c3950833fecf89f199a8126980",
+    "sha256": "9e98391321ae1667f71509233e43214c4a40e9a342864a59639d58921295af27",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim13",
+    "dataset": "Kodak",
+    "sequence": "kodim13",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim13.png",
+    "source": "/datasets/Kodak/kodim13.png",
+    "source_sha256": "bc34a3ce58dea09dce1704c997171602de90cb34d0c8503a988b77f473d39b08",
+    "sha256": "0d8f7ab070cb955985f12dbfac3ebeeb542ba59936fdd9f1fcbdd5c179af234a",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim14",
+    "dataset": "Kodak",
+    "sequence": "kodim14",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim14.png",
+    "source": "/datasets/Kodak/kodim14.png",
+    "source_sha256": "55a94550ff18f3246c4074fd32b77b0c74447c26b6ad274d564d999c0450ba6e",
+    "sha256": "062a26257f4069be63706a2e5bccb84b7382d836b09716177fc6773433fe5405",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim15",
+    "dataset": "Kodak",
+    "sequence": "kodim15",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim15.png",
+    "source": "/datasets/Kodak/kodim15.png",
+    "source_sha256": "7538cbb80cb9103606c48b806eae57d56c885c7f90b9b3be70a41160f9cbb683",
+    "sha256": "a04091f8e25378c32c6b2c1273363871a67b69ecfc65ca721aaf08e01ebf68eb",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim16",
+    "dataset": "Kodak",
+    "sequence": "kodim16",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim16.png",
+    "source": "/datasets/Kodak/kodim16.png",
+    "source_sha256": "a89c7268ccd4718ba424a99fc4643c572cf692ca6eae887185ceb4e9f11d2e54",
+    "sha256": "b83393776396cad307efc743ca790bbea5a172236015b2734f6ae6e71f88d926",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim17",
+    "dataset": "Kodak",
+    "sequence": "kodim17",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim17.png",
+    "source": "/datasets/Kodak/kodim17.png",
+    "source_sha256": "37afcc89fbdcb76d9518e04b2fc011027e2f4cd14b3b2f83cefd721641a47c5b",
+    "sha256": "a9df7a7f9bfb7a2930bd8070ca6207dc2c11301282c48879e62ac35eef58873c",
+    "source_dimensions": [
+      512,
+      768
+    ],
+    "crop_xywh": [
+      0,
+      128,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim18",
+    "dataset": "Kodak",
+    "sequence": "kodim18",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim18.png",
+    "source": "/datasets/Kodak/kodim18.png",
+    "source_sha256": "1a9258c365988961d87a0598725b609139c303ad48a5aad6c503c3b1a87849aa",
+    "sha256": "5da0ea781cca3662a0c54424220132751adea9beff8945cf4c8f492ca8cbe5c7",
+    "source_dimensions": [
+      512,
+      768
+    ],
+    "crop_xywh": [
+      0,
+      128,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim19",
+    "dataset": "Kodak",
+    "sequence": "kodim19",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim19.png",
+    "source": "/datasets/Kodak/kodim19.png",
+    "source_sha256": "b7450b264b1b0a411390d8931b112c27905a992520fc90569dc4b920aa32bbdc",
+    "sha256": "77b3348e767425af43883a30515d52ea8858262ea93cffa87116786b8fe71f15",
+    "source_dimensions": [
+      512,
+      768
+    ],
+    "crop_xywh": [
+      0,
+      128,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim20",
+    "dataset": "Kodak",
+    "sequence": "kodim20",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim20.png",
+    "source": "/datasets/Kodak/kodim20.png",
+    "source_sha256": "3b46c71e3b92a563820ba32936be8330c586c41f938efd94be938386aae4328a",
+    "sha256": "d5b2b9552f4427b72197a71475cf0272fac9393db2e3c1cba9525ae7bfa96af2",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim21",
+    "dataset": "Kodak",
+    "sequence": "kodim21",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim21.png",
+    "source": "/datasets/Kodak/kodim21.png",
+    "source_sha256": "ac958597c82073f6bb65129c68f72b651db5b9efd82e11547d07350214bc268b",
+    "sha256": "dfd5fdbcc3fe01a96f673b19f13d63b8085dace9b33d9c365b754b0ad038e57d",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim22",
+    "dataset": "Kodak",
+    "sequence": "kodim22",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim22.png",
+    "source": "/datasets/Kodak/kodim22.png",
+    "source_sha256": "1cee58eb1f2d9c7ebb254d208a03c783ce6cf2c4d8c2cf45e235dd23b4ce1b29",
+    "sha256": "f81891813fcf6dcc394d97bc3147fc5a50a6133e6671cdb1eb6ee40df4bec7de",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim23",
+    "dataset": "Kodak",
+    "sequence": "kodim23",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim23.png",
+    "source": "/datasets/Kodak/kodim23.png",
+    "source_sha256": "e3111a2fd4da24af15d6459ef9eacfe54106b38e27b4a21821b75c3f5d2d5baf",
+    "sha256": "234fc378e73cace7a63b82d07a3b884c6aec0602fb9f71c6b9ec231d7abbeb45",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "kodim24",
+    "dataset": "Kodak",
+    "sequence": "kodim24",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/kodim24.png",
+    "source": "/datasets/Kodak/kodim24.png",
+    "source_sha256": "1071c68372cc5a01435c2c225a5cf7d4bb803846ec08bb6b3d6721b156d7cb96",
+    "sha256": "4403791bdd429efae92c0c52b71744b9bd76aa07fe8539429b675ce29b913c15",
+    "source_dimensions": [
+      768,
+      512
+    ],
+    "crop_xywh": [
+      128,
+      0,
+      512,
+      512
+    ],
+    "preprocessing": "center maximal square; OpenCV INTER_AREA to 256x256; stored uint8 Y /255; no range expansion",
+    "color": "OpenCV RGB2YCrCb Y",
+    "frame": null,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_BQTerrace_f0000",
+    "dataset": "HEVC_B",
+    "sequence": "BQTerrace",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_BQTerrace_f0000.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/BQTerrace_1920x1080_60.yuv",
+    "source_sha256": "1b3be4202b8b5fb1b53afa8f4dceb3a832f0d79d5eee980d91a089501887036c",
+    "sha256": "5b239375d337e35454315c5261de6cc7bfd95705598e63340d6584bdca8e0b33",
+    "frame": 0,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 601,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "40454da92d6bcd66757a280d0ed89f8d53bb4cadd27d6fb0e158f07f8bcd537f",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 17,
+    "y_max": 235,
+    "y_p01": 41.0,
+    "y_p99": 235.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_BQTerrace_f0200",
+    "dataset": "HEVC_B",
+    "sequence": "BQTerrace",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_BQTerrace_f0200.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/BQTerrace_1920x1080_60.yuv",
+    "source_sha256": "1b3be4202b8b5fb1b53afa8f4dceb3a832f0d79d5eee980d91a089501887036c",
+    "sha256": "d1be2ef24256814ad23240d7a296ac8e3d0093d7c8f73f3d2c4dd1ce8a5c5eec",
+    "frame": 200,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 601,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "0ad86e1e128700aa9f63ed34f0e8db591cb63463b94a81a9dc20eb79809ae24a",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 17,
+    "y_max": 235,
+    "y_p01": 40.0,
+    "y_p99": 232.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_BQTerrace_f0400",
+    "dataset": "HEVC_B",
+    "sequence": "BQTerrace",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_BQTerrace_f0400.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/BQTerrace_1920x1080_60.yuv",
+    "source_sha256": "1b3be4202b8b5fb1b53afa8f4dceb3a832f0d79d5eee980d91a089501887036c",
+    "sha256": "d2a0bcfaa6e5d744965a1dc78bafc84ed64d35b9c729c084cd423be3aba93c5d",
+    "frame": 400,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 601,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "3a36c53344d7b183fc283fe7dacf1877af3c058b0745edf97acf19e0171466a2",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 17,
+    "y_max": 235,
+    "y_p01": 38.0,
+    "y_p99": 233.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_BasketballDrive_f0000",
+    "dataset": "HEVC_B",
+    "sequence": "BasketballDrive",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_BasketballDrive_f0000.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/BasketballDrive_1920x1080_50.yuv",
+    "source_sha256": "9063f3ee1e8a1a466cd2e73dd32724e6449ab6751b9a2472922c77dec7b8595f",
+    "sha256": "34a233a5733a26d83a3aa1a8a071bcd5b29727af265adc835a01e5c38b3e1fa8",
+    "frame": 0,
+    "frame_indexing": "zero based",
+    "fps": 50,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 501,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "31d8f42842be78efe2797d1e28a3762ee56fbb33b88e3b0bd550481ad4ec8dd9",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 17,
+    "y_max": 235,
+    "y_p01": 31.0,
+    "y_p99": 207.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_BasketballDrive_f0167",
+    "dataset": "HEVC_B",
+    "sequence": "BasketballDrive",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_BasketballDrive_f0167.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/BasketballDrive_1920x1080_50.yuv",
+    "source_sha256": "9063f3ee1e8a1a466cd2e73dd32724e6449ab6751b9a2472922c77dec7b8595f",
+    "sha256": "2a29653bb026774c3016a0ec501074d22cac775f427dd32277250a11ccf802a0",
+    "frame": 167,
+    "frame_indexing": "zero based",
+    "fps": 50,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 501,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "59facb69711b12360a6012edbdc6f82f121170356889a63b80e8241c1c900790",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 17,
+    "y_max": 235,
+    "y_p01": 29.0,
+    "y_p99": 210.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_BasketballDrive_f0334",
+    "dataset": "HEVC_B",
+    "sequence": "BasketballDrive",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_BasketballDrive_f0334.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/BasketballDrive_1920x1080_50.yuv",
+    "source_sha256": "9063f3ee1e8a1a466cd2e73dd32724e6449ab6751b9a2472922c77dec7b8595f",
+    "sha256": "5c00b07f3bdeba37925372723c9b52dcb7ab50f0bf15f9a3e9c50930d438ca69",
+    "frame": 334,
+    "frame_indexing": "zero based",
+    "fps": 50,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 501,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "5194bb31d2887304e84903a0da6b3d07f3d6daeb2dddc569e56c247e3626fb13",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 17,
+    "y_max": 235,
+    "y_p01": 32.0,
+    "y_p99": 208.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_Cactus_f0000",
+    "dataset": "HEVC_B",
+    "sequence": "Cactus",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_Cactus_f0000.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/Cactus_1920x1080_50.yuv",
+    "source_sha256": "f2eb36894bdd93004a3eb02e1245f8bf26d1b945267bcabae06c2ab3854b4587",
+    "sha256": "c7dd2cc8cfc1152034c6a43c68e00d5266a9fe6cf8ac7410b529135c2ecc67a7",
+    "frame": 0,
+    "frame_indexing": "zero based",
+    "fps": 50,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 500,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "65be390bacb70e95f1bfa0bf2270580bfffcf1b6355e531469824b22d9908aec",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 0,
+    "y_max": 255,
+    "y_p01": 17.0,
+    "y_p99": 241.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_Cactus_f0166",
+    "dataset": "HEVC_B",
+    "sequence": "Cactus",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_Cactus_f0166.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/Cactus_1920x1080_50.yuv",
+    "source_sha256": "f2eb36894bdd93004a3eb02e1245f8bf26d1b945267bcabae06c2ab3854b4587",
+    "sha256": "15aa5d35b2aa4c9accaeb1d480ac9cdf190701a3e8077d8761e73a9bab8ceaba",
+    "frame": 166,
+    "frame_indexing": "zero based",
+    "fps": 50,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 500,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "94eea33d27db1a7e1d8e57d28908796cc059e214308ff93ffcc8bec305ecad53",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 0,
+    "y_max": 255,
+    "y_p01": 18.0,
+    "y_p99": 242.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_Cactus_f0333",
+    "dataset": "HEVC_B",
+    "sequence": "Cactus",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_Cactus_f0333.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/Cactus_1920x1080_50.yuv",
+    "source_sha256": "f2eb36894bdd93004a3eb02e1245f8bf26d1b945267bcabae06c2ab3854b4587",
+    "sha256": "70f04c2fbc676e06c7f37fed3437fd44c01858f9bed636a5f1c9dbd1b8579389",
+    "frame": 333,
+    "frame_indexing": "zero based",
+    "fps": 50,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 500,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "8147209cbdfc806a8821709f04e80d8ea7c0b5eae4e9b5d118dbfdda492526c5",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 0,
+    "y_max": 255,
+    "y_p01": 17.0,
+    "y_p99": 241.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_Kimono1_f0000",
+    "dataset": "HEVC_B",
+    "sequence": "Kimono1",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_Kimono1_f0000.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/Kimono1_1920x1080_24.yuv",
+    "source_sha256": "4708b443662722a081cff8eaa9fd3426be76b1f6d144c78d0d477ffd98df14c2",
+    "sha256": "e7e99eac5b29523fa823500a219721a46d09809c90ab411589a110f754b278d9",
+    "frame": 0,
+    "frame_indexing": "zero based",
+    "fps": 24,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 240,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "147e8cf1cdeb5dd88b38797e93ea3f9ffedc789c5ff6d01e05cf36956e523b98",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 18,
+    "y_max": 234,
+    "y_p01": 26.0,
+    "y_p99": 210.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_Kimono1_f0080",
+    "dataset": "HEVC_B",
+    "sequence": "Kimono1",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_Kimono1_f0080.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/Kimono1_1920x1080_24.yuv",
+    "source_sha256": "4708b443662722a081cff8eaa9fd3426be76b1f6d144c78d0d477ffd98df14c2",
+    "sha256": "5976cccf2222acf51fd11944810e2e322cbddc85c63ffd17611d0e9db2a43679",
+    "frame": 80,
+    "frame_indexing": "zero based",
+    "fps": 24,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 240,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "e9bb0f75481839567a1d913d6205c782e2163313e976b20e997e2d9d5b59365f",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 18,
+    "y_max": 234,
+    "y_p01": 26.0,
+    "y_p99": 213.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_Kimono1_f0160",
+    "dataset": "HEVC_B",
+    "sequence": "Kimono1",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_Kimono1_f0160.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/Kimono1_1920x1080_24.yuv",
+    "source_sha256": "4708b443662722a081cff8eaa9fd3426be76b1f6d144c78d0d477ffd98df14c2",
+    "sha256": "200d2b7a4af8cafdf0f07b670077def43ac56b61683fdef0e274500602fc380e",
+    "frame": 160,
+    "frame_indexing": "zero based",
+    "fps": 24,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 240,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "4cfa6d3e410481e240e2be7b0429446a8c344a51f8c6ede1f6a75ddd05bf3b2e",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 16,
+    "y_max": 250,
+    "y_p01": 23.0,
+    "y_p99": 197.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_ParkScene_f0000",
+    "dataset": "HEVC_B",
+    "sequence": "ParkScene",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_ParkScene_f0000.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/ParkScene_1920x1080_24.yuv",
+    "source_sha256": "14de30cf0e9473bec2559149b05a0f9e6e3d1bebc837ac6d01cd80dc1bab5b79",
+    "sha256": "0395bd291e29b0340b614780756cf5d28bb5b3bbdd85161f6f08011eb26f9af5",
+    "frame": 0,
+    "frame_indexing": "zero based",
+    "fps": 24,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 240,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "7c9d370e927538c6ea27aabecf5910b9e745c65effd831b0d9a2da17ec9a05f7",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 16,
+    "y_max": 251,
+    "y_p01": 29.0,
+    "y_p99": 156.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_ParkScene_f0080",
+    "dataset": "HEVC_B",
+    "sequence": "ParkScene",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_ParkScene_f0080.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/ParkScene_1920x1080_24.yuv",
+    "source_sha256": "14de30cf0e9473bec2559149b05a0f9e6e3d1bebc837ac6d01cd80dc1bab5b79",
+    "sha256": "3d79f167213fab55963c12ab22a6cdb9cc05ae6c37b98b95012831b0f02752b9",
+    "frame": 80,
+    "frame_indexing": "zero based",
+    "fps": 24,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 240,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "80de5560151f9848add30fa08166c3004e79b1a38c10e93bcee5b2d4103d14de",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 21,
+    "y_max": 250,
+    "y_p01": 32.0,
+    "y_p99": 162.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_ParkScene_f0160",
+    "dataset": "HEVC_B",
+    "sequence": "ParkScene",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_ParkScene_f0160.png",
+    "source": "/datasets/HEVC_test_sequences/ClassB/ParkScene_1920x1080_24.yuv",
+    "source_sha256": "14de30cf0e9473bec2559149b05a0f9e6e3d1bebc837ac6d01cd80dc1bab5b79",
+    "sha256": "510e53a4be2343975b20c4e32846dfa375b51893f21ec249d12a574538df6c89",
+    "frame": 160,
+    "frame_indexing": "zero based",
+    "fps": 24,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 240,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "132166babcd02515561ac79ca751b5d77fc2e1a0a0fa03cbf4d2299c4b845551",
+    "crop_xywh": [
+      420,
+      0,
+      1080,
+      1080
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 16,
+    "y_max": 251,
+    "y_p01": 33.0,
+    "y_p99": 165.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_FourPeople_f0000",
+    "dataset": "HEVC_E",
+    "sequence": "FourPeople",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_FourPeople_f0000.png",
+    "source": "/datasets/HEVC_test_sequences/ClassE/FourPeople_1280x720_60.yuv",
+    "source_sha256": "f2b3f865a1cb9c2a903abfc0c46a356a7528793ed7090530c9b0b7cea29e3b3a",
+    "sha256": "40651333bdf1d1dca648cd3dcca2af8c24b6e52219fd96a944ad62ef5cac3dca",
+    "frame": 0,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "frames": 600,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "c575f55fe861753059d76d29add8df5af91c03d3942d9f41b08188ef876562b2",
+    "crop_xywh": [
+      280,
+      0,
+      720,
+      720
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 16,
+    "y_max": 236,
+    "y_p01": 22.0,
+    "y_p99": 199.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_FourPeople_f0200",
+    "dataset": "HEVC_E",
+    "sequence": "FourPeople",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_FourPeople_f0200.png",
+    "source": "/datasets/HEVC_test_sequences/ClassE/FourPeople_1280x720_60.yuv",
+    "source_sha256": "f2b3f865a1cb9c2a903abfc0c46a356a7528793ed7090530c9b0b7cea29e3b3a",
+    "sha256": "42ee5a68932b5db6322816d1986957a0ba0a43c8b955a8acfe099ae444a485c1",
+    "frame": 200,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "frames": 600,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "872da1fb36a833820cecab35268672eedd413c669786cfafc5b7720681d327ee",
+    "crop_xywh": [
+      280,
+      0,
+      720,
+      720
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 16,
+    "y_max": 237,
+    "y_p01": 22.0,
+    "y_p99": 202.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_FourPeople_f0400",
+    "dataset": "HEVC_E",
+    "sequence": "FourPeople",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_FourPeople_f0400.png",
+    "source": "/datasets/HEVC_test_sequences/ClassE/FourPeople_1280x720_60.yuv",
+    "source_sha256": "f2b3f865a1cb9c2a903abfc0c46a356a7528793ed7090530c9b0b7cea29e3b3a",
+    "sha256": "f9eafe8ba56e9ff6ce44003422ef735e710b640a367c18aee50e07e727cc45bd",
+    "frame": 400,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "frames": 600,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "141ac9e47e16b7fb2aee773880ad8f10cf3df3c09a180f92d646b32f8084feac",
+    "crop_xywh": [
+      280,
+      0,
+      720,
+      720
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 16,
+    "y_max": 236,
+    "y_p01": 22.0,
+    "y_p99": 201.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_Johnny_f0000",
+    "dataset": "HEVC_E",
+    "sequence": "Johnny",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_Johnny_f0000.png",
+    "source": "/datasets/HEVC_test_sequences/ClassE/Johnny_1280x720_60.yuv",
+    "source_sha256": "69e56cc75d40ed9e88ce39dd7662d2cde4eab33989242894ca7dd46f24b04acb",
+    "sha256": "6ef359e211e3c5dc90e630a7e08688f7a74c00f33f2f384821cb8daf1826f7d2",
+    "frame": 0,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "frames": 600,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "6659e20dc042035ba789124ff3b876511c21fa5dc3065e15caa7a9c537b2da33",
+    "crop_xywh": [
+      280,
+      0,
+      720,
+      720
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 19,
+    "y_max": 236,
+    "y_p01": 44.0,
+    "y_p99": 229.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_Johnny_f0200",
+    "dataset": "HEVC_E",
+    "sequence": "Johnny",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_Johnny_f0200.png",
+    "source": "/datasets/HEVC_test_sequences/ClassE/Johnny_1280x720_60.yuv",
+    "source_sha256": "69e56cc75d40ed9e88ce39dd7662d2cde4eab33989242894ca7dd46f24b04acb",
+    "sha256": "22f64c98cbd74259897659e175136d7bb5b059d7ac9973d9809255a4fef10979",
+    "frame": 200,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "frames": 600,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "70549ac10d44fe9f3b4acd01ddd12be3ec5d51153699437d5c35b4d0db9851b5",
+    "crop_xywh": [
+      280,
+      0,
+      720,
+      720
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 20,
+    "y_max": 236,
+    "y_p01": 46.0,
+    "y_p99": 228.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_Johnny_f0400",
+    "dataset": "HEVC_E",
+    "sequence": "Johnny",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_Johnny_f0400.png",
+    "source": "/datasets/HEVC_test_sequences/ClassE/Johnny_1280x720_60.yuv",
+    "source_sha256": "69e56cc75d40ed9e88ce39dd7662d2cde4eab33989242894ca7dd46f24b04acb",
+    "sha256": "4c8a849a196adb1e1fbfa1d82bb4651be66021a8b5e2fc3ddb96e6812d61adc0",
+    "frame": 400,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "frames": 600,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "9a4af83adc9ab0d827004b8d01d8fad9e39615abe6a5a9c855fb2a206373aeb4",
+    "crop_xywh": [
+      280,
+      0,
+      720,
+      720
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 24,
+    "y_max": 235,
+    "y_p01": 46.0,
+    "y_p99": 228.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_KristenAndSara_f0000",
+    "dataset": "HEVC_E",
+    "sequence": "KristenAndSara",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_KristenAndSara_f0000.png",
+    "source": "/datasets/HEVC_test_sequences/ClassE/KristenAndSara_1280x720_60.yuv",
+    "source_sha256": "9ed8e1f36bf12e50912cc584e8dea241ce184ee739ed9045b2818973f18a9249",
+    "sha256": "650e9f0fcb3a3bfb71b44ee653c2ee961291ae0881a74071412353c70e74f793",
+    "frame": 0,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "frames": 600,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "a945834ab9f677b6baf8d72be1daf6f832f18bf0b88f13f43c798a1b2f912b40",
+    "crop_xywh": [
+      280,
+      0,
+      720,
+      720
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 16,
+    "y_max": 236,
+    "y_p01": 28.0,
+    "y_p99": 227.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_KristenAndSara_f0200",
+    "dataset": "HEVC_E",
+    "sequence": "KristenAndSara",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_KristenAndSara_f0200.png",
+    "source": "/datasets/HEVC_test_sequences/ClassE/KristenAndSara_1280x720_60.yuv",
+    "source_sha256": "9ed8e1f36bf12e50912cc584e8dea241ce184ee739ed9045b2818973f18a9249",
+    "sha256": "b3aa5dbb87ae80652efeda7f39afe642eb63fa260782c1b0380cb02cd7810c91",
+    "frame": 200,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "frames": 600,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "dadee257227e5c2f214c4a155d766460dfccbc5f32ed81b6168652115aaf6c27",
+    "crop_xywh": [
+      280,
+      0,
+      720,
+      720
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 16,
+    "y_max": 236,
+    "y_p01": 28.0,
+    "y_p99": 227.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "hevc_KristenAndSara_f0400",
+    "dataset": "HEVC_E",
+    "sequence": "KristenAndSara",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab220_20261009/data/hevc_KristenAndSara_f0400.png",
+    "source": "/datasets/HEVC_test_sequences/ClassE/KristenAndSara_1280x720_60.yuv",
+    "source_sha256": "9ed8e1f36bf12e50912cc584e8dea241ce184ee739ed9045b2818973f18a9249",
+    "sha256": "ac486cce090260c95cc9944d7150662ca3569d91fcecb7be6e2ba61ff86ebe2f",
+    "frame": 400,
+    "frame_indexing": "zero based",
+    "fps": 60,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "frames": 600,
+    "bit_depth": 8,
+    "pixel_format": "yuv420p",
+    "stored_range": [
+      0,
+      255
+    ],
+    "nominal_video_luma_range": [
+      16,
+      235
+    ],
+    "range_policy": "preserve stored Y codes /255; no inferred tv/full conversion",
+    "frame_sha256": "69b2c54c203db9ac699e60e3830407c62e3719e1a35cb19b159d1b1cb369ad66",
+    "crop_xywh": [
+      280,
+      0,
+      720,
+      720
+    ],
+    "preprocessing": "raw Y plane; center maximal square; OpenCV INTER_AREA to 256x256; uint8 /255",
+    "y_min": 16,
+    "y_max": 236,
+    "y_p01": 27.0,
+    "y_p99": 227.0,
+    "role": "previously_observed_regression_test"
+  },
+  {
+    "name": "fresh_div2k_0802",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0802",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0802.png",
+    "source": "/datasets/DIV2K_valid_HR/0802.png",
+    "source_sha256": "4ad6f3ca8bf740192042978121f05ec493ddbe5a3da5584eaf0d9699c25ee431",
+    "sha256": "eac9dd149e39a73fd2dee48085f18bcb7f967931e95269be11fa8d2fa7cc059a",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0804",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0804",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0804.png",
+    "source": "/datasets/DIV2K_valid_HR/0804.png",
+    "source_sha256": "16b5fdbe808b868bed0be32f235208a1716d44e271a37b79cbc77ab53d2f6bdb",
+    "sha256": "4955b2d2e5a1ef361ab1784d988854af870a6a409ff80f1f467afbd3c228bb69",
+    "source_dimensions": [
+      2040,
+      1200
+    ],
+    "crop_xywh": [
+      420,
+      0,
+      1200,
+      1200
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0808",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0808",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0808.png",
+    "source": "/datasets/DIV2K_valid_HR/0808.png",
+    "source_sha256": "956528ab3e0fadad1ed8ce93f93a30bf9f58c36ffa9dd775e2ad362ffdcf5ace",
+    "sha256": "40673b9ccdfc30f4e383f152c5e3c730048d495c98c775ca3f62ce1fbea1d051",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0811",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0811",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0811.png",
+    "source": "/datasets/DIV2K_valid_HR/0811.png",
+    "source_sha256": "7016bcf4112049162da604772c810bed4f5983af52e07d23755ac2c3475fe8ad",
+    "sha256": "c649914065015fd0d014073038526e8bef598871b355054c06c15a0565cbbe63",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0813",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0813",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0813.png",
+    "source": "/datasets/DIV2K_valid_HR/0813.png",
+    "source_sha256": "71c06a2c36979345c99c887e7bd6aebfd0bd1648d93b7bd15f56c65e1291b37e",
+    "sha256": "7c6e1b566978d3cce4d6f8f7e53caa3a792939209ef0b2dd804cc8ff9ecc5017",
+    "source_dimensions": [
+      2040,
+      1464
+    ],
+    "crop_xywh": [
+      288,
+      0,
+      1464,
+      1464
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0817",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0817",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0817.png",
+    "source": "/datasets/DIV2K_valid_HR/0817.png",
+    "source_sha256": "fdb28a6df3408758cc6d87563a157081c22d1325ea6d8034405ce45abcfc3879",
+    "sha256": "4b798523d09806c50d88cf09ba073621c17d77b124e126c1cc64a173ca56e0f9",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0821",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0821",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0821.png",
+    "source": "/datasets/DIV2K_valid_HR/0821.png",
+    "source_sha256": "0eb14dfcb1d21cb5d3437dc5135c458154cd7fabed8147fbdc415d3ef671c14b",
+    "sha256": "5737c88cfb3408367de6c02daaa8762985eec29405a6839541274c6eb3a62b02",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0823",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0823",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0823.png",
+    "source": "/datasets/DIV2K_valid_HR/0823.png",
+    "source_sha256": "8db26bddf2ac9975e5227be3eb1180f6377145eee5dca1e421100014cbd7ef6e",
+    "sha256": "38b2b27b6449e1048e1749b33b3792f41183c0e24a53b0ee2b2c18f3dffe0513",
+    "source_dimensions": [
+      2040,
+      1284
+    ],
+    "crop_xywh": [
+      378,
+      0,
+      1284,
+      1284
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0826",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0826",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0826.png",
+    "source": "/datasets/DIV2K_valid_HR/0826.png",
+    "source_sha256": "b0f675a14e8fe9f2ec0b705bee98d75f8a22478eafdc1a0a0afc0f820bc5ab4d",
+    "sha256": "54a24583ebf2bf6009c28617e828d8af441ee6bea974f4f4bade161a094d50f9",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0830",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0830",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0830.png",
+    "source": "/datasets/DIV2K_valid_HR/0830.png",
+    "source_sha256": "4eb18566ab01447a06daf0314a3711aa78cea5ca0eaa47cfedafbceeb6dd0a3e",
+    "sha256": "ba630ff9fdb35dfc416b58bf7a07cf9ef0577faae9a5cf4c4cfdcb2372c503fc",
+    "source_dimensions": [
+      2040,
+      816
+    ],
+    "crop_xywh": [
+      612,
+      0,
+      816,
+      816
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0832",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0832",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0832.png",
+    "source": "/datasets/DIV2K_valid_HR/0832.png",
+    "source_sha256": "5c609d644b5924900e82dbecadfb85497b77d6cfad52a0c4c7e43a83f9868c33",
+    "sha256": "f14fd182bf6bbeac98e0125e6aafec3ee0eab6b6860a3e09cefef5505a223d67",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0836",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0836",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0836.png",
+    "source": "/datasets/DIV2K_valid_HR/0836.png",
+    "source_sha256": "d056c4afc22367640c8ec7a1b84c06eaa7405e29363f0e75ea824e15aec149d0",
+    "sha256": "fc512b745b054128cc4874039a9665fbabe05661f59ad312ab09762232f055fd",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0839",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0839",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0839.png",
+    "source": "/datasets/DIV2K_valid_HR/0839.png",
+    "source_sha256": "818abf16ba0aacc3fb6737c5ddd7c2188ca7321b6b28b7f4ba1898627387dee7",
+    "sha256": "8d1a317c24956b817cebcad9e4e9c975ae195c06af0b747dd71993b478ec0542",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0842",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0842",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0842.png",
+    "source": "/datasets/DIV2K_valid_HR/0842.png",
+    "source_sha256": "c6ec845abfd696fcf5f39beadb8632ecc56ac8416318a9dbb27c4c4d294aa592",
+    "sha256": "4c939ac0e15a243d4613ac975d2d0f3f0c1e6935de600419a625b4f81a4adebe",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0845",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0845",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0845.png",
+    "source": "/datasets/DIV2K_valid_HR/0845.png",
+    "source_sha256": "35416e153d4ffd1f83df1502dca371db2059e818b72c1e3a95fb9a9266b59172",
+    "sha256": "8070e217e2ab76452d18f7f701192e330e002181ca18cd5946175e03d3589cb1",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0849",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0849",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0849.png",
+    "source": "/datasets/DIV2K_valid_HR/0849.png",
+    "source_sha256": "1d576e20f4720050d0b7af5295b323c342a5284ed75a8ce3bae6e0cb46c89eb6",
+    "sha256": "0fbfcfee703a31c508a0590c3848fb09e5267f5d5cb8b0e8adbe07d3278f6679",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0851",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0851",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0851.png",
+    "source": "/datasets/DIV2K_valid_HR/0851.png",
+    "source_sha256": "1c4bc95887a3c06f9690fec153d5548ec52039c8ba83da749f2b5f6e0d2ecf33",
+    "sha256": "53d8cd57a8151351415128691ade6bb167ee4879c7c4456322307128f2b56749",
+    "source_dimensions": [
+      2040,
+      1344
+    ],
+    "crop_xywh": [
+      348,
+      0,
+      1344,
+      1344
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0855",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0855",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0855.png",
+    "source": "/datasets/DIV2K_valid_HR/0855.png",
+    "source_sha256": "86001004f1eb6a1e182bb2ed3c23093d2656690a61091b2822af1c9124a40141",
+    "sha256": "82bfac45b77357983cfaf6d0bc5ecbb2c81bc61e048847a04f8f5542467d9ec2",
+    "source_dimensions": [
+      2040,
+      2040
+    ],
+    "crop_xywh": [
+      0,
+      0,
+      2040,
+      2040
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0858",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0858",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0858.png",
+    "source": "/datasets/DIV2K_valid_HR/0858.png",
+    "source_sha256": "428049494acf4dadf08c5bd62c8711ac258af5fa0f008b5fb389a4fffca96c58",
+    "sha256": "3ea2b9a3b9986e4b6bab33b9ffc002f459fcfa4a0b8cf9ef87f299bfc3dc4165",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0861",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0861",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0861.png",
+    "source": "/datasets/DIV2K_valid_HR/0861.png",
+    "source_sha256": "c6fe192a3f1b702948e99c483f04edfb362d2d218082a12457a5b0f09219ffc6",
+    "sha256": "68ce48895e5995898a1bd1e6745c884eec43b7b1ffd8bdd5e8d2f88e8be00ca6",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0864",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0864",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0864.png",
+    "source": "/datasets/DIV2K_valid_HR/0864.png",
+    "source_sha256": "ca9811dd5910f947ee4dc75f709dcffe17bb7811ca562a0e4bcdefc781eadd76",
+    "sha256": "31737845b5fca8317f7b9cddb332fa602a464805a51ae09eaf8b839708966499",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0868",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0868",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0868.png",
+    "source": "/datasets/DIV2K_valid_HR/0868.png",
+    "source_sha256": "ba7de4237fa7cbdc2fff31f35015711909e501230e7c2f3f01f4e8dcf7a23c95",
+    "sha256": "bc31360126a4c27b6e376e881c9861baafd0f4fc811c761daa8f7ad66e125702",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0870",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0870",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0870.png",
+    "source": "/datasets/DIV2K_valid_HR/0870.png",
+    "source_sha256": "f03f496bb0f21d53012723782bfdbcbbde66115c45c35aa7d83373c304a9c041",
+    "sha256": "ecfceadb52947becb7d82500d1ee4fd6116a22c87418a6b26fabf040c61e9e4c",
+    "source_dimensions": [
+      2040,
+      1572
+    ],
+    "crop_xywh": [
+      234,
+      0,
+      1572,
+      1572
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0874",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0874",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0874.png",
+    "source": "/datasets/DIV2K_valid_HR/0874.png",
+    "source_sha256": "11cb511247d70d84adad5557a720254e5f73e3786dbcd399c6053a1982ce1784",
+    "sha256": "a749db84c6cb54b24a96fab71948dc9d5086185c52f489284ac357705f08011e",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0877",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0877",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0877.png",
+    "source": "/datasets/DIV2K_valid_HR/0877.png",
+    "source_sha256": "4e0fb583729accf7b93e07b2b81ce8d919f6490cee2d1f90db90b60095a59165",
+    "sha256": "489d99472388bf76a4e504af230b69025d05365edd515c3292004093bb90c05c",
+    "source_dimensions": [
+      2040,
+      1152
+    ],
+    "crop_xywh": [
+      444,
+      0,
+      1152,
+      1152
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0879",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0879",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0879.png",
+    "source": "/datasets/DIV2K_valid_HR/0879.png",
+    "source_sha256": "ad5eb9637c891994c00f44358cf0a5238f642b8796b5cacaa8b59ba8bb51553a",
+    "sha256": "4d9cda0839cc9c07aa187827854d8ae0621aecf06461a78b45bc0e23f4c82889",
+    "source_dimensions": [
+      2040,
+      1872
+    ],
+    "crop_xywh": [
+      84,
+      0,
+      1872,
+      1872
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0883",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0883",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0883.png",
+    "source": "/datasets/DIV2K_valid_HR/0883.png",
+    "source_sha256": "3355621b3d834c320a66879e6cd23988df29f504f6cdecd22f1984b432a7e55a",
+    "sha256": "aec1e19fdd9ef3c1938bdeb4c36b19d5742690b721c197632cbdde510dc4eee9",
+    "source_dimensions": [
+      2040,
+      1380
+    ],
+    "crop_xywh": [
+      330,
+      0,
+      1380,
+      1380
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0887",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0887",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0887.png",
+    "source": "/datasets/DIV2K_valid_HR/0887.png",
+    "source_sha256": "a0a893c9417fcd04067bf254512801f92ae7c795b686e05f7389853c9fb78b11",
+    "sha256": "b5f7db6030ce902fa55522b47169f748568d9f363151df57a54b4c277ffc7c06",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0889",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0889",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0889.png",
+    "source": "/datasets/DIV2K_valid_HR/0889.png",
+    "source_sha256": "a8f73c42065e3193c4deb883dcb3bc432a3f838e9be5bacea708ee39eb2c6e04",
+    "sha256": "219b8807f823e3722d9fcff0775ea3d2dd2f3f87bfa9a908f8031d7febd361fd",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0892",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0892",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0892.png",
+    "source": "/datasets/DIV2K_valid_HR/0892.png",
+    "source_sha256": "7fb05e491f00963e64b53a0f3f7a3d1af51f1434e7fd4898d4b84c479e1f66f9",
+    "sha256": "3865398c85a9febf752bf5f9bb9ab54aa1be3ddb09d833bc37d0b48833cc8c50",
+    "source_dimensions": [
+      2040,
+      1284
+    ],
+    "crop_xywh": [
+      378,
+      0,
+      1284,
+      1284
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0896",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0896",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0896.png",
+    "source": "/datasets/DIV2K_valid_HR/0896.png",
+    "source_sha256": "367c698aa344cea6e790239f04bae168ef204ae771f6ea05285e5255fad2f84f",
+    "sha256": "a1a1a0eba6de65ef44ce33f25f60a448859f9ec68b7d3bd42eed391d95201f6b",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  },
+  {
+    "name": "fresh_div2k_0899",
+    "dataset": "DIV2K_fresh",
+    "sequence": "fresh_div2k_0899",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_round2_20261009/data/fresh_div2k_0899.png",
+    "source": "/datasets/DIV2K_valid_HR/0899.png",
+    "source_sha256": "77e25eca6c3828abbea8f7fcf360d9be7f496513aa9ec08ff3f2e3a9c272e60e",
+    "sha256": "5d6d81b3114fa64996655b020cc4b4ba7946437cf88a97c0c5260be8f82a0e95",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not previously evaluated or used in this fine-tuning or selection"
+  }
+]

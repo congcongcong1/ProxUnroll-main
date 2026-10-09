@@ -1,0 +1,1146 @@
+[
+  {
+    "name": "holdout10000_div2k_0803",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0803",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0803.png",
+    "source": "/datasets/DIV2K_valid_HR/0803.png",
+    "source_sha256": "4b0148a9a1ff877ad9f76e65736a50cc36e10822b5d8ccd2abb2988ff4e1782b",
+    "sha256": "be3e0384a0d342eb1cc37bb3a31090f440127d701e098dc39e058ad295a601cb",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0805",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0805",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0805.png",
+    "source": "/datasets/DIV2K_valid_HR/0805.png",
+    "source_sha256": "e28d56feee10c2e2663f347dda574fff736894dba37341d37b91bac2ecd863b2",
+    "sha256": "6a1e584ee62a65a7700261a7342f90d240c5fbf50622c88ac7f60113398602bb",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0806",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0806",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0806.png",
+    "source": "/datasets/DIV2K_valid_HR/0806.png",
+    "source_sha256": "36720ddd59f8b3eed28f8981e12e6e2d680bfa78b9d25f33ec4152013652c713",
+    "sha256": "b98a7b2f46caf087bb57f2a0d2f4c05ddf73a30eaafe3c988dc71145b1349753",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0809",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0809",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0809.png",
+    "source": "/datasets/DIV2K_valid_HR/0809.png",
+    "source_sha256": "a0b094da02bcaeabea1976fb939c87366d437bdda1a796fbc3f4700fb5e7bbed",
+    "sha256": "f17c50ec528eb2af37ffb6b10d91b7fe76f10406ee8b4b9b022ab8972224796f",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0810",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0810",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0810.png",
+    "source": "/datasets/DIV2K_valid_HR/0810.png",
+    "source_sha256": "6940c660b97d2c5f1113101c3e6360d1d6886743c5796cad52224b8076b903f8",
+    "sha256": "860bb9e5822cf1c0d065712336f8cd07a124ba6173c94eb667b8bf3f5e2e4718",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0812",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0812",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0812.png",
+    "source": "/datasets/DIV2K_valid_HR/0812.png",
+    "source_sha256": "49e45b8922872b44ece90db047756f3a5356612bb6ee30bdc23df2bd208ec861",
+    "sha256": "8901bab88273a3a54f328bfe25afff4cfbea24698c02a68c1211d51ca8938347",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0815",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0815",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0815.png",
+    "source": "/datasets/DIV2K_valid_HR/0815.png",
+    "source_sha256": "c8f278e51f2bc9be7a696935b7e386eb4adafde24572d8ecdd4edf8adf4b4108",
+    "sha256": "49115eb20967b95605f2401a72e304bd0f8e02fd2466ec2c719b4cea31a1ec1c",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0816",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0816",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0816.png",
+    "source": "/datasets/DIV2K_valid_HR/0816.png",
+    "source_sha256": "87b7b2a666c92efdb24eadf67bc0c68bce5560ee89bd0532f50f94d8cf88b434",
+    "sha256": "3a7303a0d3301f05aa48962b292651674c8fc967f323dd71ad158f5383603094",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0818",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0818",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0818.png",
+    "source": "/datasets/DIV2K_valid_HR/0818.png",
+    "source_sha256": "8679d88891d7e8491fd61abded2c6864d90f5c1817b300f5d5796d05bb11488f",
+    "sha256": "82376fd6f7bbadb6ebf7ddd1960dd940d2d4e11982a8f74ba9daa5c63391f4e2",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0819",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0819",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0819.png",
+    "source": "/datasets/DIV2K_valid_HR/0819.png",
+    "source_sha256": "fcbc6cb7e7cdb717e94d8c8eaf659d6b2bfa513aa133c0d2c4a8e2aa96092529",
+    "sha256": "f36775f2e58fa5aca383cc4543b3b43ef9b9aa5b180817a7d66ed343842c2b50",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0822",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0822",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0822.png",
+    "source": "/datasets/DIV2K_valid_HR/0822.png",
+    "source_sha256": "a1d308fd62adecb1ea8b0fa8d0c687c92d3cf0d3358e598c8b97aca1b9cf8ad0",
+    "sha256": "607431c4f54e851f6937fe4bde94cb3e82d8a9783260d76d3c1e0b16425855aa",
+    "source_dimensions": [
+      2040,
+      1596
+    ],
+    "crop_xywh": [
+      222,
+      0,
+      1596,
+      1596
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0824",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0824",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0824.png",
+    "source": "/datasets/DIV2K_valid_HR/0824.png",
+    "source_sha256": "484316545f6b08655d30faa1bc5f29eb6821d049b62bb528319b504790c188e2",
+    "sha256": "ce54d9ff6127990d27a8e6598544e8bf9fd64566e26da23f5a65e499cd087227",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0825",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0825",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0825.png",
+    "source": "/datasets/DIV2K_valid_HR/0825.png",
+    "source_sha256": "0db87d6f7d6cf3a12fc384d8232c337fe0f509f2518845166c1033e22169115d",
+    "sha256": "08d14eaec8e98b8b2b4a2cab6c5755c880e74c5f63b4762586c7c5fff700a2fe",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0828",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0828",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0828.png",
+    "source": "/datasets/DIV2K_valid_HR/0828.png",
+    "source_sha256": "a62013e252fa503920f54b9b1eff9babd501c742d2c82c97d7c22394493ffa12",
+    "sha256": "ff10bf1d0c6ceff95c25d8d021e258e365e8a97c2bba97e567882d9642197159",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0829",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0829",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0829.png",
+    "source": "/datasets/DIV2K_valid_HR/0829.png",
+    "source_sha256": "de81c82e13d499226fd96505b6a72f59b6b8506c03ff0b6d06b6393d066f68a4",
+    "sha256": "5bf0ad2e572f71512d83b02951f11d6fd9aab2ffc6b9a8de503222dd254f4783",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0831",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0831",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0831.png",
+    "source": "/datasets/DIV2K_valid_HR/0831.png",
+    "source_sha256": "343c5d2665d9c5efd7a5444e72d383f63d96bac35902ed088c9a3ee88e0d4ed2",
+    "sha256": "f0c0cf1c8e7aa38a7f382142e3e1d4a5f444161bb4a761a49d94ed86dc7bbbd7",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0833",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0833",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0833.png",
+    "source": "/datasets/DIV2K_valid_HR/0833.png",
+    "source_sha256": "2e9668b3a318284ec90c9bbdd940317ecd2f7b95314e68c48c94d2380fad679a",
+    "sha256": "332c148e4cbd2947df9b8854d888b9d74d2f5bd0938f75c4ce5e73b8c2c42f96",
+    "source_dimensions": [
+      2040,
+      1548
+    ],
+    "crop_xywh": [
+      246,
+      0,
+      1548,
+      1548
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0835",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0835",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0835.png",
+    "source": "/datasets/DIV2K_valid_HR/0835.png",
+    "source_sha256": "263cfd9c7d2eee15b29250e6d0dc366ed680feb222de3f8c2fb5c6bd304608e4",
+    "sha256": "2b3f2c957071a429c3cc2ee4d816aa187a12c96c46625a03111f4b215eff355d",
+    "source_dimensions": [
+      1620,
+      2040
+    ],
+    "crop_xywh": [
+      0,
+      210,
+      1620,
+      1620
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0837",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0837",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0837.png",
+    "source": "/datasets/DIV2K_valid_HR/0837.png",
+    "source_sha256": "4618bd32e1d1a2ef0f4ad3f6b941e3745a97371fd300dad3c5c4c9013caec8db",
+    "sha256": "b697e4c6f53e3ed10bdbf1b9bfb5f9793b908648d23ea0c5feaf33466d5216a1",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0838",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0838",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0838.png",
+    "source": "/datasets/DIV2K_valid_HR/0838.png",
+    "source_sha256": "01e42bb5efb35d97a9931fc421f793e3c12d0922a3df288bbfd148b6a82a145b",
+    "sha256": "65900f2fd1f19b412ddde22795860c10efbc551d3fb325d360da10e7f06640c3",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0841",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0841",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0841.png",
+    "source": "/datasets/DIV2K_valid_HR/0841.png",
+    "source_sha256": "0f46093cd84e7ee037d1ded8680f2f39583af5dadac0da580a3911ed482de285",
+    "sha256": "70db3c94426a80a174214ca28f22a685bb98fa0adb52984526dca4d4699622ce",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0843",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0843",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0843.png",
+    "source": "/datasets/DIV2K_valid_HR/0843.png",
+    "source_sha256": "3ef88e17c711156a52ef8c7385f01b364ade64bb0d90938debfc4b454e0d1e06",
+    "sha256": "261002080e92cd587370bd9c2e2065b5e0705cd32424cc83939e53d662e41154",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0844",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0844",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0844.png",
+    "source": "/datasets/DIV2K_valid_HR/0844.png",
+    "source_sha256": "93da0f98885573c518891c5eb6004818436ae36cf1ed894cfef853e131d9d86d",
+    "sha256": "1166b751670ff31c72ab6bedd0b2c872aa7a26d33a111920a2042c19d747896c",
+    "source_dimensions": [
+      1356,
+      2040
+    ],
+    "crop_xywh": [
+      0,
+      342,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0846",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0846",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0846.png",
+    "source": "/datasets/DIV2K_valid_HR/0846.png",
+    "source_sha256": "eaef63b3b0889ea99559e1e959240393505d9f6d4d5cb7f6a90729b024b4ffb4",
+    "sha256": "3d28db9feb9394604a3b64d1ae46768ba1bc59a03537c8c8e63316ba705dec8c",
+    "source_dimensions": [
+      2040,
+      1368
+    ],
+    "crop_xywh": [
+      336,
+      0,
+      1368,
+      1368
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0848",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0848",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0848.png",
+    "source": "/datasets/DIV2K_valid_HR/0848.png",
+    "source_sha256": "4a8f2f4eee348242b17eb7ee72aad9c1c1fe870a1d414db4704819fede40b660",
+    "sha256": "8e519200a343955427c8df0b7bf80e1e30f3d895eee5e1ce23291009b4ed9ca1",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0850",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0850",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0850.png",
+    "source": "/datasets/DIV2K_valid_HR/0850.png",
+    "source_sha256": "1d026bda033ce6fa0db97aa3ec120f3609663f4d0aaf2f9d8e677fdbe235ab03",
+    "sha256": "d3f3ba748848b8083dbdac4158a372610daa085da431ff8a9374b24b444a7fed",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0852",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0852",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0852.png",
+    "source": "/datasets/DIV2K_valid_HR/0852.png",
+    "source_sha256": "47f4db4100055a954606d789dfe183612ea7e196a06b2e7bc4bd39c3522628ee",
+    "sha256": "7e6cae32de24303ae6fa8274bfd534242135cf3254aa8301224a055ce0cf83d7",
+    "source_dimensions": [
+      2040,
+      1152
+    ],
+    "crop_xywh": [
+      444,
+      0,
+      1152,
+      1152
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0854",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0854",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0854.png",
+    "source": "/datasets/DIV2K_valid_HR/0854.png",
+    "source_sha256": "f77817c7a5d940baf174efa61d2fbf40354a08ade7a151e155ce62bd2481eca8",
+    "sha256": "559df49e29f60431d2c96cd7599b27368f968a3733a69fe31659cf5b8971b5cc",
+    "source_dimensions": [
+      2040,
+      1068
+    ],
+    "crop_xywh": [
+      486,
+      0,
+      1068,
+      1068
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0856",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0856",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0856.png",
+    "source": "/datasets/DIV2K_valid_HR/0856.png",
+    "source_sha256": "cf845f85d9f65570938a15f56fe9de749619f9bee35533944f46bba94f0ff77b",
+    "sha256": "15ebde20cb12a7a3b8526821b6ad008289442de92d581a64883f9c5d2369b30c",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0857",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0857",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0857.png",
+    "source": "/datasets/DIV2K_valid_HR/0857.png",
+    "source_sha256": "4fafd48e2926f530129290c9f843490dcbf7809c8505c123a5f18ec2a5005611",
+    "sha256": "aa240b565c87745216a2a5a84f475a1b43df35477d6077c6e988780aebac72d0",
+    "source_dimensions": [
+      2040,
+      1416
+    ],
+    "crop_xywh": [
+      312,
+      0,
+      1416,
+      1416
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0859",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0859",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0859.png",
+    "source": "/datasets/DIV2K_valid_HR/0859.png",
+    "source_sha256": "3ada872de7c5def1d408920385db278b1ff3a5a0cfcab83105a789ff540a1827",
+    "sha256": "2730ea4db7d9a175efe6f3b2655d7ed0abd2a758f5991d1c30d0067278a8c690",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0862",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0862",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0862.png",
+    "source": "/datasets/DIV2K_valid_HR/0862.png",
+    "source_sha256": "31a02d7392ee9dadd4b8a2c1b5b9d670943135d0d40e85d4178ab77923c75548",
+    "sha256": "97b56d91b231642f2afa4b6e498e7897195cecc13c705931e554ed8abbfb8900",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0863",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0863",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0863.png",
+    "source": "/datasets/DIV2K_valid_HR/0863.png",
+    "source_sha256": "5e98cca0fbeb2e649fa36a41a06240ce4ec4b05aa23859da13797f8ded0d5c1f",
+    "sha256": "e1657b8feb3bbe3de3adc7dfe3db28a1de01649374ba6877bc21eeb807d1f7db",
+    "source_dimensions": [
+      1500,
+      2040
+    ],
+    "crop_xywh": [
+      0,
+      270,
+      1500,
+      1500
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0865",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0865",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0865.png",
+    "source": "/datasets/DIV2K_valid_HR/0865.png",
+    "source_sha256": "46ced1e049fce5a0381c3dc7d7276d058f78a7a7dab5cd88ef7a224cbf51fdb1",
+    "sha256": "9d81b97a6435374857afa58f10136608aaba71fd01d4fe5f863e4f10e478649d",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0866",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0866",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0866.png",
+    "source": "/datasets/DIV2K_valid_HR/0866.png",
+    "source_sha256": "7fc232b9294ea4e6f32bdacc26f314efc067ee0359c5ff1a7000ec61c8da8511",
+    "sha256": "cefae514f550549ace5eb72d295952ae3dadfdc83e05249864af9edb3ce2a413",
+    "source_dimensions": [
+      1356,
+      2040
+    ],
+    "crop_xywh": [
+      0,
+      342,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0869",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0869",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0869.png",
+    "source": "/datasets/DIV2K_valid_HR/0869.png",
+    "source_sha256": "68a693195536fc94bc34ce7ff0e041990916fed73164a7c2dce00098a178ac75",
+    "sha256": "025358e42cdce9013d13f1fbcc15484ec4fe1fdc3fb5db605046bf6484d1027c",
+    "source_dimensions": [
+      1356,
+      2040
+    ],
+    "crop_xywh": [
+      0,
+      342,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0871",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0871",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0871.png",
+    "source": "/datasets/DIV2K_valid_HR/0871.png",
+    "source_sha256": "777df9ed736ff3ccc73388e90de36e131c002dfac64767f3b8ebccdd2cd5f058",
+    "sha256": "b24fc77e793e8474873491acb80b0d34fe3e5f463dc5eacfc410b04010b26c67",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0872",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0872",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0872.png",
+    "source": "/datasets/DIV2K_valid_HR/0872.png",
+    "source_sha256": "028ca10affee013698c7f15068fe4813a9d7b2c24f2bd40dac68305774a5577a",
+    "sha256": "1cd726db30bd5b802faf99e0c39bfa6ceb47c46ea2e56a5940bb3ebf8443e89a",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0875",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0875",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0875.png",
+    "source": "/datasets/DIV2K_valid_HR/0875.png",
+    "source_sha256": "3c4859b59635fe7fcd6ec182c798eb3af44a2eafb6e8b891df3db62d0da3c5e2",
+    "sha256": "87fc41757ae9d44eab248c2511b0e51c08c5606f9fc3a0066ca5335c66b93be1",
+    "source_dimensions": [
+      2040,
+      1536
+    ],
+    "crop_xywh": [
+      252,
+      0,
+      1536,
+      1536
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0876",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0876",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0876.png",
+    "source": "/datasets/DIV2K_valid_HR/0876.png",
+    "source_sha256": "9d5a819847876bb0061bf1fd42b8bd97e8aef89d1f5fb09b1669b7e9546a25f1",
+    "sha256": "89a1fc8e6ec3f4702bc7fb92a3204aa59d60da0b8468093e336e1059f14e57cc",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0878",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0878",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0878.png",
+    "source": "/datasets/DIV2K_valid_HR/0878.png",
+    "source_sha256": "e1aff248577bc04ddeba4f48a62aff421ca06450a703e4a450dd401e1efd9546",
+    "sha256": "6b8a9f5c3af28d71ad6273047b6bfdfe614ffe40e49b7d9515fe80eb09687c31",
+    "source_dimensions": [
+      2040,
+      1740
+    ],
+    "crop_xywh": [
+      150,
+      0,
+      1740,
+      1740
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0881",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0881",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0881.png",
+    "source": "/datasets/DIV2K_valid_HR/0881.png",
+    "source_sha256": "d2fba016ee3cee2395b677524d7ae2b2f6750cea1a6df4edc41f2977bd5d1b7c",
+    "sha256": "375684f0467cd940cdb8b54812ae2cdab8bddce00bfdcb50e19af2270934d4af",
+    "source_dimensions": [
+      2040,
+      1260
+    ],
+    "crop_xywh": [
+      390,
+      0,
+      1260,
+      1260
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0882",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0882",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0882.png",
+    "source": "/datasets/DIV2K_valid_HR/0882.png",
+    "source_sha256": "573345fb42061a43fe8f1c0b3b9faf57cdd77189782a4d89b78c31e421f19115",
+    "sha256": "27ae09257692d49fb0b2c7d9916b5357f160c854420c01dff2eda693e60d1c86",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0884",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0884",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0884.png",
+    "source": "/datasets/DIV2K_valid_HR/0884.png",
+    "source_sha256": "06a928200ad757ff2422ecd2e12986bb90e3bf6b64c6062e5d31f864cdc992bc",
+    "sha256": "2f8ad80b488c3962484caaf3ba6b5a472c6f7a13b4bdf704163a184b19cc2aa5",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0885",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0885",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0885.png",
+    "source": "/datasets/DIV2K_valid_HR/0885.png",
+    "source_sha256": "36f1c2b8af6d898354506ef3f78d386156cf1c1f1397c165a84e74cf6484d800",
+    "sha256": "c89377f2825549864dbe5ba5947907aef60ca659c338536f757bdffccb780d63",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0888",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0888",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0888.png",
+    "source": "/datasets/DIV2K_valid_HR/0888.png",
+    "source_sha256": "82a8d193f4eb0819ad3e48c048d13860d0b8f34d6fafc9b626e304294db3ba12",
+    "sha256": "9ca688f5d92cc85f88e3de44afc75d7515cff831e9ef3745a54e349e1538993b",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0890",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0890",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0890.png",
+    "source": "/datasets/DIV2K_valid_HR/0890.png",
+    "source_sha256": "67069da53af2b4f5237030631b0b5e087b8014d7b0f59917d96924aca1ab433c",
+    "sha256": "4c5abbb20d6c6c95cc5ac96e1aab957079feda67c21e94b8509be08d8257f855",
+    "source_dimensions": [
+      2040,
+      1368
+    ],
+    "crop_xywh": [
+      336,
+      0,
+      1368,
+      1368
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0891",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0891",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0891.png",
+    "source": "/datasets/DIV2K_valid_HR/0891.png",
+    "source_sha256": "8e36e76f3675831c87b2e645e70ef33513b898dc09beb20b0bdcc61cc6d63bed",
+    "sha256": "ff2db1bbc95c8e1e4665ca539e3c95d1e23568d0b42a308a6d809fa7ff53e632",
+    "source_dimensions": [
+      1668,
+      2040
+    ],
+    "crop_xywh": [
+      0,
+      186,
+      1668,
+      1668
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0894",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0894",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0894.png",
+    "source": "/datasets/DIV2K_valid_HR/0894.png",
+    "source_sha256": "f412ff02984a0de7acc7e1209d02f8dcaa18ac76008fa260cf7c355e4a77976c",
+    "sha256": "2a7a96f25b4c5137d1756cd97d0d4bbae02581e2274d3ea0b93bba21b9715f79",
+    "source_dimensions": [
+      1356,
+      2040
+    ],
+    "crop_xywh": [
+      0,
+      342,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0895",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0895",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0895.png",
+    "source": "/datasets/DIV2K_valid_HR/0895.png",
+    "source_sha256": "a1c0888648fed4eb909c6e7f5f5db220ae98861294ebfdfa14b2c72567e96b2b",
+    "sha256": "752d5e2d851fb977be63c7a7bc9e7be5fe4240d8acfc14d0213f8f2800d57642",
+    "source_dimensions": [
+      2040,
+      1284
+    ],
+    "crop_xywh": [
+      378,
+      0,
+      1284,
+      1284
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0897",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0897",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0897.png",
+    "source": "/datasets/DIV2K_valid_HR/0897.png",
+    "source_sha256": "dca63f56dba4a2a2c6b920c4b0406c6c6459d8f7ffb0d20322f51fbbc8f14b38",
+    "sha256": "d4c17117ddd752645a966a397e240340a3f2c6d71d3f098936472a911d1d2e9b",
+    "source_dimensions": [
+      2040,
+      1368
+    ],
+    "crop_xywh": [
+      336,
+      0,
+      1368,
+      1368
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  },
+  {
+    "name": "holdout10000_div2k_0898",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0898",
+    "split": "test",
+    "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0898.png",
+    "source": "/datasets/DIV2K_valid_HR/0898.png",
+    "source_sha256": "4cd6696b8e59615ceacff729181dd9b0cc5ea936ea9a57e089bb1fe4fe87c347",
+    "sha256": "cb395f378254a6e099cc6d3a07be4493dc6f1f3b051b31b7a43ecdca420aebfc",
+    "source_dimensions": [
+      2040,
+      1356
+    ],
+    "crop_xywh": [
+      342,
+      0,
+      1356,
+      1356
+    ],
+    "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+    "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+  }
+]
