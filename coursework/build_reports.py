@@ -33,6 +33,7 @@ def h(text):
 def table(rows, widths):
     t = Table([[Paragraph(str(c), SMALL) for c in row] for row in rows], colWidths=widths, hAlign='LEFT')
     t.setStyle(TableStyle([('LINEABOVE', (0, 0), (-1, 0), .6, colors.black),
+                          ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#F1F3F5')),
                           ('LINEBELOW', (0, 0), (-1, 0), .4, colors.black),
                           ('LINEBELOW', (0, -1), (-1, -1), .6, colors.black),
                           ('VALIGN', (0, 0), (-1, -1), 'TOP'),

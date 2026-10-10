@@ -1,14 +1,19 @@
 {
   "schema": 1,
-  "captured_utc": "2026-10-09T08:21:54.299496+00:00",
-  "scope": "Completed laboratory and Nanjing web-photograph evaluation; completed 10000-step frozen-sensing fine-tuning; original evidence preserved",
+  "captured_utc": "2026-10-10T01:28:45.062172+00:00",
+  "scope": "Completed laboratory and Nanjing web-photograph evaluation; completed 10000-step frozen-sensing fine-tuning; layout-revised English report and literature paper; original evidence preserved",
   "files": {
+    "coursework/build_layout_revision.py": "789f68d69074687cfb795159438187e0d175ccf7cc10c2cd0634b6e53a99e7fd",
     "output/pdf/literature_review.pdf": "c393ec2ad1b18063526c828303667a69a65ee60e4c5813c628153ccb5d458dee",
+    "output/pdf/literature_review_layoutfix_20261010.md": "43a268baa6497a634472acc73ad74379f98f2fb915a801af0feab1c5306eea00",
+    "output/pdf/literature_review_layoutfix_20261010.pdf": "359cd0620b39460faec83dfba6fa4947e422b1707e68959423565d053849d718",
     "output/pdf/technical_report.pdf": "7137850a125fd7510eae52b7ee519f0bc0b9910d534a3e88d0124bfc7b8a094d",
     "output/pdf/technical_report_5000_20261009.pdf": "d0e0a946fb44561bfc49abe66a0ecd71014036cedc3083e1fe10e032fd808b61",
     "output/pdf/technical_report_lab220_20261009.pdf": "b019a58304d2000afbef067c0bcf6efe48e1cd92deb0383139d8878b82bca00a",
     "output/pdf/technical_report_nanjing_20261009.md": "940e5b45b60ba34f6d984324f057f1c02a61c29082a49459c99eb34a935dd7b6",
     "output/pdf/technical_report_nanjing_20261009.pdf": "8b1da11ee5025816b106f97ebdf8a9a965897cc8975081095f2a01a340e88209",
+    "output/pdf/technical_report_nanjing_layoutfix_20261010.md": "940e5b45b60ba34f6d984324f057f1c02a61c29082a49459c99eb34a935dd7b6",
+    "output/pdf/technical_report_nanjing_layoutfix_20261010.pdf": "fc728686a1cdf5001eaeb60b650c295ddc1919f28cf86346d7e309da9c1664a7",
     "output/presentation/course_presentation.pptx": "eb38fdb5783c5e32c872dc443f74c5d5c7823884130923d104cb80c76dd59054",
     "output/presentation/course_presentation_5000_20261009.pptx": "fb9f431371bc3d34901369baf67e231f73782488c4309f08317a577c9ece60c3",
     "output/presentation/course_presentation_lab220_20261009.pptx": "de35f04a7c880b7cbeab4a3273c03bb8e6291580b0c6e4edb7b2fb8cbc028c72",
@@ -315,7 +320,9 @@
     "output/pdf/literature_review.pdf": 3,
     "output/pdf/technical_report_lab220_20261009.pdf": 6,
     "output/pdf/technical_report_5000_20261009.pdf": 6,
-    "output/pdf/technical_report_nanjing_20261009.pdf": 6
+    "output/pdf/technical_report_nanjing_20261009.pdf": 6,
+    "output/pdf/technical_report_nanjing_layoutfix_20261010.pdf": 6,
+    "output/pdf/literature_review_layoutfix_20261010.pdf": 3
   },
   "ppt_slides": {
     "output/presentation/course_presentation.pptx": 12,

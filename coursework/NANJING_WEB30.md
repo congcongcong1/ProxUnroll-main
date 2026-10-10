@@ -13,7 +13,7 @@
 
 直连 Wikimedia 图像超时，改由 wsrv.nl 获取全尺寸 PNG 转码，未请求缩放、裁剪或滤镜。
 保留了尺寸、来源 URL 和 PNG 哈希。它们不是原 JPEG 字节，解码、色彩配置或 EXIF 处理可能与直读原文件不同。
-`source_png/` 保存下载的全尺寸 PNG（本地保留，不进入 Git）；`data/` 保存实际评测的 30 张灰度图。
+`source_png/` 的 30 张全尺寸 PNG 已保存到远端 `/workspace/ProxUnroll-main/runs/nanjing_web30_20261009/source_png/`（逐文件 SHA-256 核对后清理本地副本）；`data/` 保存实际评测的 30 张灰度图。
 
 统一预处理：EXIF 方向 → 最大中心正方形 → OpenCV RGB2YCrCb 的 Y → INTER_AREA 256×256 → uint8/255。
 清单记录每张图的原尺寸、裁剪坐标、原作者、来源、全尺寸 PNG 和灰度图哈希。
@@ -116,10 +116,11 @@ SSH 断开不影响作业。启动、GPU 进程、完成标记、退出码和原
 ```
 
 默认不取回 NPY；要在本地重算全部浮点指标，增加 `--include-arrays`，并准备锁定的三个微调权重。
-微调权重和 NPY 保留在远端，也已取回本地核验；全尺寸来源 PNG 本地保留。Git 只收录选定冻结证据和实际评测的灰度输入。
+微调权重、完整浮点 NPY、测量归档和全尺寸来源 PNG 均保留在远端，并已在清理前完成哈希核验；本地保留 CSV、汇总 JSON、失败案例、重建 PNG、灰度输入和交付权重。Git 只收录选定冻结证据和实际评测的灰度输入。
 所有照片及其图像派生版本保留来源许可和署名，代码许可证不覆盖照片。
 
-新版英文六页报告 `output/pdf/technical_report_nanjing_20261009.pdf`、十二页 PPT `output/presentation/course_presentation_nanjing_20261009.pptx`。
+新版英文六页报告 `output/pdf/technical_report_nanjing_layoutfix_20261010.pdf`、三页文献论文 `output/pdf/literature_review_layoutfix_20261010.pdf`、十二页 PPT `output/presentation/course_presentation_nanjing_20261009.pptx`。
+排版修订稿增加了正文可读字号、图表纵向空间和表头底色；2026-10-09 原版 PDF 保留。
 旧版文件不变。三页文献报告保持；新增讲稿计划仍为 600 秒。课程登记、实际排练、理解代码和最终课程平台提交未由本次操作代办。
 
 ## 跨平台核验补充
@@ -128,7 +129,7 @@ SSH 断开不影响作业。启动、GPU 进程、完成标记、退出码和原
 Mac ARM 与记录的 Linux x86 重新生成测量值时，189/330 条件的末位比特不同；
 最大绝对差 3.025e-06、相对 L2 差 3.235e-08。
 正式实验内所有方法始终共享同一测量值。`audit/measurements.npz` 重新存档远端的 330 个测量数组，逐个匹配原 CSV 测量哈希。
-本地依据该存档核验，不把 CPU 库的末位差当成数据变更；NPZ 和 NPY 均保留在远端及本地，不进入 Git。
+本地在清理前依据该存档核验，不把 CPU 库的末位差当成数据变更；NPZ 和 NPY 已完成核验后清理本地副本，仅保留在远端，不进入 Git。
 `comparison/local_float_verification.json` 保存每个重建数组哈希、包版本及上述差异。
 
 ```bash

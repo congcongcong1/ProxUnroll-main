@@ -42,7 +42,9 @@ def main():
         return next(r for r in summary['datasets'] if r['dataset']==dataset and r['cr']==cr and r['sigma']==sigma and r['method']==method)
     FIG.mkdir(exist_ok=True)
     plt.rcParams.update({'font.size':12, 'axes.spines.top':False, 'axes.spines.right':False})
-    fig, axes = plt.subplots(1,2,figsize=(10.5,3.3),layout='constrained')
+    # A taller canvas keeps the full-width figure legible and uses the available
+    # conference-paper column height more evenly.
+    fig, axes = plt.subplots(1,2,figsize=(10.5,4.4),layout='constrained')
     for ax,d,label in zip(axes,DATASETS,LABELS):
         for m,n,c in [('adjoint','Adjoint','#777777'),('fista_dct','DCT-FISTA','#D78924'),('hqs','Official HQS','#147D78'),('admm','Official ADMM','#B74760')]:
             ax.plot([1,4,10,25,50],[baseline(d,m,cr=r)['psnr'] for r in [.01,.04,.1,.25,.5]],'-o',label=n,color=c)
@@ -52,7 +54,7 @@ def main():
     validation = list(csv.DictReader((TRAIN/'finetune/validation.csv').open()))
     steps = sorted({int(r['step']) for r in validation})
     curves = {}
-    fig, axes = plt.subplots(1,2,figsize=(10.5,3.2),layout='constrained')
+    fig, axes = plt.subplots(1,2,figsize=(10.5,4.2),layout='constrained')
     for name,levels,color in [('Clean',[0.],'#147D78'),('Mixed',[0.,.01,.05],'#D78924'),('Strong noise',[.05],'#B74760')]:
         curve=[float(np.mean([float(r['psnr']) for r in validation if int(r['step'])==s and float(r['sigma']) in levels])) for s in steps]
         curves[name]=curve;axes[0].plot(steps,curve,label=name,color=color)
@@ -64,7 +66,7 @@ def main():
     axes[1].set_xticks(x,['Campus','Scenic']);axes[1].axhline(5,color='gray',linestyle='--')
     axes[1].set(ylabel='Clean 10% MSE reduction (%)');axes[1].legend(fontsize=10)
     fig.savefig(FIG/'validation_clean.png',dpi=220);plt.close(fig)
-    fig,axes=plt.subplots(1,2,figsize=(10.5,3.0),layout='constrained')
+    fig,axes=plt.subplots(1,2,figsize=(10.5,4.0),layout='constrained')
     for d,label in zip(DATASETS,LABELS):
         axes[0].plot([1,4,10,25,50],[value(d,cr=r)['mse_reduction_percent'] for r in [.01,.04,.1,.25,.5]],'-o',label=label)
     axes[0].axhline(0,color='gray',linewidth=.7);axes[0].axhline(5,color='gray',linestyle='--')
@@ -90,7 +92,7 @@ def main():
     for label,begin,end in [('sky',0,106),('skyline',106,162),('water',162,256)]:
         mse=[float(np.mean((gt[begin:end]-p[begin:end])**2,dtype=np.float64)) for p in [old_float,new_float]]
         regions[label]=dict(rows=[begin,end],old_mse=mse[0],new_mse=mse[1],mse_increase_percent=100*(mse[1]/mse[0]-1))
-    fig,axes=plt.subplots(1,4,figsize=(10.5,2.9),layout='constrained')
+    fig,axes=plt.subplots(1,4,figsize=(10.5,3.5),layout='constrained')
     for ax,im,title in zip(axes,[*images,error],['Reference','5000-budget HQS','10000-step HQS','Absolute error']):
         ax.imshow(im,cmap='gray' if title!='Absolute error' else 'magma',vmin=0,vmax=1 if title!='Absolute error' else .3)
         ax.set_title(title,fontsize=11);ax.axis('off')

@@ -6,7 +6,8 @@
 
 ## 已完成的交付物
 
-- 最新已完成英文技术报告：`output/pdf/technical_report_nanjing_20261009.pdf`，6 页。
+- 最新排版修订英文技术报告：`output/pdf/technical_report_nanjing_layoutfix_20261010.pdf`，6 页；原 2026-10-09 版本保留。
+- 最新排版修订文献论文：`output/pdf/literature_review_layoutfix_20261010.pdf`，3 页；原文献报告保留。
 - 最新已完成 PPT：`output/presentation/course_presentation_nanjing_20261009.pptx`，12 页、讲稿计划 600 秒。
 - 旧技术报告、3 页文献报告、旧 PPT、实验室 100 步版本全部保留。
 - `coursework/ROUND5000.md`、`DEFENSE_5000_ZH.md`、`PRESENTATION_GUIDE_5000.md`：复现、答辩和讲稿。
@@ -38,7 +39,7 @@
 `runs/lab244_round2_20261009` 保存前 946 步的阶段信息和原图划分；
 `runs/lab244_10000_20261009` 收录固定清单、环境、来源锁、启动/恢复证明和已完成训练历史/审计。
 `runs/nanjing_web30_20261009` 收录精确灰度输入、来源/许可、预先锁定协议、原始 CSV、指标复核、全部负例和报告图。
-全尺寸来源 PNG 保留在本地 `source_png/`，完整浮点重建保留在远端并已取回本地；它们不进入 Git。微调权重位置/哈希如下。
+全尺寸来源 PNG、完整浮点重建和测量归档保留在远端 `/workspace/ProxUnroll-main`，并在本地清理前完成逐文件/聚合 SHA-256 核验；它们不进入 Git。微调权重位置/哈希如下。
 
 `repository_evidence.json` 列出上述冻结文件的 SHA256、CSV 覆盖和文档页数。
 在仓库根目录执行以下检查，无需 CUDA、SSH 或实验室数据：

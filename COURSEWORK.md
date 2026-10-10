@@ -11,9 +11,12 @@
 ## Deliverables
 
 The latest extension completes 10000 total HQS updates and evaluates 30
-team-curated Nanjing web photographs. The new six-page English report is
-`output/pdf/technical_report_nanjing_20261009.pdf`, with the 12-slide
+team-curated Nanjing web photographs. The layout-revised six-page English report is
+`output/pdf/technical_report_nanjing_layoutfix_20261010.pdf`, with the 12-slide
 `output/presentation/course_presentation_nanjing_20261009.pptx`.
+The three-page literature paper has a matching revised copy at
+`output/pdf/literature_review_layoutfix_20261010.pdf`; the 2026-10-09 PDFs remain
+preserved.
 See [NANJING_WEB30.md](coursework/NANJING_WEB30.md) for sources, exact commands,
 per-location scores and all weak/negative outcomes. These are externally authored
 web photographs, not photographs captured by our team. The optional self-capture
