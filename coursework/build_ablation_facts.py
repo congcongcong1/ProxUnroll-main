@@ -9,6 +9,7 @@ import numpy as np
 from PIL import Image
 
 from coursework.run_experiments import ROOT, sha
+from coursework.ablation_completion import require_workflow
 
 
 def collect(base):
@@ -17,7 +18,8 @@ def collect(base):
     workflow = json.loads((base / 'workflow_status.json').read_text())
     if workflow['phase'] != 'experiments_complete':
         raise ValueError('Experiments are not complete')
-    for name in ['continuation', 'seed_20261013', 'seed_20261014', 'evaluation_smoke', 'evaluation_primary', 'evaluation_regression']:
+    completion = require_workflow(base)
+    for name in ['continuation', 'seed_20261013', 'seed_20261014', 'evaluation_smoke']:
         assert int((base / 'logs' / (name + '.exit')).read_text()) == 0, name
     phases = {}
     for phase in ['primary', 'regression']:
@@ -73,12 +75,18 @@ def collect(base):
         hashes[label + '.npy'] = sha(illustration / (label + '.npy'))
         hashes[label + '.png'] = sha(illustration / (label + '.png'))
     negative_count = sum(float(r['mse_reduction_percent']) < 0 for r in continuation_pairs)
-    result = dict(lock=lock, evaluation_selection=selection, training=training, phases=phases,
+    result = dict(lock=lock, evaluation_selection=selection, training=training, phases=phases, completion=completion,
         continuation_negative_conditions_vs_10000=negative_count,
         continuation_total_conditions=52 * 11, failure_case=dict(worst, source=item,
             illustration_hashes=hashes, selection_rule='smallest per-condition MSE reduction on the primary set; selected model first, endpoint only if selected never regresses',
             interpretation='diagnostic selection after test, never checkpoint selection'),
         figures_derived_from='verified floating metrics; no use of rounded display PNGs for headline metrics')
+    bridge_path = base / 'hardware_bridge_overlap_audit.json'
+    if completion['evaluations']['regression']['recovered']:
+        bridge = json.loads(bridge_path.read_text())
+        assert bridge['common_rows'] == 96 and bridge['paired_measurement_hashes_equal']
+        assert bridge['max_psnr_difference_db'] < 2e-5 and bridge['max_ssim_difference'] < 2e-5
+        result['hardware_bridge_overlap'] = dict(bridge, evidence_sha256=sha(bridge_path))
     (base / 'report_facts.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps({'formal_updates': 8400, 'primary_rows': phases['primary']['verification']['rows'],
                      'regression_rows': phases['regression']['verification']['rows'],

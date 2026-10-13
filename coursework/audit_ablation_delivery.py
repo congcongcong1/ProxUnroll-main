@@ -13,6 +13,7 @@ import numpy as np
 from pypdf import PdfReader
 
 from coursework.run_experiments import ROOT, sha
+from coursework.ablation_completion import require_workflow
 
 BASE = ROOT / 'runs/hqs_ablation_20261013'
 
@@ -64,7 +65,12 @@ def audit(experiments_only=False):
         check(record['steps'] == 800 and record['arms'] == 4, 'Pairing coverage')
         check(all(record[k] for k in ['same_image_order_crops_flips_sampling_and_potential_noise',
               'same_measurements_between_supervision_arms', 'clean_arms_have_zero_training_noise', 'loss_total_weight_one']), 'Pairing failed')
-    for name in ['continuation', 'seed_20261013', 'seed_20261014', 'evaluation_smoke', 'evaluation_primary', 'evaluation_regression', 'finalize']:
+    completion = require_workflow(BASE)
+    if completion['evaluations']['regression']['recovered']:
+        bridge = facts['hardware_bridge_overlap']
+        check(bridge['evidence_sha256'] == sha(BASE / 'hardware_bridge_overlap_audit.json'), 'Hardware overlap evidence changed')
+        check(bridge['max_psnr_difference_db'] < 2e-5 and bridge['max_ssim_difference'] < 2e-5, 'Hardware metric difference exceeds tolerance')
+    for name in ['continuation', 'seed_20261013', 'seed_20261014', 'evaluation_smoke']:
         check(int((BASE / 'logs' / (name + '.exit')).read_text()) == 0, 'Nonzero job exit: ' + name)
     results = {}
     for phase, images, models in [('primary', 52, 20), ('regression', 110, 12)]:
@@ -106,7 +112,7 @@ def audit(experiments_only=False):
             metrics_sha256=sha(directory / 'metrics.csv'), complete_float_verification=verification)
     result = dict(formal_updates=total_updates, training_arms=8, continuation_total_updates=12000,
         selected_continuation_step=facts['training']['continuation']['selected_step'], phases=results,
-        locked_sources_verified=True, test_model_selection=False)
+        locked_sources_verified=True, test_model_selection=False, completion=completion)
     if not experiments_only:
         report = ROOT / 'output/pdf/technical_report_ablation_20261013.pdf'
         ppt = ROOT / 'output/presentation/course_presentation_ablation_20261013.pptx'

@@ -133,7 +133,19 @@ def main():
                    and r['dataset'] == DATASET and r['cr'] == .1 and r['sigma'] == sigma and r['checkpoint_view'] == 'last')
         return (f'{row["mean_mse_reduction_percent"]:+.2f}% mean, '
                 f'{row["minimum_mse_reduction_percent"]:+.2f}% to {row["maximum_mse_reduction_percent"]:+.2f}% across seeds')
+    def factorial_description(sigma):
+        values = {row['effect']: row['official_normalized_percent_points'] for row in primary['factorial_effects']
+                  if row['dataset'] == DATASET and row['cr'] == .1 and row['sigma'] == sigma
+                  and row['checkpoint_view'] == 'last' and row['training_seed'] == 'mean_of_two'}
+        return ', '.join(f'{values[key]:+.2f}' for key in ['noise_main_mse_benefit',
+                         'stage_main_mse_benefit', 'noise_stage_interaction_mse_benefit'])
     source_name = escape(case['source'].get('source', 'DIV2K original').split('/')[-1])
+    recovery_note = ''
+    if facts.get('completion', {}).get('evaluations', {}).get('regression', {}).get('recovered'):
+        recovery_note = (' The original regression inference reached its 90-minute cap after 88 complete originals. '
+                         'A separate bounded run completed the remaining 22 on an idle RTX 2080 Ti; original failures and partial CSVs were retained. '
+                         'All merged floating metrics were rechecked. Within every original all states share hardware and inputs; '
+                         'mixed-hardware timings are not treated as one-GPU speed results.')
     report.FIG = FIG
     report.STYLE.fontSize = 10.35
     report.STYLE.leading = 13
@@ -176,12 +188,13 @@ def main():
             ('heading', '6. Effects of Noise and Stage Supervision'), ('table', factorial_table),
             ('text', 'Table 2 compares fixed-budget endpoints on primary52. Noise effect compares noise-on with noise-off under weighted loss. Stage effect compares weighted with final-only loss under noisy training. Each comparison holds seed, original order, crops, sampling and budget fixed. Positive values indicate lower mean MSE when adding that factor.'),
             ('text', f'At clean 10%, adding training noise with weighted loss gives {effect_description("noise_effect_at_weighted",0.)}; at test noise .05 it gives {effect_description("noise_effect_at_weighted",.05)}. Adding stage supervision with noisy training gives {effect_description("stage_effect_at_noise_on",0.)} on clean measurements and {effect_description("stage_effect_at_noise_on",.05)} at noise .05.'),
-            ('text', 'The complete factorial analysis also compares noise under final-only loss and stage supervision under clean training. Main effects average raw-MSE benefits over the other factor; interaction is noise benefit with weighted loss minus noise benefit with final-only loss. These raw effects share official-MSE normalization in percent points, rather than mixing reductions with different denominators.'),
+            ('text', 'The complete factorial analysis also compares noise under final-only loss and stage supervision under clean training. Main effects average raw-MSE benefits over the other factor; interaction is noise benefit with weighted loss minus noise benefit with final-only loss. These raw effects share official-MSE normalization in percent points, rather than mixing reductions with different denominators. '
+                     f'Two-seed mean noise main / stage main / interaction effects are {factorial_description(0.)} percent points on clean data and {factorial_description(.05)} at noise .05.'),
             ('text', 'Selected-best effects and endpoint effects remain separate in CSV. Every seed is reported alongside the two-seed mean and range; two training seeds are too few for strong significance claims. A negative result or an initialization-selected arm is retained. We do not reinterpret related measurement repetitions as independent training replications.'),
         ]),
         dict(figures=[('regression.png', 'Figure 3. Previously observed regression datasets, selected continuation versus selected step-10000 HQS. Each video contributes equally within its dataset.')], table_widths=[105,73,73], blocks=[
             ('heading', '7. Regression and Complete Evidence'), ('table', regression_table),
-            ('text', 'Table 3 preserves clean and stronger-noise results for each regression dataset at 10% sampling. Kodak, HEVC, DIV2K32 and Nanjing photographs were already inspected in previous work; they are regression evidence, not newly unseen confirmation. Each video has its own table, and no long sequence dominates the dataset mean.'),
+            ('text', 'Table 3 preserves clean and stronger-noise results for each regression dataset at 10% sampling. Kodak, HEVC, DIV2K32 and Nanjing photographs were already inspected in previous work; they are regression evidence, not newly unseen confirmation. Each video has its own table, and no long sequence dominates the dataset mean.' + recovery_note),
             ('text', f'The primary set saves {facts["phases"]["primary"]["verification"]["rows"]} metric rows for selected and endpoint states; regressions save {facts["phases"]["regression"]["verification"]["rows"]} rows for selected ablation states and continuation views. All {total_rows} floating reconstructions are independently checked against stored metrics, with data/weight/matrix/source and regenerated measurement hashes. Raw CSV, stage metrics, configurations, versions, arrays and display images remain available.'),
             ('text', f'On primary52, selected continuation increases MSE versus the prior selected state in {facts["continuation_negative_conditions_vs_10000"]}/{facts["continuation_total_conditions"]} measurement conditions. All per-image deltas and every negative comparison are retained, across references and factorial contrasts. Sample illustration selection occurs after testing for diagnosis, not model selection.'),
         ]),

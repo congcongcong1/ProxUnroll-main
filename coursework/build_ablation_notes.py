@@ -1,5 +1,8 @@
 """Chinese results, reproduction commands and speaking notes from completed CSVs."""
 import json
+import csv
+from collections import defaultdict
+import numpy as np
 from pathlib import Path
 
 from coursework.run_experiments import ROOT
@@ -46,7 +49,7 @@ def main():
         '# 12000 步 HQS 续训与双因素消融结果',
         '本页由已完成的训练审计、独立浮点复核和原始 CSV 生成。正百分比表示误差下降，负百分比表示误差增加。',
         '## 实际完成状态',
-        f'原配方从 10000 步完整状态继续到 12000 步，新增 2000 步，验证选择第 {selected} 步。另有四种配方各两个种子、每组 800 步，共 6400 步。正式新增更新总计 8400 次；预检另有 14 次更新。全部任务退出 0，六个测量因子固定，完整恢复状态、损失/梯度、原图/裁剪/采样配对和验证选模均通过审计。',
+        f'原配方从 10000 步完整状态继续到 12000 步，新增 2000 步，验证选择第 {selected} 步。另有四种配方各两个种子、每组 800 步，共 6400 步。正式新增更新总计 8400 次；预检另有 14 次更新。全部训练任务退出 0，六个测量因子固定，完整恢复状态、损失/梯度、原图/裁剪/采样配对和验证选模均通过审计。',
         f'续训耗时 {training["continuation"]["wall_seconds"]/60:.2f} 分钟；全部新正式训练合计 {sum(r["wall_seconds"] for r in training.values())/60:.2f} GPU 分钟。峰值分配显存 {max(r["peak_memory_mib"] for r in training.values())/1024:.2f} GiB。GPU 分钟是各任务耗时之和，不是三张卡并行后的墙钟时间。',
         '## 主要52图：续训有多少收益',
         '| 10%采样测试条件 | 相比官方HQS的MSE下降 | 相比10000步选中模型的MSE下降 | PSNR变化 vs10000 | SSIM变化 vs10000 |',
@@ -76,12 +79,43 @@ def main():
         '以上是固定800步终点的配对差异。验证选中best的结果在同目录单独保存，不与终点混合。两个种子平均是两个配对改善百分比的平均，每个种子的原始值都可查。',
         '因素主效应另用原始MSE差计算，再按同一官方MSE归一化为百分点；交互项是“有阶段监督时噪声收益 − 最终监督时噪声收益”。它与上表不同分母的相对百分比不能混用。',
         '两种训练种子不够证明稳健显著性。800步的消融解释的是这次短期配方作用，不是此前10000步全部收益的原因；没有消融的数据覆盖、学习率与结构不能强行归因。',
+        '## 完整双因素主效应和交互项',
+        '以下为两个训练种子的平均，固定800步终点；单位是按同一官方MSE归一化的百分点，正数代表误差改善。',
+        '| 测试噪声 | 噪声主效应 | 阶段监督主效应 | 交互项 |', '|---|---:|---:|---:|',
+    ]
+    for sigma in [0., .01, .05]:
+        values = {r['effect']: r['official_normalized_percent_points'] for r in primary['factorial_effects']
+                  if r['dataset'] == DATASET and r['cr'] == .1 and r['sigma'] == sigma
+                  and r['checkpoint_view'] == 'last' and r['training_seed'] == 'mean_of_two'}
+        numbers = [values[key] for key in ['noise_main_mse_benefit', 'stage_main_mse_benefit', 'noise_stage_interaction_mse_benefit']]
+        summary.append(f'| {sigma:g} | ' + ' | '.join(f'{value:+.3f}' for value in numbers) + ' |')
+    summary += [
         '## 回归集：分别保留每个数据集和视频',
         '| 已观察数据集 | 干净10% MSE下降 vs10000 | 噪声.05 MSE下降 vs10000 |',
         '|---|---:|---:|',
     ]
     for dataset, label in [('Kodak','Kodak24'),('HEVC_B','HEVC B'),('HEVC_E','HEVC E'),('DIV2K_fresh','DIV2K32'),('NJU_campus_web','校园18图'),('Nanjing_scenic_web','景区12图')]:
         summary.append(f'| {label} | {signed(pair("hqs_12000","hqs_10000",0.,regression,dataset)["mse_reduction_percent"])} | {signed(pair("hqs_12000","hqs_10000",.05,regression,dataset)["mse_reduction_percent"])} |')
+    summary += ['## 每段HEVC视频：续训相对10000步模型',
+                '| 视频 | 固定间隔帧数 | 干净10% MSE下降 | 噪声.05 MSE下降 |', '|---|---:|---:|---:|']
+    video_values = defaultdict(lambda: defaultdict(list))
+    for row in csv.DictReader((BASE / 'evaluation_regression/metrics.csv').open()):
+        if row['dataset'] not in ['HEVC_B', 'HEVC_E'] or float(row['cr']) != .1:
+            continue
+        if row['method'] not in ['hqs_10000', 'hqs_12000'] or float(row['sigma']) not in [0., .05]:
+            continue
+        video_values[(row['sequence'], float(row['sigma']), row['method'])][row['image']].append(10 ** (-float(row['psnr']) / 10))
+    for video in sorted({key[0] for key in video_values}):
+        reductions = []
+        for sigma in [0., .05]:
+            means = {method: float(np.mean([np.mean(repeats) for repeats in video_values[video, sigma, method].values()]))
+                     for method in ['hqs_10000', 'hqs_12000']}
+            reductions.append(100 * (1 - means['hqs_12000'] / means['hqs_10000']))
+        count = len(video_values[video, 0., 'hqs_10000'])
+        assert count == 3
+        summary.append(f'| {video} | {count} | {signed(reductions[0])} | {signed(reductions[1])} |')
+    if facts.get('completion', {}).get('evaluations', {}).get('regression', {}).get('recovered'):
+        summary.append('回归原推理在90分钟上限退出，88张完整原图复用，剩余22张以独立45分钟预算在空闲RTX 2080 Ti补测；原失败exit与部分CSV保留。合并后全部浮点指标重新核验。每张原图内所有模型仍使用同一硬件和输入，不能将混合硬件耗时平均声称为同一卡的速度。')
     case = facts['failure_case']
     summary += [
         '每段视频分别有video_summary.csv。逐帧重建仍属于单图任务，没有利用前后帧；按整段视频等权聚合。网络南京照片来自外部作者，属于自行整理的网络图像集，不是亲自拍摄。',

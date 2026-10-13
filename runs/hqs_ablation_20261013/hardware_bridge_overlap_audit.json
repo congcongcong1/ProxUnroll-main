@@ -1,0 +1,12 @@
+{
+  "image": "web_nju_gulou_09",
+  "common_rows": 96,
+  "original_gpu": "RTX 3090",
+  "recovery_gpu": "RTX 2080 Ti",
+  "paired_measurement_hashes_equal": true,
+  "max_psnr_difference_db": 2.420929700264196e-06,
+  "max_ssim_difference": 5.566844940574356e-07,
+  "max_float_prediction_difference": 5.304813385009766e-06,
+  "scope": "Existing partial-image overlap; no new inference and no model selection",
+  "within_metric_tolerance": true
+}
