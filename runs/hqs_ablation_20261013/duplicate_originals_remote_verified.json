@@ -1,0 +1,18 @@
+{
+  "server": "244",
+  "root": "/workspace/ProxUnroll-main",
+  "non_deleting": true,
+  "existing_different_file_policy": "abort before any write",
+  "files": {
+    "COURSEWORK.md": "25444b509564a75ca730529d16a962806b03c9a6140e713f67d4607bf1a0ecca",
+    "coursework/repository_evidence.json": "4c78db248cc99513d250855031243e500fa5186010156de9df93e1275cef0ba6",
+    "coursework/build_reports.py": "20be9bf471376592e904fc3e3d449d2d9e16c0fe4ba54311561a112371d08670",
+    "coursework/NANJING_WEB30.md": "62dc990904f2403fba3bf0d650437d99a4d1b12483068c08f5d91b32559c380d",
+    "coursework/REQUIREMENTS_STATUS_20261009.md": "e6069869054ff65ded6c6a1d69b2554c7e3acdfbd16b6164da47205581c2aa11",
+    "coursework/REPOSITORY_SYNC.md": "5052b32e4f0d953363e9d1241e247fd7ff8d102366e8d057488f2142b49d8163",
+    "coursework/build_nanjing_report.py": "ee8f166c779b86bf4ce874e1d5a150a18b5540407d4aed08580af5f274305e07",
+    "coursework/build_nanjing_notes.py": "860ea9868bfe98a473004716c9eb0d4f453a4dbf430e1e5cb995add7b98d651c"
+  },
+  "compressed_bytes": 62231,
+  "archive_sha256": "23ba776693c077e86719ddf889f8e59f6926838a18f8dcf0a72511915d88857d"
+}
