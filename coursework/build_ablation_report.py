@@ -199,7 +199,16 @@ def main():
     report.draw_report('technical_report_ablation_20261013.pdf',
         'Single-Pixel Reconstruction: Controlled HQS Fine-Tuning and Training Ablations', pages)
     markdown_path = report.OUT / 'technical_report_ablation_20261013.md'
-    markdown_path.write_text(markdown_path.read_text().replace('../../coursework/figures/', '../../runs/hqs_ablation_20261013/figures/'))
+    markdown = markdown_path.read_text().replace('../../coursework/figures/', '../../runs/hqs_ablation_20261013/figures/')
+    for page in pages:
+        for kind, rows in page['blocks']:
+            if kind != 'table':
+                continue
+            original = '\n\n'.join(' | '.join(str(c) for c in row) for row in rows)
+            rendered = ['| ' + ' | '.join(str(c) for c in row) + ' |' for row in rows]
+            rendered.insert(1, '| ' + ' | '.join(['---'] * len(rows[0])) + ' |')
+            markdown = markdown.replace(original, '\n'.join(rendered))
+    markdown_path.write_text(markdown)
     (BASE / 'presentation_facts.json').write_text(json.dumps(dict(
         primary_continuation=continuation_table, factorial_endpoint=factorial_table,
         regression_continuation=regression_table, selected_step=selected,
