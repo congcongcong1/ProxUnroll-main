@@ -1,0 +1,16 @@
+{
+  "completed_steps": 800,
+  "start_step": 0,
+  "best_step": 600,
+  "best_validation_psnr": 28.486621763708182,
+  "initial_clean_validation_psnr": 29.224096385373162,
+  "wall_seconds": 1194.789716460975,
+  "peak_memory_mib": 11098.93603515625,
+  "mean_step_seconds": 1.1351057166283136,
+  "stop_reason": "step_limit",
+  "checkpoint_sha256": {
+    "best.pth": "5a2e13359549b89783bd8af87e95625a4c8732636690946363121c6d1b8fd5e0",
+    "last.pth": "701e25f5848899d6f60efbc42aa8e8d0feb4cf211fe4db16d3045f0e27a35815"
+  },
+  "fixed_factors_verified": true
+}

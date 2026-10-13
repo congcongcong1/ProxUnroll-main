@@ -1,0 +1,35 @@
+{
+  "completed_steps": 800,
+  "new_updates": 800,
+  "selected_step": 800,
+  "optimizer_step_counts": [
+    800
+  ],
+  "finite_loss_and_gradient": true,
+  "frozen_sensing_factors": [
+    "H_256_256",
+    "W_256_256",
+    "H_321_481",
+    "W_321_481",
+    "H_512_512",
+    "W_512_512"
+  ],
+  "changed_reconstruction_tensors": 427,
+  "independent_validation_selection": true,
+  "checked_crop_and_measurement_steps": [
+    1,
+    2,
+    401,
+    800
+  ],
+  "checkpoint_hashes": {
+    "best.pth": "c559735bb54df490d3b60e734b4db85299006fbfaeb7ee30303454f55075069f",
+    "last.pth": "ea764c62054496c3416770d46446bd23da4dd6867f3e2d2862be261d64867e1f"
+  },
+  "selected_mixed_validation_gain_db": 0.2847106221304898,
+  "selected_clean_validation_gain_db": 0.14287641481501723,
+  "endpoint_mixed_validation_gain_db": 0.2847106221304898,
+  "endpoint_clean_validation_gain_db": 0.14287641481501723,
+  "wall_seconds": 1188.322632875992,
+  "peak_memory_mib": 11098.93603515625
+}

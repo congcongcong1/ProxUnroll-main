@@ -1,0 +1,105 @@
+{
+  "models": {
+    "hqs": {
+      "path": "weight/hqs_proxunroll.pth",
+      "sha256": "848c263ac54d44ef74374b6fa686af6b8dfa7240720499d174ff135ab1959be6"
+    },
+    "hqs_10000": {
+      "path": "runs/lab244_10000_20261009/finetune/best.pth",
+      "sha256": "78601d24cabff4dc884c1b129a0643491098cf84bf54dc5c93dbf02e38fd2ed3"
+    },
+    "hqs_12000": {
+      "path": "runs/hqs_ablation_20261013/continuation/best.pth",
+      "sha256": "668bb36e066d4a26b193d74661f05d1f95983206a0315e1e09857618f483700a"
+    },
+    "last_12000": {
+      "path": "runs/hqs_ablation_20261013/continuation/last.pth",
+      "sha256": "69b21b0567c3ad69a4026735197d4b125cea1ae875d64b001f4ec29fff10237f"
+    },
+    "best_noise_on_weighted_s20261013": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261013/best.pth",
+      "sha256": "5a2e13359549b89783bd8af87e95625a4c8732636690946363121c6d1b8fd5e0"
+    },
+    "last_noise_on_weighted_s20261013": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261013/last.pth",
+      "sha256": "701e25f5848899d6f60efbc42aa8e8d0feb4cf211fe4db16d3045f0e27a35815"
+    },
+    "best_noise_off_weighted_s20261013": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261013/best.pth",
+      "sha256": "b340890c021670f80a8495a5bb4aaf3d48f3c384ecc6129ac3176bb77eded9d1"
+    },
+    "last_noise_off_weighted_s20261013": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261013/last.pth",
+      "sha256": "dc4140d8a0e07dd20dd1cf73c3df83e3edad11c0057559e9e89ab37761f96e05"
+    },
+    "best_noise_on_final_s20261013": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_on_final_s20261013/best.pth",
+      "sha256": "c559735bb54df490d3b60e734b4db85299006fbfaeb7ee30303454f55075069f"
+    },
+    "last_noise_on_final_s20261013": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_on_final_s20261013/last.pth",
+      "sha256": "ea764c62054496c3416770d46446bd23da4dd6867f3e2d2862be261d64867e1f"
+    },
+    "best_noise_off_final_s20261013": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_off_final_s20261013/best.pth",
+      "sha256": "a3a18e297f459cad64c899486557499dc0576a7a68eaa35ac6bd31fb7e6969cd"
+    },
+    "last_noise_off_final_s20261013": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_off_final_s20261013/last.pth",
+      "sha256": "7d188df73ab9fd3db83aa482072a0063d38d9548ec34131023d87ea1145d9bb0"
+    },
+    "best_noise_on_weighted_s20261014": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261014/best.pth",
+      "sha256": "f62beec6ec0a5390c4f461725e7b8e33633f671f6914289516c8cb4979d2c66d"
+    },
+    "last_noise_on_weighted_s20261014": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261014/last.pth",
+      "sha256": "5025812b7a4f4379b991de1d89f4e7f459a77a850bd28e0b2aed4ad37c582b38"
+    },
+    "best_noise_off_weighted_s20261014": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261014/best.pth",
+      "sha256": "5eecedc13082b4a59ee8b1e361e7c584176b02a98b32c145fbf95fa0de1656ae"
+    },
+    "last_noise_off_weighted_s20261014": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261014/last.pth",
+      "sha256": "f2022bf178809717e3e06ac18e889a4039867bb68c6e74e42b3d6b41f167ec0b"
+    },
+    "best_noise_on_final_s20261014": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_on_final_s20261014/best.pth",
+      "sha256": "12300f42378cbfbcc81b5331da19ca86dc27f6ba960c533938e5cfc9f708a364"
+    },
+    "last_noise_on_final_s20261014": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_on_final_s20261014/last.pth",
+      "sha256": "75543bcdcc3c0aa245bdfca21c40849349fb6818cc8863086be6eea18e1f9d3c"
+    },
+    "best_noise_off_final_s20261014": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_off_final_s20261014/best.pth",
+      "sha256": "a5e6d1aad7451a830df6ee37120c4ea3cea09e9811d326bb59eeaeb2b33b9fc0"
+    },
+    "last_noise_off_final_s20261014": {
+      "path": "runs/hqs_ablation_20261013/arms/noise_off_final_s20261014/last.pth",
+      "sha256": "d7299b1f7babc42c33fcad7c2de2b5e3f4569fdb29250148b5b56859308d9b54"
+    }
+  },
+  "selected_steps": {
+    "noise_on_weighted_s20261013": 600,
+    "noise_off_weighted_s20261013": 800,
+    "noise_on_final_s20261013": 800,
+    "noise_off_final_s20261013": 800,
+    "noise_on_weighted_s20261014": 800,
+    "noise_off_weighted_s20261014": 800,
+    "noise_on_final_s20261014": 800,
+    "noise_off_final_s20261014": 800
+  },
+  "training_lock_sha256": "fb0baa58da2bfbb8c374030ef09b195218301788f369a653887ea68bf137bed7",
+  "fresh_manifest_sha256": "9cfcbc04a8be7e94aa741244db452de431bffab1f9e657d463133db166c99384",
+  "regression_manifest_sha256": "73b51ba932d2f85597e0e0d09424db9484276730220cf870ab999b6854be94d3",
+  "evaluation_source_hashes": {
+    "coursework/evaluate_ablation_suite.py": "acdfab1f963c106fb7434cea8fbb439f14769f39205059d9d3990d4319162814",
+    "coursework/analyze_ablation.py": "70b8d055840963eb2e542b177b704bc820ff8b07f1ee7a806e7897bf73ce818f",
+    "coursework/evaluate_manifest.py": "25341c2e497848fd0a0893191008e4084d1f1c4eeed4d9e7c39b9b39c403eecd",
+    "coursework/verify_lab_run.py": "7a2fce134ae7ff0fdec25c67457cddeba6bfa67c09af9d9f9dfe9303bc039041"
+  },
+  "selection": "validation only; all selected best and fixed-budget last states retained",
+  "test_driven_model_selection": false
+}

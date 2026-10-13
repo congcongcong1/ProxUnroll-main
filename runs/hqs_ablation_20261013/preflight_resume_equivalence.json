@@ -1,0 +1,7 @@
+{
+  "step": 3,
+  "model_optimizer_scheduler_rng_bitwise_equal": true,
+  "crop_loss_validation_equal": true,
+  "resumed": "/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/preflight_resumed3/last.pth",
+  "continuous": "/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/preflight_continuous3/last.pth"
+}

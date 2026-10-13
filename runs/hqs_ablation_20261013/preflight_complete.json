@@ -1,0 +1,85 @@
+{
+  "preflight_updates": 14,
+  "all_four_arms_have_real_cuda_updates_and_checkpoints": true,
+  "ablation_resume_2_plus_1_equals_3": true,
+  "legacy_resume_5_to_6_bitwise_equal": true,
+  "retained_legacy_fixture_sha256": "5610a88f02e96df925907a3030fb02cbb648c95e769f2e4c36d83d475e837a19",
+  "arms": [
+    {
+      "name": "preflight_on_weighted",
+      "summary": {
+        "completed_steps": 2,
+        "start_step": 0,
+        "best_step": 2,
+        "best_validation_psnr": 25.894710013278996,
+        "initial_clean_validation_psnr": 26.362051233762244,
+        "wall_seconds": 21.49677548906766,
+        "peak_memory_mib": 11093.08251953125,
+        "mean_step_seconds": 1.260990176582709,
+        "stop_reason": "step_limit",
+        "checkpoint_sha256": {
+          "best.pth": "7f73823e0de0ddce80c835943c58f8130036adc11aab03bc2cc55620aed5ef64",
+          "last.pth": "4ec2c40271213c461a30285e5ffca26c349851e27b902b6cf9e8bc737af8872e"
+        },
+        "fixed_factors_verified": true
+      }
+    },
+    {
+      "name": "preflight_off_weighted",
+      "summary": {
+        "completed_steps": 2,
+        "start_step": 0,
+        "best_step": 2,
+        "best_validation_psnr": 25.89091725114905,
+        "initial_clean_validation_psnr": 26.362051233762244,
+        "wall_seconds": 21.261837602825835,
+        "peak_memory_mib": 11093.08251953125,
+        "mean_step_seconds": 1.2735061870189384,
+        "stop_reason": "step_limit",
+        "checkpoint_sha256": {
+          "best.pth": "b5207b0bf457aaeec65800edb7267934a4b00a1b71154b3974df81f586e0fb65",
+          "last.pth": "300aae1c20e7307166c00ffc9121d36c30b11e7c92bbb39b08604cb3a38bd2d3"
+        },
+        "fixed_factors_verified": true
+      }
+    },
+    {
+      "name": "preflight_on_final",
+      "summary": {
+        "completed_steps": 2,
+        "start_step": 0,
+        "best_step": 2,
+        "best_validation_psnr": 25.894880217697544,
+        "initial_clean_validation_psnr": 26.362051233762244,
+        "wall_seconds": 21.49237691797316,
+        "peak_memory_mib": 11093.08251953125,
+        "mean_step_seconds": 1.3134513593977317,
+        "stop_reason": "step_limit",
+        "checkpoint_sha256": {
+          "best.pth": "cb1154611e00b806c090e3fb4133215214c7ee9ab035cad012407b774e6af79d",
+          "last.pth": "48d5e14ef874d3728f80bd1732779e976faaa04980fd477d0cca71213c0fa496"
+        },
+        "fixed_factors_verified": true
+      }
+    },
+    {
+      "name": "preflight_off_final",
+      "summary": {
+        "completed_steps": 2,
+        "start_step": 0,
+        "best_step": 2,
+        "best_validation_psnr": 25.891088477157606,
+        "initial_clean_validation_psnr": 26.362051233762244,
+        "wall_seconds": 22.649876788957044,
+        "peak_memory_mib": 11093.08251953125,
+        "mean_step_seconds": 1.3093796204775572,
+        "stop_reason": "step_limit",
+        "checkpoint_sha256": {
+          "best.pth": "6c08de7c182f20c07fa4c9f6ddc8b2eb0df9d4a518323972fc58ca1cdec00595",
+          "last.pth": "d5f3f68fd2d474c36013c9291fb2b0d97a1c0a69b9e4f2a529335b2745cae0e4"
+        },
+        "fixed_factors_verified": true
+      }
+    }
+  ]
+}

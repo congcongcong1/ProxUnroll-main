@@ -1,0 +1,9 @@
+{
+  "seed": 20261013,
+  "steps": 800,
+  "arms": 4,
+  "same_image_order_crops_flips_sampling_and_potential_noise": true,
+  "same_measurements_between_supervision_arms": true,
+  "clean_arms_have_zero_training_noise": true,
+  "loss_total_weight_one": true
+}
