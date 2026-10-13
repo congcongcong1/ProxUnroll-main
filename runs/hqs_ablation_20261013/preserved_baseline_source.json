@@ -1,0 +1,53 @@
+{
+  "path": "runs/nanjing_web30_20261009/comparison/dataset_summary.csv",
+  "sha256": "4e9227998777de43d5a6263e36940ecef2071dd92a7ad1494e59989904d92f53",
+  "dataset": "NJU_campus_web",
+  "cr": 0.1,
+  "sigma": 0,
+  "methods": {
+    "adjoint": {
+      "dataset": "NJU_campus_web",
+      "cr": "0.1",
+      "sigma": "0.0",
+      "method": "adjoint",
+      "units": "18",
+      "images": "18",
+      "psnr": "23.9207985094517",
+      "ssim": "0.5710051693611603",
+      "seconds": "0.00024052437705298266"
+    },
+    "fista_dct": {
+      "dataset": "NJU_campus_web",
+      "cr": "0.1",
+      "sigma": "0.0",
+      "method": "fista_dct",
+      "units": "18",
+      "images": "18",
+      "psnr": "24.604091585968757",
+      "ssim": "0.6243778720317623",
+      "seconds": "0.37437162104631877"
+    },
+    "hqs": {
+      "dataset": "NJU_campus_web",
+      "cr": "0.1",
+      "sigma": "0.0",
+      "method": "hqs",
+      "units": "18",
+      "images": "18",
+      "psnr": "28.345434618027255",
+      "ssim": "0.8453907839728361",
+      "seconds": "0.3213014918146655"
+    },
+    "admm": {
+      "dataset": "NJU_campus_web",
+      "cr": "0.1",
+      "sigma": "0.0",
+      "method": "admm",
+      "units": "18",
+      "images": "18",
+      "psnr": "28.378332062211722",
+      "ssim": "0.8449461351810255",
+      "seconds": "0.32078337820712477"
+    }
+  }
+}

@@ -5,6 +5,7 @@ import posixpath
 from pathlib import Path
 import zipfile
 import xml.etree.ElementTree as ET
+from pypdf import PdfReader
 
 from coursework.run_experiments import ROOT, sha
 
@@ -80,6 +81,30 @@ def main():
                   native_chart_checks=result, paired_design_table_checked=True,
                   failure_candidate_and_signed_error_checked=True,
                   visual_check='Separate rendered-page inspection required; numeric audit alone is insufficient')
+    report = ROOT / 'output/pdf/technical_report_ablation_20261013.pdf'
+    pages = [' '.join(p.extract_text().split()) for p in PdfReader(report).pages]
+    primary = list(csv.DictReader((BASE / 'evaluation_primary/all_model_summary.csv').open()))
+    for sigma, label in [(0., 'Clean'), (.01, 'Noise .01'), (.05, 'Noise .05')]:
+        values = [pair('hqs_12000', reference, sigma) * 100 for reference in ['hqs', 'hqs_10000']]
+        score = next(r for r in primary if r['method'] == 'hqs_12000' and float(r['cr']) == .1 and float(r['sigma']) == sigma)
+        expected_row = f'{label} {values[0]:+.2f}% {values[1]:+.2f}% {float(score["psnr"]):.2f} / {float(score["ssim"]):.3f}'
+        assert expected_row in pages[2], expected_row
+    for seed in [20261013, 20261014]:
+        for sigma, label in [(0., 'clean'), (.05, 'noise .05')]:
+            expected_row = f'{seed} / {label} {factor("noise_effect_at_weighted",seed,sigma)*100:+.2f}% {factor("stage_effect_at_noise_on",seed,sigma)*100:+.2f}%'
+            assert expected_row in pages[3], expected_row
+    regression_csv = BASE / 'evaluation_regression/paired_summary.csv'
+    regression = list(csv.DictReader(regression_csv.open()))
+    for dataset, label in [('Kodak','Kodak24'), ('HEVC_B','HEVC B'), ('HEVC_E','HEVC E'),
+                           ('DIV2K_fresh','DIV2K32'), ('NJU_campus_web','Campus18'), ('Nanjing_scenic_web','Scenic12')]:
+        values = [float(next(r for r in regression if r['candidate'] == 'hqs_12000' and r['reference'] == 'hqs_10000'
+                        and r['dataset'] == dataset and float(r['cr']) == .1 and float(r['sigma']) == sigma)['mse_reduction_percent'])
+                  for sigma in [0., .05]]
+        assert f'{label} {values[0]:+.2f}% {values[1]:+.2f}%' in pages[4]
+    record['numeric_csv_hashes'].update({str(p.relative_to(ROOT)): sha(p) for p in
+                                       [BASE / 'evaluation_primary/all_model_summary.csv', regression_csv]})
+    record['report_sha256'] = sha(report)
+    record['report_tables_checked_against_csv'] = ['continuation MSE/PSNR/SSIM', 'both-seed factorial contrasts', 'all regression datasets']
     (BASE / 'materials_numeric_audit.json').write_text(json.dumps(record, indent=2) + '\n')
     print(json.dumps(record, indent=2))
 

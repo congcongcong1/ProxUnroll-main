@@ -1,0 +1,11 @@
+{
+  "server": "244",
+  "root": "/workspace/ProxUnroll-main",
+  "non_deleting": true,
+  "existing_different_file_policy": "abort before any write",
+  "files": {
+    "coursework/preflight_ablation.py": "1e8d32e652840bf89090d0eb29a56644c8e45c3aaa8b8cb348c4ee4618df6bda"
+  },
+  "compressed_bytes": 1726,
+  "archive_sha256": "85e7a42e90f7606caf5d797d746896d5182e1fe88c004b021689c7526546914d"
+}

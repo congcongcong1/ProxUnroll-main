@@ -1,0 +1,2 @@
+image,dataset,sequence,split,cr,actual_cr,sigma,seed,measurement_sha256,method,psnr,ssim,seconds,relative_residual
+kodim01,Kodak,kodim01,test,0.1,0.1001129150390625,0.0,2026,40e7cc33fdc3172c07c2679b8848e4ab3416ce89db487b17f58f0cad6529b495,hqs,24.92010058318052,0.6745541009800806,0.34127813996747136,0.0039202370680868626

@@ -1,0 +1,11 @@
+{
+  "server": "244",
+  "root": "/workspace/ProxUnroll-main",
+  "non_deleting": true,
+  "existing_different_file_policy": "abort before any write",
+  "files": {
+    "coursework/audit_ablation_delivery.py": "6f31151869f4ad71af9606457d4ef086252e56b0620fcbb5391383552d9588c2"
+  },
+  "compressed_bytes": 3573,
+  "archive_sha256": "3627c90b365d54d0ef54e1c01f985de4e9ed4932745f3f63f33f01cb03132e03"
+}

@@ -1,0 +1,41 @@
+{
+  "ppt_sha256": "442d226ea77e4152cf75b5e5fec49f7db5564d00a80add3cc61cca7408bea2ec",
+  "report_facts_sha256": "c258c4a8a1b9bf3e0fbe2743a0316464be85372676c27b8777fa924d4107e191",
+  "numeric_csv_hashes": {
+    "runs/hqs_ablation_20261013/evaluation_primary/paired_summary.csv": "03cdd1fb24777565f5eb3ecb13c6af4195695d87794921dc5f9e1445947878be",
+    "runs/nanjing_web30_20261009/comparison/dataset_summary.csv": "4e9227998777de43d5a6263e36940ecef2071dd92a7ad1494e59989904d92f53",
+    "runs/hqs_ablation_20261013/evaluation_primary/all_model_summary.csv": "c9d341e44d03bcb938d57d8bebe245ff3f6b49ba14c68c5e1e3f80c46cc1635b",
+    "runs/hqs_ablation_20261013/evaluation_regression/paired_summary.csv": "275b98da405d43de0c1a1c856b7ed066ee9a3d78a2505d2a2a060bf66c015ae7"
+  },
+  "native_chart_checks": {
+    "8": {
+      "chart_part": "ppt/slides/charts/chart2.xml",
+      "max_absolute_numeric_error": 3.0976996412412916e-08,
+      "all_series_and_training_seeds_checked": true
+    },
+    "9": {
+      "chart_part": "ppt/slides/charts/chart3.xml",
+      "max_absolute_numeric_error": 4.805298210210085e-08,
+      "all_series_and_training_seeds_checked": true
+    },
+    "10": {
+      "chart_part": "ppt/slides/charts/chart4.xml",
+      "max_absolute_numeric_error": 4.9445733339248225e-08,
+      "all_series_and_training_seeds_checked": true
+    },
+    "6": {
+      "chart_part": "ppt/slides/charts/chart1.xml",
+      "max_absolute_numeric_error": 4.787538305350836e-06,
+      "all_series_and_training_seeds_checked": true
+    }
+  },
+  "paired_design_table_checked": true,
+  "failure_candidate_and_signed_error_checked": true,
+  "visual_check": "Separate rendered-page inspection required; numeric audit alone is insufficient",
+  "report_sha256": "509a2bd62abc031a55e18216af0a07fd859add26ce9e85b2b58e379a35329c54",
+  "report_tables_checked_against_csv": [
+    "continuation MSE/PSNR/SSIM",
+    "both-seed factorial contrasts",
+    "all regression datasets"
+  ]
+}

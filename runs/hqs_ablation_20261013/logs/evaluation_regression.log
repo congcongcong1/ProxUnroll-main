@@ -1,0 +1,116 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"evaluation_command": ["/workspace/ProxUnroll-main/.venv-linux/bin/python", "-m", "coursework.evaluate_manifest", "--manifest", "/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/regression_manifest.json", "--output", "/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/evaluation_regression", "--methods", "hqs,hqs_10000,hqs_12000,last_12000,best_noise_on_weighted_s20261013,best_noise_off_weighted_s20261013,best_noise_on_final_s20261013,best_noise_off_final_s20261013,best_noise_on_weighted_s20261014,best_noise_off_weighted_s20261014,best_noise_on_final_s20261014,best_noise_off_final_s20261014", "--extra-checkpoint", "hqs_10000=/workspace/ProxUnroll-main/runs/lab244_10000_20261009/finetune/best.pth", "--extra-checkpoint", "hqs_12000=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/continuation/best.pth", "--extra-checkpoint", "last_12000=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/continuation/last.pth", "--extra-checkpoint", "best_noise_on_weighted_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261013/best.pth", "--extra-checkpoint", "best_noise_off_weighted_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261013/best.pth", "--extra-checkpoint", "best_noise_on_final_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_final_s20261013/best.pth", "--extra-checkpoint", "best_noise_off_final_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_final_s20261013/best.pth", "--extra-checkpoint", "best_noise_on_weighted_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261014/best.pth", "--extra-checkpoint", "best_noise_off_weighted_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261014/best.pth", "--extra-checkpoint", "best_noise_on_final_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_final_s20261014/best.pth", "--extra-checkpoint", "best_noise_off_final_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_final_s20261014/best.pth"]}
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+kodim01: 132 rows, 52.5s
+kodim02: 264 rows, 105.1s
+kodim03: 396 rows, 156.7s
+kodim04: 528 rows, 208.9s
+kodim05: 660 rows, 260.9s
+kodim06: 792 rows, 312.9s
+kodim07: 924 rows, 364.5s
+kodim08: 1056 rows, 417.0s
+kodim09: 1188 rows, 469.2s
+kodim10: 1320 rows, 522.7s
+kodim11: 1452 rows, 575.9s
+kodim12: 1584 rows, 629.7s
+kodim13: 1716 rows, 694.3s
+kodim14: 1848 rows, 761.9s
+kodim15: 1980 rows, 825.0s
+kodim16: 2112 rows, 884.9s
+kodim17: 2244 rows, 941.7s
+kodim18: 2376 rows, 995.5s
+kodim19: 2508 rows, 1052.8s
+kodim20: 2640 rows, 1113.8s
+kodim21: 2772 rows, 1169.8s
+kodim22: 2904 rows, 1223.8s
+kodim23: 3036 rows, 1277.3s
+kodim24: 3168 rows, 1332.1s
+hevc_BQTerrace_f0000: 3300 rows, 1387.3s
+hevc_BQTerrace_f0200: 3432 rows, 1442.9s
+hevc_BQTerrace_f0400: 3564 rows, 1497.2s
+hevc_BasketballDrive_f0000: 3696 rows, 1552.6s
+hevc_BasketballDrive_f0167: 3828 rows, 1607.8s
+hevc_BasketballDrive_f0334: 3960 rows, 1665.9s
+hevc_Cactus_f0000: 4092 rows, 1722.3s
+hevc_Cactus_f0166: 4224 rows, 1779.7s
+hevc_Cactus_f0333: 4356 rows, 1837.3s
+hevc_Kimono1_f0000: 4488 rows, 1893.0s
+hevc_Kimono1_f0080: 4620 rows, 1947.9s
+hevc_Kimono1_f0160: 4752 rows, 2003.3s
+hevc_ParkScene_f0000: 4884 rows, 2059.6s
+hevc_ParkScene_f0080: 5016 rows, 2116.8s
+hevc_ParkScene_f0160: 5148 rows, 2173.2s
+hevc_FourPeople_f0000: 5280 rows, 2230.8s
+hevc_FourPeople_f0200: 5412 rows, 2287.5s
+hevc_FourPeople_f0400: 5544 rows, 2343.8s
+hevc_Johnny_f0000: 5676 rows, 2399.9s
+hevc_Johnny_f0200: 5808 rows, 2456.8s
+hevc_Johnny_f0400: 5940 rows, 2519.9s
+hevc_KristenAndSara_f0000: 6072 rows, 2579.2s
+hevc_KristenAndSara_f0200: 6204 rows, 2639.7s
+hevc_KristenAndSara_f0400: 6336 rows, 2701.1s
+fresh_div2k_0802: 6468 rows, 2760.4s
+fresh_div2k_0804: 6600 rows, 2819.5s
+fresh_div2k_0808: 6732 rows, 2879.2s
+fresh_div2k_0811: 6864 rows, 2938.5s
+fresh_div2k_0813: 6996 rows, 2999.1s
+fresh_div2k_0817: 7128 rows, 3057.8s
+fresh_div2k_0821: 7260 rows, 3117.4s
+fresh_div2k_0823: 7392 rows, 3177.5s
+fresh_div2k_0826: 7524 rows, 3237.7s
+fresh_div2k_0830: 7656 rows, 3297.4s
+fresh_div2k_0832: 7788 rows, 3359.5s
+fresh_div2k_0836: 7920 rows, 3418.0s
+fresh_div2k_0839: 8052 rows, 3478.9s
+fresh_div2k_0842: 8184 rows, 3538.7s
+fresh_div2k_0845: 8316 rows, 3599.8s
+fresh_div2k_0849: 8448 rows, 3659.5s
+fresh_div2k_0851: 8580 rows, 3719.5s
+fresh_div2k_0855: 8712 rows, 3781.8s
+fresh_div2k_0858: 8844 rows, 3842.2s
+fresh_div2k_0861: 8976 rows, 3903.1s
+fresh_div2k_0864: 9108 rows, 3965.4s
+fresh_div2k_0868: 9240 rows, 4026.9s
+fresh_div2k_0870: 9372 rows, 4088.5s
+fresh_div2k_0874: 9504 rows, 4150.8s
+fresh_div2k_0877: 9636 rows, 4211.4s
+fresh_div2k_0879: 9768 rows, 4273.3s
+fresh_div2k_0883: 9900 rows, 4336.4s
+fresh_div2k_0887: 10032 rows, 4398.8s
+fresh_div2k_0889: 10164 rows, 4464.9s
+fresh_div2k_0892: 10296 rows, 4543.1s
+fresh_div2k_0896: 10428 rows, 4618.5s
+fresh_div2k_0899: 10560 rows, 4688.1s
+web_nju_gulou_01: 10692 rows, 4766.3s
+web_nju_gulou_02: 10824 rows, 4849.0s
+web_nju_gulou_03: 10956 rows, 4930.7s
+web_nju_gulou_04: 11088 rows, 5013.4s
+web_nju_gulou_05: 11220 rows, 5094.1s
+web_nju_gulou_06: 11352 rows, 5173.9s
+web_nju_gulou_07: 11484 rows, 5251.2s
+web_nju_gulou_08: 11616 rows, 5326.3s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/ProxUnroll-main/coursework/evaluate_ablation_suite.py", line 95, in <module>
+    main()
+  File "/workspace/ProxUnroll-main/coursework/evaluate_ablation_suite.py", line 87, in main
+    subprocess.run(command, cwd=ROOT, check=True, timeout=5400)
+  File "/opt/conda/lib/python3.11/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/subprocess.py", line 2141, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+  File "/opt/conda/lib/python3.11/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/subprocess.py", line 2045, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/workspace/ProxUnroll-main/.venv-linux/bin/python', '-m', 'coursework.evaluate_manifest', '--manifest', '/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/regression_manifest.json', '--output', '/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/evaluation_regression', '--methods', 'hqs,hqs_10000,hqs_12000,last_12000,best_noise_on_weighted_s20261013,best_noise_off_weighted_s20261013,best_noise_on_final_s20261013,best_noise_off_final_s20261013,best_noise_on_weighted_s20261014,best_noise_off_weighted_s20261014,best_noise_on_final_s20261014,best_noise_off_final_s20261014', '--extra-checkpoint', 'hqs_10000=/workspace/ProxUnroll-main/runs/lab244_10000_20261009/finetune/best.pth', '--extra-checkpoint', 'hqs_12000=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/continuation/best.pth', '--extra-checkpoint', 'last_12000=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/continuation/last.pth', '--extra-checkpoint', 'best_noise_on_weighted_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261013/best.pth', '--extra-checkpoint', 'best_noise_off_weighted_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261013/best.pth', '--extra-checkpoint', 'best_noise_on_final_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_final_s20261013/best.pth', '--extra-checkpoint', 'best_noise_off_final_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_final_s20261013/best.pth', '--extra-checkpoint', 'best_noise_on_weighted_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261014/best.pth', '--extra-checkpoint', 'best_noise_off_weighted_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261014/best.pth', '--extra-checkpoint', 'best_noise_on_final_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_final_s20261014/best.pth', '--extra-checkpoint', 'best_noise_off_final_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_final_s20261014/best.pth']' timed out after 5399.99994134414 seconds

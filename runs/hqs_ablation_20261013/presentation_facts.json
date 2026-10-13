@@ -1,0 +1,149 @@
+{
+  "primary_continuation": [
+    [
+      "Condition",
+      "vs official",
+      "vs 10000",
+      "PSNR / SSIM"
+    ],
+    [
+      "Clean",
+      "+4.12%",
+      "+0.21%",
+      "28.02 / 0.845"
+    ],
+    [
+      "Noise .01",
+      "+3.89%",
+      "+0.20%",
+      "27.68 / 0.839"
+    ],
+    [
+      "Noise .05",
+      "+12.33%",
+      "+0.09%",
+      "25.92 / 0.783"
+    ]
+  ],
+  "factorial_endpoint": [
+    [
+      "Seed / test",
+      "Noise effect",
+      "Stage effect"
+    ],
+    [
+      "20261013 / clean",
+      "-0.77%",
+      "+0.03%"
+    ],
+    [
+      "20261013 / noise .05",
+      "+8.34%",
+      "-0.20%"
+    ],
+    [
+      "20261014 / clean",
+      "-0.71%",
+      "+0.32%"
+    ],
+    [
+      "20261014 / noise .05",
+      "+8.56%",
+      "-0.07%"
+    ]
+  ],
+  "regression_continuation": [
+    [
+      "Dataset",
+      "Clean",
+      "Noise .05"
+    ],
+    [
+      "Kodak24",
+      "+0.81%",
+      "+0.37%"
+    ],
+    [
+      "HEVC B",
+      "+0.40%",
+      "+0.29%"
+    ],
+    [
+      "HEVC E",
+      "-0.12%",
+      "+1.03%"
+    ],
+    [
+      "DIV2K32",
+      "+0.18%",
+      "+0.28%"
+    ],
+    [
+      "Campus18",
+      "+0.41%",
+      "+0.31%"
+    ],
+    [
+      "Scenic12",
+      "+0.21%",
+      "+0.45%"
+    ]
+  ],
+  "selected_step": 11500,
+  "formal_updates": 8400,
+  "total_gpu_minutes": 212.42255542226292,
+  "maximum_allocated_memory_gib": 10.842641830444336,
+  "clean_mse_reduction_vs_10000": 0.20843276968752766,
+  "strong_noise_mse_reduction_vs_10000": 0.08974029682793372,
+  "primary_rows": 11440,
+  "regression_rows": 14520,
+  "failure_case": {
+    "image": "holdout10000_div2k_0897",
+    "dataset": "DIV2K_holdout_10000",
+    "sequence": "holdout10000_div2k_0897",
+    "cr": "0.04",
+    "sigma": "0.0",
+    "measurement_seed": "2026",
+    "reference": "hqs_10000",
+    "candidate": "hqs_12000",
+    "comparison": "model_vs_hqs_10000",
+    "checkpoint_view": "",
+    "training_seed": "",
+    "old_mse": "0.01635762959000785",
+    "new_mse": "0.01716989175115072",
+    "mse_reduction_percent": "-4.965647110868954",
+    "delta_psnr": "-0.21047187533832457",
+    "delta_ssim": "-0.01873167290516542",
+    "source": {
+      "name": "holdout10000_div2k_0897",
+      "dataset": "DIV2K_holdout_10000",
+      "sequence": "holdout10000_div2k_0897",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0897.png",
+      "source": "/datasets/DIV2K_valid_HR/0897.png",
+      "source_sha256": "dca63f56dba4a2a2c6b920c4b0406c6c6459d8f7ffb0d20322f51fbbc8f14b38",
+      "sha256": "d4c17117ddd752645a966a397e240340a3f2c6d71d3f098936472a911d1d2e9b",
+      "source_dimensions": [
+        2040,
+        1368
+      ],
+      "crop_xywh": [
+        336,
+        0,
+        1368,
+        1368
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+    },
+    "illustration_hashes": {
+      "reference.png": "d4c17117ddd752645a966a397e240340a3f2c6d71d3f098936472a911d1d2e9b",
+      "old.npy": "57d0fb3e5c786deb51246dbb4fed097a0a58d34be6ff357eb6de1c6cf309074c",
+      "old.png": "749629bb6947d859ccfc0b165644a0fd4abb1e2784bd8297ebe860e65a596ca5",
+      "new.npy": "667d0a0de732d25e54aa50c598a8bd04cd72c0e1bace59540f9e4ae77d14e5f8",
+      "new.png": "9b64b7010b8228a5306dacb7d7436092f900bacca20af623da93cb42826a2acf"
+    },
+    "selection_rule": "smallest per-condition MSE reduction on the primary set; selected model first, endpoint only if selected never regresses",
+    "interpretation": "diagnostic selection after test, never checkpoint selection"
+  }
+}

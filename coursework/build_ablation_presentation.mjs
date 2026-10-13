@@ -49,7 +49,7 @@ function chart(slide,categories,series,yTitle) {
     series:series.map(r=>({...r,values:r.values.map(v=>Number(v.toFixed(7)))})),
     hasLegend:true,legend:{position:'bottom',textStyle:{typeface:font,fontSize:21}},
     chartFill:'#FFFFFF',plotAreaFill:'#FFFFFF',
-    xAxis:{textStyle:{typeface:font,fontSize:20}},
+    xAxis:{tickLabelPosition:'low',textStyle:{typeface:font,fontSize:20}},
     yAxis:{title:yTitle,numberFormatCode:'0.0%',textStyle:{typeface:font,fontSize:20},majorGridlines:{fill:'#E3E7E7',width:1}},
     barOptions:{direction:'column',grouping:'clustered'}
   });
@@ -78,6 +78,25 @@ for(const [i,name] of ['web_nju_gulou_04','web_nju_xianlin_05','web_qinhuai_fuzi
 }
 text(dataSlide,'External-author photographs; source and license retained',65,623,1120,35,23,false,muted);
 record(6,'This preserved graph contains four-method results on all 18 campus originals, at five clean ratios, under identical measurements. At clean 10%, official HQS/ADMM have mean PSNR 28.35/28.38 dB, compared with 24.60 for DCT-FISTA and 23.92 for adjoint. These are previously observed regression results, not the new primary52 experiment. Source: runs/nanjing_web30_20261009/comparison/dataset_summary.csv.');
+// Recreate the literal series from frozen CSV-derived JSON. Importing the old
+// chart retains workbook references but loses that workbook in Artifact Tool;
+// never fabricate its missing formulas or bypass the portability validator.
+const baseline=JSON.parse(await fs.readFile(path.join(root,'runs/nanjing_web30_20261009/comparison/summary.json'),'utf8'));
+const baselineSlide=reset(6,'Four-method reconstruction on campus scenes',notes[6]);
+const methodLabels={adjoint:'Adjoint',fista_dct:'DCT-FISTA',hqs:'HQS pretrained',admm:'ADMM pretrained'};
+const methodColors={adjoint:'#777777',fista_dct:'#D78924',hqs:teal,admm:'#B74760'};
+const baselineChart=baselineSlide.charts.add('scatter',{
+  position:{left:65,top:160,width:1135,height:420},categories:[],
+  series:Object.entries(methodLabels).map(([method,name])=>({name,xValues:[1,4,10,25,50],
+    values:[.01,.04,.1,.25,.5].map(cr=>Number(baseline.datasets.find(r=>r.dataset==='NJU_campus_web'&&r.method===method&&r.cr===cr&&r.sigma===0).psnr.toFixed(5))),
+    fill:methodColors[method],line:{fill:methodColors[method],width:3},marker:{symbol:'circle',size:7}})),
+  hasLegend:true,legend:{position:'bottom',textStyle:{typeface:font,fontSize:21}},
+  chartFill:'#FFFFFF',plotAreaFill:'#FFFFFF',scatterOptions:{style:'lineWithMarkers'},
+  xAxis:{title:'Nominal clean sampling (%)',min:0,max:50,majorUnit:10,textStyle:{typeface:font,fontSize:20}},
+  yAxis:{title:'PSNR (dB)',min:0,max:45,numberFormatCode:'0.00',textStyle:{typeface:font,fontSize:20},majorGridlines:{fill:'#E3E7E7',width:1}}
+});
+applyPresentationChartFont(baselineChart,{fontFamily:font});
+text(baselineSlide,'Every source photograph contributes equally',65,610,1120,45,25,false,muted);
 
 let slide=reset(7,'Matched training ablations',
   'All four arms start from identical official HQS weights with fresh Adam 1e-5, batch one, FP32, frozen sensing factors, 800 DIV2K training and 16 validation originals. Seeds 20261013 and 20261014 each complete 800 steps per arm. Same-seed image order, crops, flips, sampling rates and potential noise draws are identical. Removing noise sets amplitude to zero. Removing intermediate loss keeps total weight one. Separate continuation restores full step-10000 state and adds 2000 updates under the unchanged update rule. Source: runs/hqs_ablation_20261013/lock.json and all training/pairing audits.');

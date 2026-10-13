@@ -1,0 +1,136 @@
+{
+  "report_sha256": "509a2bd62abc031a55e18216af0a07fd859add26ce9e85b2b58e379a35329c54",
+  "ppt_sha256": "442d226ea77e4152cf75b5e5fec49f7db5564d00a80add3cc61cca7408bea2ec",
+  "inspection": "Individually viewed all six PDF pages and all twelve slide PNGs; rechecked page 5 after balancing and slides 8/9/10 after moving category labels below negative bars",
+  "pdf_pages": [
+    {
+      "number": 1,
+      "path": "runs/hqs_ablation_20261013/materials_preview/pdf/page-1.png",
+      "sha256": "e5ad6f78173643a669b4855046e7d4c4c19c79254ff965c77a00d876100877c2",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 2,
+      "path": "runs/hqs_ablation_20261013/materials_preview/pdf/page-2.png",
+      "sha256": "bfffe289f3e1d2e7c0319edaad93a28b57da4bae5e9a3d87f5518a8c55b39ed5",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 3,
+      "path": "runs/hqs_ablation_20261013/materials_preview/pdf/page-3.png",
+      "sha256": "0a431371bb10bcfb84ac009bc3cc6995cedcc9bec3b2770ff17dcc17535b130e",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 4,
+      "path": "runs/hqs_ablation_20261013/materials_preview/pdf/page-4.png",
+      "sha256": "7984664168eda7fc30f638c7726bc275906de357f9c358e0c213c986eeca11a3",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 5,
+      "path": "runs/hqs_ablation_20261013/materials_preview/pdf/page-5.png",
+      "sha256": "da337806c18931aa9cbcf62fd6773313b82f5f519d9c0257331ff542acb03c5b",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 6,
+      "path": "runs/hqs_ablation_20261013/materials_preview/pdf/page-6.png",
+      "sha256": "b03defb64166066cd4b7eb25024b17dc75a360cc1f00e83fdc19e66604517d96",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    }
+  ],
+  "slides": [
+    {
+      "number": 1,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-1.png",
+      "sha256": "2b2cd2ac99ab79a498414a8c01cd23741f7cc6ccf5db0c4ca5631008384a5f65",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 2,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-2.png",
+      "sha256": "55479fdbd0060f939b244d3056e6a7767d6b3b7c180450be2426b405c8b928a6",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 3,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-3.png",
+      "sha256": "50fbfb38e28384ce123411b6652fcfe025a97b36cbe49a43fbcc4c9e1a8a64e0",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 4,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-4.png",
+      "sha256": "dc2e46387c04a698a2929cb1476ab5b72abfbde1cf3922970843e4938a52319f",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 5,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-5.png",
+      "sha256": "1046e847c816a37a6250763e1052dd96d0af286269dabd45d970e00ecfa3fb37",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 6,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-6.png",
+      "sha256": "1171c24b4af9ac04247321a691d37777f07483cec43faaa5798c93d6b627d1c5",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 7,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-7.png",
+      "sha256": "684394745932670178c62a504de152479302c5ff78839db290b2ab947d78fec3",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 8,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-8.png",
+      "sha256": "7a57fa5a11bf09c12482dcc89fe50824af538db895fa136066739d7bbfedca44",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 9,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-9.png",
+      "sha256": "c229a6aeabebe29b0d0bf4f25d3bd337e054519e10b7423e2daa90f8e305a58a",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 10,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-10.png",
+      "sha256": "1c411489893c413098e1ffcc6e39fa7950327f544f59b9209eb7e92a1a025214",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 11,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-11.png",
+      "sha256": "f4a4787e8fb5ed7260a8a2303e126747e1c428267bc057ac4ea44db2c26334ca",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "number": 12,
+      "path": "runs/hqs_ablation_20261013/materials_preview/slides/slide-12.png",
+      "sha256": "7014cff8089bd78d7a0cd924c3feeb663cf441bcb4a4fc59f8e13d71b034c305",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    }
+  ],
+  "powerpoint_application_edit_save_reopen_test": "not performed; artifact-tool reopen, native-chart workbook integrity, CSV numeric comparison, and rendered previews verified"
+}

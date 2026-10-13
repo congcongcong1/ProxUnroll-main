@@ -1,0 +1,22 @@
+{
+  "phase": "experiments_complete",
+  "completion_path": "bounded missing-original recovery; original failed exits retained",
+  "proof": {
+    "evaluations": {
+      "primary": {
+        "original_exit_code": 0,
+        "recovered": false
+      },
+      "regression": {
+        "original_exit_code": 1,
+        "recovered": true,
+        "recovery_exit_code": 0,
+        "reused_originals": 88,
+        "recovered_originals": 22,
+        "original_failure_and_partial_data_preserved": true
+      }
+    },
+    "original_finalize_exit": 1
+  },
+  "last_checked_epoch": 1791901940.541525
+}

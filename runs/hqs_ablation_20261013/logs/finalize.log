@@ -1,0 +1,15 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"waiting_for_training": [{"name": "continuation", "terminal": false, "pid": 144521, "process_verified": true}, {"name": "seed_20261013", "terminal": false, "pid": 144536, "process_verified": true}, {"name": "seed_20261014", "terminal": false, "pid": 144552, "process_verified": true}]}
+{"waiting_for_training": [{"name": "continuation", "terminal": true, "exit_code": 0}, {"name": "seed_20261013", "terminal": false, "pid": 144536, "process_verified": true}, {"name": "seed_20261014", "terminal": false, "pid": 144552, "process_verified": true}]}
+{"waiting_for_training": [{"name": "continuation", "terminal": true, "exit_code": 0}, {"name": "seed_20261013", "terminal": true, "exit_code": 0}, {"name": "seed_20261014", "terminal": false, "pid": 144552, "process_verified": true}]}
+{"waiting_for_training": [{"name": "continuation", "terminal": true, "exit_code": 0}, {"name": "seed_20261013", "terminal": true, "exit_code": 0}, {"name": "seed_20261014", "terminal": true, "exit_code": 0}]}
+{"evaluation_finished": "primary"}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/ProxUnroll-main/coursework/finalize_ablation.py", line 106, in <module>
+    main()
+  File "/workspace/ProxUnroll-main/coursework/finalize_ablation.py", line 88, in main
+    raise RuntimeError('Evaluation failed; independent live evaluator remains untouched: ' + name)
+RuntimeError: Evaluation failed; independent live evaluator remains untouched: regression

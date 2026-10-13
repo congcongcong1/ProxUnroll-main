@@ -1,0 +1,14 @@
+{
+  "server": "244",
+  "root": "/workspace/ProxUnroll-main",
+  "non_deleting": true,
+  "existing_different_file_policy": "abort before any write",
+  "files": {
+    "coursework/finetune_ablation.py": "1c6e5b3414fe743bf4cda41f27e50fc8a4b413594b34e42feb03487a9d301434",
+    "coursework/ablation_suite.py": "696ca9264f2e0adadb187f11a3ba3d6d72c82f3c6f92d1ebc4550f53aba993be",
+    "coursework/HQS_ABLATION_20261013.md": "d183b5692d36e47d3f396dde6fa13024167ff16cdb4147a98ae023b9168bbfe5",
+    "tests/test_ablation.py": "516e84cd6e60557dfa3d00ad45d7d91e0e8a4874b578dac37054d4cf07594f07"
+  },
+  "compressed_bytes": 12719,
+  "archive_sha256": "cbdbb14595867430a9d60dbd3864a62c15dd27c71c860710a6ac40dec8b7df74"
+}

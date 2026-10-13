@@ -1,0 +1,67 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"evaluation_command": ["/workspace/ProxUnroll-main/.venv-linux/bin/python", "-m", "coursework.evaluate_manifest", "--manifest", "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/test_fresh.json", "--output", "/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/evaluation_primary", "--methods", "hqs,hqs_10000,hqs_12000,last_12000,best_noise_on_weighted_s20261013,last_noise_on_weighted_s20261013,best_noise_off_weighted_s20261013,last_noise_off_weighted_s20261013,best_noise_on_final_s20261013,last_noise_on_final_s20261013,best_noise_off_final_s20261013,last_noise_off_final_s20261013,best_noise_on_weighted_s20261014,last_noise_on_weighted_s20261014,best_noise_off_weighted_s20261014,last_noise_off_weighted_s20261014,best_noise_on_final_s20261014,last_noise_on_final_s20261014,best_noise_off_final_s20261014,last_noise_off_final_s20261014", "--extra-checkpoint", "hqs_10000=/workspace/ProxUnroll-main/runs/lab244_10000_20261009/finetune/best.pth", "--extra-checkpoint", "hqs_12000=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/continuation/best.pth", "--extra-checkpoint", "last_12000=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/continuation/last.pth", "--extra-checkpoint", "best_noise_on_weighted_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261013/best.pth", "--extra-checkpoint", "last_noise_on_weighted_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261013/last.pth", "--extra-checkpoint", "best_noise_off_weighted_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261013/best.pth", "--extra-checkpoint", "last_noise_off_weighted_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261013/last.pth", "--extra-checkpoint", "best_noise_on_final_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_final_s20261013/best.pth", "--extra-checkpoint", "last_noise_on_final_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_final_s20261013/last.pth", "--extra-checkpoint", "best_noise_off_final_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_final_s20261013/best.pth", "--extra-checkpoint", "last_noise_off_final_s20261013=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_final_s20261013/last.pth", "--extra-checkpoint", "best_noise_on_weighted_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261014/best.pth", "--extra-checkpoint", "last_noise_on_weighted_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_weighted_s20261014/last.pth", "--extra-checkpoint", "best_noise_off_weighted_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261014/best.pth", "--extra-checkpoint", "last_noise_off_weighted_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_weighted_s20261014/last.pth", "--extra-checkpoint", "best_noise_on_final_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_final_s20261014/best.pth", "--extra-checkpoint", "last_noise_on_final_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_on_final_s20261014/last.pth", "--extra-checkpoint", "best_noise_off_final_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_final_s20261014/best.pth", "--extra-checkpoint", "last_noise_off_final_s20261014=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/arms/noise_off_final_s20261014/last.pth"]}
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+holdout10000_div2k_0803: 220 rows, 87.8s
+holdout10000_div2k_0805: 440 rows, 173.3s
+holdout10000_div2k_0806: 660 rows, 260.5s
+holdout10000_div2k_0809: 880 rows, 346.9s
+holdout10000_div2k_0810: 1100 rows, 433.3s
+holdout10000_div2k_0812: 1320 rows, 520.1s
+holdout10000_div2k_0815: 1540 rows, 609.0s
+holdout10000_div2k_0816: 1760 rows, 716.0s
+holdout10000_div2k_0818: 1980 rows, 823.7s
+holdout10000_div2k_0819: 2200 rows, 919.6s
+holdout10000_div2k_0822: 2420 rows, 1009.3s
+holdout10000_div2k_0824: 2640 rows, 1102.3s
+holdout10000_div2k_0825: 2860 rows, 1191.9s
+holdout10000_div2k_0828: 3080 rows, 1282.3s
+holdout10000_div2k_0829: 3300 rows, 1373.8s
+holdout10000_div2k_0831: 3520 rows, 1466.3s
+holdout10000_div2k_0833: 3740 rows, 1558.8s
+holdout10000_div2k_0835: 3960 rows, 1650.4s
+holdout10000_div2k_0837: 4180 rows, 1743.1s
+holdout10000_div2k_0838: 4400 rows, 1834.5s
+holdout10000_div2k_0841: 4620 rows, 1924.6s
+holdout10000_div2k_0843: 4840 rows, 2016.0s
+holdout10000_div2k_0844: 5060 rows, 2108.7s
+holdout10000_div2k_0846: 5280 rows, 2200.2s
+holdout10000_div2k_0848: 5500 rows, 2291.7s
+holdout10000_div2k_0850: 5720 rows, 2384.6s
+holdout10000_div2k_0852: 5940 rows, 2480.5s
+holdout10000_div2k_0854: 6160 rows, 2579.6s
+holdout10000_div2k_0856: 6380 rows, 2675.1s
+holdout10000_div2k_0857: 6600 rows, 2772.9s
+holdout10000_div2k_0859: 6820 rows, 2869.4s
+holdout10000_div2k_0862: 7040 rows, 2966.6s
+holdout10000_div2k_0863: 7260 rows, 3065.8s
+holdout10000_div2k_0865: 7480 rows, 3164.7s
+holdout10000_div2k_0866: 7700 rows, 3257.9s
+holdout10000_div2k_0869: 7920 rows, 3353.7s
+holdout10000_div2k_0871: 8140 rows, 3448.6s
+holdout10000_div2k_0872: 8360 rows, 3542.9s
+holdout10000_div2k_0875: 8580 rows, 3640.0s
+holdout10000_div2k_0876: 8800 rows, 3736.0s
+holdout10000_div2k_0878: 9020 rows, 3831.8s
+holdout10000_div2k_0881: 9240 rows, 3928.3s
+holdout10000_div2k_0882: 9460 rows, 4025.5s
+holdout10000_div2k_0884: 9680 rows, 4124.1s
+holdout10000_div2k_0885: 9900 rows, 4222.2s
+holdout10000_div2k_0888: 10120 rows, 4320.5s
+holdout10000_div2k_0890: 10340 rows, 4417.0s
+holdout10000_div2k_0891: 10560 rows, 4536.3s
+holdout10000_div2k_0894: 10780 rows, 4646.8s
+holdout10000_div2k_0895: 11000 rows, 4771.0s
+holdout10000_div2k_0897: 11220 rows, 4893.2s
+holdout10000_div2k_0898: 11440 rows, 5016.5s
+COMPLETE
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"rows": 11440, "stages": 68640, "paired_conditions": 572, "float_arrays_recomputed": 11440, "max_metric_error": 0.0, "data_checkpoint_matrix_source_hashes_verified": true, "measurement_hashes_recomputed": true}
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"rows": 11440, "conditions": 572, "negative_comparisons": 14837}
+{"completed": "primary", "output": "/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/evaluation_primary"}

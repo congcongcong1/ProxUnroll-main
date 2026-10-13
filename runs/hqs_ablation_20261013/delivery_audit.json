@@ -1,0 +1,78 @@
+{
+  "formal_updates": 8400,
+  "training_arms": 8,
+  "continuation_total_updates": 12000,
+  "selected_continuation_step": 11500,
+  "phases": {
+    "primary": {
+      "images": 52,
+      "conditions": 572,
+      "model_states": 20,
+      "rows": 11440,
+      "stages": 68640,
+      "all_mse_psnr_ssim_aggregates_independently_recomputed": true,
+      "metrics_sha256": "5d3719397bca1d5fcd8eb124568c646d8ca71cddf04e48926b89a71e99f30ae6",
+      "complete_float_verification": {
+        "rows": 11440,
+        "stages": 68640,
+        "paired_conditions": 572,
+        "float_arrays_recomputed": 11440,
+        "max_metric_error": 0.0,
+        "data_checkpoint_matrix_source_hashes_verified": true,
+        "measurement_hashes_recomputed": true
+      }
+    },
+    "regression": {
+      "images": 110,
+      "conditions": 1210,
+      "model_states": 12,
+      "rows": 14520,
+      "stages": 87120,
+      "all_mse_psnr_ssim_aggregates_independently_recomputed": true,
+      "metrics_sha256": "ad3c766548760360068e710d1ca6b306a154a4da586080c88d93604a6d0aa705",
+      "complete_float_verification": {
+        "rows": 14520,
+        "stages": 87120,
+        "paired_conditions": 1210,
+        "float_arrays_recomputed": 14520,
+        "max_metric_error": 0.0,
+        "data_checkpoint_matrix_source_hashes_verified": true,
+        "measurement_hashes_recomputed": true
+      }
+    }
+  },
+  "locked_sources_verified": true,
+  "test_model_selection": false,
+  "completion": {
+    "evaluations": {
+      "primary": {
+        "original_exit_code": 0,
+        "recovered": false
+      },
+      "regression": {
+        "original_exit_code": 1,
+        "recovered": true,
+        "recovery_exit_code": 0,
+        "reused_originals": 88,
+        "recovered_originals": 22,
+        "original_failure_and_partial_data_preserved": true
+      }
+    },
+    "original_finalize_exit": 1
+  },
+  "materials": {
+    "report_pages": 6,
+    "slides": 12,
+    "speaking_seconds": 600,
+    "native_chart_values_independently_checked": true,
+    "all_pages_slides_individually_inspected": true,
+    "files": {
+      "output/pdf/technical_report_ablation_20261013.pdf": "509a2bd62abc031a55e18216af0a07fd859add26ce9e85b2b58e379a35329c54",
+      "output/presentation/course_presentation_ablation_20261013.pptx": "442d226ea77e4152cf75b5e5fec49f7db5564d00a80add3cc61cca7408bea2ec",
+      "coursework/\u8bb2\u7a3f_\u7eed\u8bad\u4e0e\u6d88\u878d_20261013.md": "8443d290534745c62b5ec128645082797b00cc36951366f0e916b68dbffb8b17",
+      "coursework/HQS_ABLATION_RESULTS_20261013.md": "ba4c5f8624c49917d052ff34f5e75be6605b8a0b6dc55c9a7ad7ba1f2c668af1",
+      "runs/hqs_ablation_20261013/materials_numeric_audit.json": "eb25a47c780a06fee6fdc35fde428bc415078ffd25e71f9a0a0dd1026e2f849b",
+      "runs/hqs_ablation_20261013/materials_visual_audit.json": "4afcad217c5fd7204f7529a0f4bda8676f8167df8374f8db44c3cd69869bda2b"
+    }
+  }
+}

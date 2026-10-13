@@ -130,11 +130,13 @@ def audit(experiments_only=False):
             check(len(note_names) == 12, 'Missing speaking notes')
             note_text = '\n'.join(' '.join(x.text or '' for x in ET.fromstring(package.read(n)).iter()) for n in note_names)
             check(sum(map(int, re.findall(r'Planned speaking time:\s*(\d+)\s*seconds', note_text))) == 600, 'Speaking plan')
-            check('AI' in note_text and 'Codex' in note_text, 'Missing AI disclosure')
+            slide_text = '\n'.join(' '.join(x.text or '' for x in ET.fromstring(package.read(n)).iter()) for n in slides)
+            check('AI disclosure' in slide_text and 'Codex' in note_text, 'Missing visible AI disclosure or detailed tool attribution')
         guide = ROOT / 'coursework/讲稿_续训与消融_20261013.md'
         check(len(re.findall(r'^## 第\d+页', guide.read_text(), re.M)) == 12, 'Chinese notes coverage')
         numeric = json.loads((BASE / 'materials_numeric_audit.json').read_text())
         check(numeric['ppt_sha256'] == sha(ppt), 'Numeric audit refers to a different PPT')
+        check(numeric['report_sha256'] == sha(report), 'Numeric audit refers to a different report')
         check(numeric['report_facts_sha256'] == sha(BASE / 'report_facts.json'), 'Numeric facts changed')
         check(set(numeric['native_chart_checks']) == {'6', '8', '9', '10'}, 'Incomplete native chart audit')
         for relative, digest in numeric['numeric_csv_hashes'].items():

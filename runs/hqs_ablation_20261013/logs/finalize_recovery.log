@@ -1,0 +1,71 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"formal_updates": 8400, "primary_rows": 11440, "regression_rows": 14520, "failure_image": "holdout10000_div2k_0897", "negative_continuation_conditions": 191}
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{
+  "formal_updates": 8400,
+  "training_arms": 8,
+  "continuation_total_updates": 12000,
+  "selected_continuation_step": 11500,
+  "phases": {
+    "primary": {
+      "images": 52,
+      "conditions": 572,
+      "model_states": 20,
+      "rows": 11440,
+      "stages": 68640,
+      "all_mse_psnr_ssim_aggregates_independently_recomputed": true,
+      "metrics_sha256": "5d3719397bca1d5fcd8eb124568c646d8ca71cddf04e48926b89a71e99f30ae6",
+      "complete_float_verification": {
+        "rows": 11440,
+        "stages": 68640,
+        "paired_conditions": 572,
+        "float_arrays_recomputed": 11440,
+        "max_metric_error": 0.0,
+        "data_checkpoint_matrix_source_hashes_verified": true,
+        "measurement_hashes_recomputed": true
+      }
+    },
+    "regression": {
+      "images": 110,
+      "conditions": 1210,
+      "model_states": 12,
+      "rows": 14520,
+      "stages": 87120,
+      "all_mse_psnr_ssim_aggregates_independently_recomputed": true,
+      "metrics_sha256": "ad3c766548760360068e710d1ca6b306a154a4da586080c88d93604a6d0aa705",
+      "complete_float_verification": {
+        "rows": 14520,
+        "stages": 87120,
+        "paired_conditions": 1210,
+        "float_arrays_recomputed": 14520,
+        "max_metric_error": 0.0,
+        "data_checkpoint_matrix_source_hashes_verified": true,
+        "measurement_hashes_recomputed": true
+      }
+    }
+  },
+  "locked_sources_verified": true,
+  "test_model_selection": false,
+  "completion": {
+    "evaluations": {
+      "primary": {
+        "original_exit_code": 0,
+        "recovered": false
+      },
+      "regression": {
+        "original_exit_code": 1,
+        "recovered": true,
+        "recovery_exit_code": 0,
+        "reused_originals": 88,
+        "recovered_originals": 22,
+        "original_failure_and_partial_data_preserved": true
+      }
+    },
+    "original_finalize_exit": 1
+  }
+}
+RECOVERY AND INDEPENDENT COMPLETION AUDIT FINISHED
