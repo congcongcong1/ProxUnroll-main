@@ -127,8 +127,22 @@ def audit(experiments_only=False):
             check('AI' in note_text and 'Codex' in note_text, 'Missing AI disclosure')
         guide = ROOT / 'coursework/讲稿_续训与消融_20261013.md'
         check(len(re.findall(r'^## 第\d+页', guide.read_text(), re.M)) == 12, 'Chinese notes coverage')
+        numeric = json.loads((BASE / 'materials_numeric_audit.json').read_text())
+        check(numeric['ppt_sha256'] == sha(ppt), 'Numeric audit refers to a different PPT')
+        check(numeric['report_facts_sha256'] == sha(BASE / 'report_facts.json'), 'Numeric facts changed')
+        check(set(numeric['native_chart_checks']) == {'6', '8', '9', '10'}, 'Incomplete native chart audit')
+        for relative, digest in numeric['numeric_csv_hashes'].items():
+            check(sha(ROOT / relative) == digest, 'Numeric source changed: ' + relative)
+        visual = json.loads((BASE / 'materials_visual_audit.json').read_text())
+        check(visual['report_sha256'] == sha(report) and visual['ppt_sha256'] == sha(ppt), 'Visual audit refers to different materials')
+        check(len(visual['pdf_pages']) == len(reader.pages) and len(visual['slides']) == 12, 'Visual inspection coverage')
+        for preview in visual['pdf_pages'] + visual['slides']:
+            check(preview['individually_inspected'] and preview['no_clipping_or_overlap'], 'Unverified visual layout')
+            check(sha(ROOT / preview['path']) == preview['sha256'], 'Rendered preview changed')
         result['materials'] = dict(report_pages=len(reader.pages), slides=12, speaking_seconds=600,
-            files={str(p.relative_to(ROOT)): sha(p) for p in [report, ppt, guide, ROOT / 'coursework/HQS_ABLATION_RESULTS_20261013.md']})
+            native_chart_values_independently_checked=True, all_pages_slides_individually_inspected=True,
+            files={str(p.relative_to(ROOT)): sha(p) for p in [report, ppt, guide, ROOT / 'coursework/HQS_ABLATION_RESULTS_20261013.md',
+                BASE / 'materials_numeric_audit.json', BASE / 'materials_visual_audit.json']})
     destination = BASE / ('experiment_completion_audit.json' if experiments_only else 'delivery_audit.json')
     destination.write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))

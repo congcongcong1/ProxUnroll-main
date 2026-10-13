@@ -1,0 +1,25 @@
+{
+  "verified_utc": "2026-10-13T09:26:28.315049+00:00",
+  "startup_checkpoint_step": 12001,
+  "startup_checkpoint_sha256": "c8f9e60d0a9ac1657bc74fe546ab3446dcfb33715bf9adf5b3a59cbbb9e3d39c",
+  "adam_updates": 12001,
+  "frozen_factors": [
+    "H_256_256",
+    "W_256_256",
+    "H_321_481",
+    "W_321_481",
+    "H_512_512",
+    "W_512_512"
+  ],
+  "changed_reconstruction_parameters": true,
+  "finite_loss_gradient": true,
+  "observed_latest_step": 12034,
+  "median_observed_update_seconds": 1.1373008295195177,
+  "estimated_total_hours_including_validation": 3.5,
+  "estimate_range_hours": [
+    3.5,
+    4.0
+  ],
+  "estimated_finish_china": "2026-10-13 21:00-21:30",
+  "status": "running; inference deferred per user; completion not yet proven"
+}

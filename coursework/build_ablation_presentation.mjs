@@ -68,14 +68,15 @@ const photoCredits=['web_nju_gulou_04','web_nju_xianlin_05','web_qinhuai_fuzimia
   const r=photoManifest.find(r=>r.name===name);
   return `${r.title}; ${r.author}; ${r.license}; source ${r.page_url}; license ${r.license_url}. Adapted by grayscale center crop and area resize. Full credits: runs/nanjing_web30_20261009/ATTRIBUTION.md.`;
 }).join('\n');
-record(5,`Training uses 800 DIV2K originals and validation uses 16 distinct originals. The primary test is the previously locked, project-unused 52 DIV2K originals. Regression tests include 110 previously observed images: Kodak24, eight HEVC videos with three spaced frames each, DIV2K32, and 30 Nanjing web photographs. The photographs shown are external-author regression images, not team captures. Source manifests and original licenses are preserved. DIV2K: data.vision.ee.ethz.ch/cvl/DIV2K/.\n\nPhotograph attribution:\n${photoCredits}`);
-for(const shape of deck.slides.items[4].shapes.items) {
-  const current=String(shape.text ?? '');
-  if(current.includes('18 campus photos + 12 scenic photos')) {
-    shape.text='800 training / 16 validation / 52 primary test originals\nRegression scenes include 30 Nanjing web photographs';
-    shape.text.style={typeface:font,fontSize:28,bold:true,color:teal,autoFit:'none'};
-  }
+const dataSlide=reset(5,'Training, independent tests and regression scenes',`Training uses 800 DIV2K originals and validation uses 16 distinct originals. The primary test is the previously locked, project-unused 52 DIV2K originals. Regression tests include 110 previously observed images: Kodak24, eight HEVC videos with three spaced frames each, DIV2K32, and 30 Nanjing web photographs. The photographs shown are external-author regression images, not team captures. Source manifests and original licenses are preserved. DIV2K: data.vision.ee.ethz.ch/cvl/DIV2K/.\n\nPhotograph attribution:\n${photoCredits}`);
+text(dataSlide,'800 training / 16 validation / 52 primary test originals\nRegression scenes include 30 Nanjing web photographs',65,149,1120,88,28,true,teal);
+for(const [i,name] of ['web_nju_gulou_04','web_nju_xianlin_05','web_qinhuai_fuzimiao_03'].entries()) {
+  const row=photoManifest.find(r=>r.name===name);
+  const file=path.join(root,'runs/nanjing_web30_20261009/data',row.path);
+  dataSlide.images.add({blob:new Uint8Array(await fs.readFile(file)),contentType:'image/png',alt:row.title,fit:'contain',position:{left:65+i*390,top:257,width:340,height:300}});
+  text(dataSlide,['NJU Gulou','NJU Xianlin','Qinhuai night'][i],65+i*390,567,350,38,26);
 }
+text(dataSlide,'External-author photographs; source and license retained',65,623,1120,35,23,false,muted);
 record(6,'This preserved graph contains four-method results on all 18 campus originals, at five clean ratios, under identical measurements. At clean 10%, official HQS/ADMM have mean PSNR 28.35/28.38 dB, compared with 24.60 for DCT-FISTA and 23.92 for adjoint. These are previously observed regression results, not the new primary52 experiment. Source: runs/nanjing_web30_20261009/comparison/dataset_summary.csv.');
 
 let slide=reset(7,'Matched training ablations',

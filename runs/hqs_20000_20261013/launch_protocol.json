@@ -1,0 +1,21 @@
+{
+  "authorized_target_total_updates": 20000,
+  "additional_updates": 8000,
+  "resume": "runs/hqs_ablation_20261013/continuation/last.pth",
+  "resume_sha256": "69b21b0567c3ad69a4026735197d4b125cea1ae875d64b001f4ec29fff10237f",
+  "inherited_best_step": 11500,
+  "driver": "coursework/finetune_20000.py",
+  "driver_sha256": "a25a40c454d0d6f63dcbaa0c633f04d36b6552f7605cbac7bb9f089a3f00e3ed",
+  "gpu_uuid": "GPU-62160106-d537-698b-2e4a-94b4196592a9",
+  "server": "192.168.1.244",
+  "container": "luozc_mlvc",
+  "max_training_minutes": 300,
+  "validation_every": 250,
+  "wall_timeout_seconds": 18600,
+  "gradient_validation_checkpoint_selection_AST_identical_to_12000_driver": true,
+  "selection": "validation only; mixed PSNR with original clean -0.03 dB guard; inherited best is a candidate",
+  "sensing": "all six factors frozen",
+  "test_evaluation": "deferred at explicit user request; does not delay 12000/800-step ablation goal",
+  "estimated_minutes_from_previous_2000_updates": 212.3502287336625,
+  "created_utc": "2026-10-13T09:24:30.961684+00:00"
+}

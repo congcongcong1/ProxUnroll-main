@@ -12,6 +12,16 @@ def signed(value):
     return f'{value:+.2f}%'
 
 
+def markdown_blocks(blocks):
+    """Keep consecutive table rows together while separating prose blocks."""
+    result = []
+    for block in blocks:
+        if result:
+            result.append('\n' if block.startswith('|') and result[-1].startswith('|') else '\n\n')
+        result.append(block)
+    return ''.join(result) + '\n'
+
+
 def main():
     facts = json.loads((BASE / 'report_facts.json').read_text())
     primary = facts['phases']['primary']['analysis']
@@ -81,7 +91,7 @@ def main():
         '## 目录和重跑命令',
         '远端：192.168.1.244 / luozc_mlvc / `/workspace/ProxUnroll-main/runs/hqs_ablation_20261013`。独立环境`.venv-linux`；版本在evaluation目录的provenance.json。',
         '- `lock.json`：启动前的训练/验证/测试清单、源码、原权重和测量矩阵哈希。',
-        '- `continuation/`：11500等验证选中best.pth、12000终点完整last.pth、train.csv、validation.csv、config.json、summary.json、audit.json。',
+        f'- `continuation/`：第{selected}步验证选中best.pth、12000终点完整last.pth、train.csv、validation.csv、config.json、summary.json、audit.json。',
         '- `arms/`：八组配方/种子的权重、完整恢复状态、训练与验证记录。',
         '- `pairing_*.json`：同种子逐步输入和随机配对的完整核验。',
         '- `evaluation_lock.json`：推理前固定best/last权重哈希。',
@@ -94,7 +104,7 @@ def main():
         '完整20状态命令与权重哈希在evaluation_primary/provenance.json及logs/evaluation_primary.log。独立浮点复核成功后才做分析。运行命令前应重新确认GPU空闲。',
         '英文新报告：`output/pdf/technical_report_ablation_20261013.pdf`。新十二页PPT：`output/presentation/course_presentation_ablation_20261013.pptx`。旧材料保持。AI协助声明保留；未提交课程平台。',
     ]
-    (ROOT / 'coursework/HQS_ABLATION_RESULTS_20261013.md').write_text('\n\n'.join(summary) + '\n')
+    (ROOT / 'coursework/HQS_ABLATION_RESULTS_20261013.md').write_text(markdown_blocks(summary))
     speeches = [
         '老师、同学们好，我们研究怎样用少量测量值恢复灰度图。我们复现官方模型，增加传统基线和多种数据测试，再开展固定测量矩阵的微调。这次还增加了有控制的消融，检验训练噪声和中间阶段损失是否有用。',
         '单像素成像每次测得的是经过空间编码后的整体亮度，不是简单地留下几个像素。我们在电脑上把原图变成少量测量，再用算法恢复整图。主要输入为256乘256灰度图；10%采样时，测量数量大约只有原像素数量的十分之一。本次没有搭建光学相机。',

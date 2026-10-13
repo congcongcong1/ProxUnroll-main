@@ -1,0 +1,14 @@
+{
+  "server": "244",
+  "root": "/workspace/ProxUnroll-main",
+  "non_deleting": true,
+  "existing_different_file_policy": "abort before any write",
+  "files": {
+    "coursework/HQS_20000_20261013.md": "3e83c7bcb2d390a1a0857ca45b340eb79ccf9ae5fd60fdfa0ce2cef6da4acbc3",
+    "coursework/verify_ablation_materials.py": "be32df90876bb2dfdc7ca76bb5373d7dfc4d01fed52658166e7100bfeed6696f",
+    "runs/hqs_20000_20261013/startup_verified.json": "95e9369cec95a2fd30b553b3c4b7183b98082f1020ed8b07536b17128effcc12",
+    "runs/hqs_20000_20261013/prelaunch_verified.json": "234fa64b490d267da344a24c618b450c67f50b68be41c9add67bde6a5da0f2c6"
+  },
+  "compressed_bytes": 5223,
+  "archive_sha256": "aae03dd530efda57fcc751c21e08822f38f74a847123ad846b6a08a91b6f451c"
+}

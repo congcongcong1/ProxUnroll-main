@@ -11,7 +11,7 @@ import numpy as np
 from PIL import Image
 
 from coursework import build_reports as report
-from coursework.run_experiments import ROOT
+from coursework.run_experiments import ROOT, sha
 
 BASE = ROOT / 'runs/hqs_ablation_20261013'
 FIG = BASE / 'figures'
@@ -119,6 +119,11 @@ def main():
     selected = training['continuation']['selected_step']
     total_gpu_minutes = sum(r['wall_seconds'] for r in training.values()) / 60
     max_memory = max(r['peak_memory_mib'] for r in training.values()) / 1024
+    baseline_path = ROOT / 'runs/nanjing_web30_20261009/comparison/dataset_summary.csv'
+    baseline_rows = list(csv.DictReader(baseline_path.open()))
+    baseline = {r['method']: r for r in baseline_rows if r['dataset'] == 'NJU_campus_web'
+                and float(r['cr']) == .1 and float(r['sigma']) == 0}
+    baseline_psnr = [float(baseline[m]['psnr']) for m in ['adjoint', 'fista_dct', 'hqs', 'admm']]
     experiment_table = [['Arm', 'Noise', 'Stage loss', 'Updates']]
     for noise, supervision in [('on', 'weighted'), ('off', 'weighted'), ('on', 'final'), ('off', 'final')]:
         experiment_table.append([f'{noise}/{supervision}', noise, '.01 x5 / .95' if supervision == 'weighted' else 'final 1', '800 x2'])
@@ -140,13 +145,15 @@ def main():
     pages = [
         dict(blocks=[
             ('heading', 'Abstract'),
-            ('text', f'We study image reconstruction from matched simulated single-pixel measurements. Preserved experiments compare adjoint reconstruction, DCT-FISTA and released HQS/ADMM ProxUnroll models. This extension continues fixed-operator HQS from 10000 to 12000 updates and runs a two-by-two ablation of training measurement noise and intermediate-stage supervision, with two training seeds and 800 updates per arm. A previously locked 52-image DIV2K project holdout evaluates all selected and fixed-budget endpoint states. Validation selects step {selected} for the continuation. At clean 10% sampling, its mean MSE changes by {clean_gain:+.2f}% versus the prior selected 10000-step state; at relative noise .05 the reduction is {noisy_gain:+.2f}%. All regressions and seed-specific effects are retained.'),
+            ('text', f'We study image reconstruction from matched simulated single-pixel measurements. Preserved experiments compare adjoint reconstruction, DCT-FISTA and released HQS/ADMM ProxUnroll models. This extension continues fixed-operator HQS from 10000 to 12000 updates and runs a two-by-two ablation of training measurement noise and intermediate-stage supervision, with two training seeds and 800 updates per arm. A previously locked 52-image DIV2K project holdout evaluates all selected and fixed-budget endpoint states. Validation selects step {selected} for the continuation. At clean 10% sampling, its mean MSE reduction is {clean_gain:+.2f}% versus the prior selected 10000-step state; at relative noise .05 the reduction is {noisy_gain:+.2f}%. Negative reductions mean higher error. All regressions and seed-specific effects are retained.'),
             ('heading', '1. Problem and Prior Work'),
             ('text', 'Single-pixel imaging records spatially encoded integrated responses [1]. We simulate this acquisition from existing 256 x 256 grayscale images. The task is underdetermined at low sampling rates, so reconstruction combines measurement consistency and image priors. ProxUnroll [2] provides the architecture and official pretrained weights. Our contributions are a common measurement/metric contract, reproducible external evaluations, bounded fixed-matrix fine-tuning and controlled training ablations; we do not claim a new architecture.'),
             ('heading', '2. Common Reconstruction Contract'),
             ('text', 'The separable forward model is Y = H X W<super>T</super> + E. Adjoint reconstruction uses H<super>T</super> Y W. DCT-FISTA [3] uses gradient descent, DCT soft thresholding and acceleration for 200 iterations; lambda .001 was chosen by independent original validation before the external tests. HQS alternates measurement correction with a learned restorer; ADMM adds a dual variable. The supplied six-stage restorer uses convolution, window attention and memory within one image, without previous/future video frames.'),
             ('text', 'All methods receive identical common-MAT factors, measured values and noise realizations. Nominal clean sampling rates are 1%, 4%, 10%, 25% and 50%; actual row counts are recorded. At 10%, zero-mean Gaussian noise has standard deviation .01 or .05 times clean measurement RMS. Three fixed measurement seeds repeat noisy conditions. Predictions are clipped to [0,1] for PSNR/SSIM with data_range 1, without border cropping. Primary metrics precede PNG quantization.'),
             ('text', 'Percent improvement means 100(1 - mean candidate MSE / mean reference MSE). It is not a percentage change in PSNR. Noise repeats average within each image; images average within a video; whole videos have equal weight within a dataset. Still-image units are originals. Training seeds and measurement-noise seeds are separate experimental units.'),
+            ('heading', '2.1. Preserved Four-Method Comparison'),
+            ('text', f'On the 18 Nanjing campus web photographs at clean 10% sampling, mean PSNR is {baseline_psnr[0]:.2f} dB for adjoint, {baseline_psnr[1]:.2f} for DCT-FISTA, {baseline_psnr[2]:.2f} for official HQS and {baseline_psnr[3]:.2f} for official ADMM. The neural models outperform these traditional baselines under the common contract; HQS and ADMM are close. These are previously observed regression results, separate from the new primary52 continuation and factorial tests.'),
         ]),
         dict(table_widths=[80,32,86,53], blocks=[
             ('heading', '3. Data and Test Roles'),
@@ -200,6 +207,10 @@ def main():
         maximum_allocated_memory_gib=max_memory, clean_mse_reduction_vs_10000=clean_gain,
         strong_noise_mse_reduction_vs_10000=noisy_gain, primary_rows=primary['rows'],
         regression_rows=regression['rows'], failure_case=case), indent=2) + '\n')
+    (BASE / 'preserved_baseline_source.json').write_text(json.dumps(dict(
+        path=str(baseline_path.relative_to(ROOT)), sha256=sha(baseline_path),
+        dataset='NJU_campus_web', cr=.1, sigma=0,
+        methods={m: baseline[m] for m in ['adjoint', 'fista_dct', 'hqs', 'admm']}), indent=2) + '\n')
 
 
 if __name__ == '__main__':

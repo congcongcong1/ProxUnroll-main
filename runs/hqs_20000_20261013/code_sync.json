@@ -1,0 +1,12 @@
+{
+  "server": "244",
+  "root": "/workspace/ProxUnroll-main",
+  "non_deleting": true,
+  "existing_different_file_policy": "abort before any write",
+  "files": {
+    "coursework/finetune_20000.py": "a25a40c454d0d6f63dcbaa0c633f04d36b6552f7605cbac7bb9f089a3f00e3ed",
+    "runs/hqs_20000_20261013/launch_protocol.json": "91600e9a0e8c9e88c9ce2a08bfb68ed7e75e3da169de06c08e2309a8627efb17"
+  },
+  "compressed_bytes": 5935,
+  "archive_sha256": "8cb39b3af0c074c79ad0ddf145b3fbddfef838114577358d1c4c1f9aace0b1c7"
+}
