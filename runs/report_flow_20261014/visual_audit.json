@@ -1,0 +1,42 @@
+{
+  "report_sha256": "0f0028156403b8c3fc16e98f2a3712d41af88f8df8533b0fca27767258dbd374",
+  "render_command": "pdftoppm -r 150 -png output/pdf/technical_report_flow_20261014.pdf runs/report_flow_20261014/preview/page",
+  "pages": [
+    {
+      "page": 1,
+      "path": "runs/report_flow_20261014/preview/page-1.png",
+      "sha256": "4ed6a12a9875f2fbe187e2e12121b5aebba1d684a262c937923a1c260d907f11",
+      "individually_inspected": true,
+      "no_overlap_clipping_or_orphan_headings": true,
+      "chart_labels_legible": true,
+      "all_tables_kept_whole": true
+    },
+    {
+      "page": 2,
+      "path": "runs/report_flow_20261014/preview/page-2.png",
+      "sha256": "f2fb785ddaba59c66e53e132e3861a86748ee3cf50a77dfb0ac3273d67457a77",
+      "individually_inspected": true,
+      "no_overlap_clipping_or_orphan_headings": true,
+      "chart_labels_legible": true,
+      "all_tables_kept_whole": true
+    },
+    {
+      "page": 3,
+      "path": "runs/report_flow_20261014/preview/page-3.png",
+      "sha256": "9326ab2d834ec2804516e56cdd5f9e66a8b18cd502a4538218b6f62a1fbc7083",
+      "individually_inspected": true,
+      "no_overlap_clipping_or_orphan_headings": true,
+      "chart_labels_legible": true,
+      "all_tables_kept_whole": true
+    },
+    {
+      "page": 4,
+      "path": "runs/report_flow_20261014/preview/page-4.png",
+      "sha256": "41a2dbcc8a4c12ee787fa14cf195dd075e8d21025c601b883e26c8b63dbf38c0",
+      "individually_inspected": true,
+      "no_overlap_clipping_or_orphan_headings": true,
+      "chart_labels_legible": true,
+      "all_tables_kept_whole": true
+    }
+  ]
+}

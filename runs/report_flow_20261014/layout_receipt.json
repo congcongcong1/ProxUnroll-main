@@ -1,0 +1,33 @@
+{
+  "source_markdown_sha256": "458e1eb5c02581fbb5a27b1ecfccf5610cfa392bb9a0e0f85714b20ee0e14612",
+  "preserved_original_report_sha256": "509a2bd62abc031a55e18216af0a07fd859add26ce9e85b2b58e379a35329c54",
+  "report_sha256": "0f0028156403b8c3fc16e98f2a3712d41af88f8df8533b0fca27767258dbd374",
+  "pages": 4,
+  "figures": 4,
+  "tables": 6,
+  "paragraphs": 45,
+  "pagination": "continuous two-column flow; no per-section PageBreak or fixed page content; figures stay with captions",
+  "body_font_pt": 10.2,
+  "leading_pt": 12.5,
+  "includes_20000_evaluation": true,
+  "last_page_balanced": true,
+  "column_used_height_pt": {
+    "1": {
+      "left": 633.1,
+      "right": 625.9
+    },
+    "2": {
+      "left": 688.8125714285715,
+      "right": 700.6
+    },
+    "3": {
+      "left": 657.8268571428571,
+      "right": 694.7285714285715
+    },
+    "4": {
+      "left": 614.9000000000001,
+      "right": 630.4554285714286
+    }
+  },
+  "extended_results_sha256": "5d532852107dc6ef938e3429da664c060feaa603b452d1191a1eb0b9273469e7"
+}

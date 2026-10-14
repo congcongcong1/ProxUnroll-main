@@ -1,0 +1,37 @@
+{
+  "models": {
+    "hqs_20000": {
+      "path": "/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/best.pth",
+      "sha256": "1464249fc38656689f0ee3baa59e6be0a3d8948ad5400b76160b53049aad8731"
+    },
+    "last_20000": {
+      "path": "/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/last.pth",
+      "sha256": "e921c0b60a00abc794d14f3420a3e6b3efdaa3565e4b19d80c9bae4f089b6f9b"
+    }
+  },
+  "reference_metric_hashes": {
+    "primary": {
+      "metrics.csv": "5d3719397bca1d5fcd8eb124568c646d8ca71cddf04e48926b89a71e99f30ae6",
+      "verification.json": "b9b23da54629bf39cd2befd10d8886bd079dfe5642fea4730fd1eae390937576",
+      "provenance.json": "0a21d70e38a4ba0e7326fedf68f0ace9726bd00ffadf52beb4c612a9e29b66c8"
+    },
+    "regression": {
+      "metrics.csv": "ad3c766548760360068e710d1ca6b306a154a4da586080c88d93604a6d0aa705",
+      "verification.json": "947ccbb5e126168a2e7e00f877ad58506de4e508697ddbf4b2f87167204f0f13",
+      "provenance.json": "cbb5a3b7335709bc49c730149231b2917441728d794dbda02b44b3f839912893"
+    }
+  },
+  "manifests": {
+    "primary": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/test_fresh.json",
+    "regression": "/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/regression_manifest.json"
+  },
+  "selected_step": 19500,
+  "endpoint_step": 20000,
+  "selection": "unchanged validation rule; both states locked before inference",
+  "test_role": "same 52-image project holdout and 110-image regression; both now previously observed; no new test-based selection",
+  "driver_sha256": "33a756000e4e6842333ee25b590d5953ccf27889c3c05b8771cee283ba8fe8e1",
+  "metric_source_sha256": "25341c2e497848fd0a0893191008e4084d1f1c4eeed4d9e7c39b9b39c403eecd",
+  "inference_budget_per_phase_seconds": 2400,
+  "verification_budget_per_phase_seconds": 900,
+  "created_epoch": 1791936378.3633592
+}

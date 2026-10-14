@@ -1,0 +1,2 @@
+image,dataset,sequence,split,cr,actual_cr,sigma,seed,measurement_sha256,method,psnr,ssim,seconds,relative_residual
+holdout10000_div2k_0803,DIV2K_holdout_10000,holdout10000_div2k_0803,test,0.1,0.1001129150390625,0.0,2026,a9d28ceb41087bdcc03f87f929562f0e3b521f2caa28e5f13cf663fa4bc5477f,hqs,33.368382793951554,0.9557903483719826,0.31941778399050236,0.003155844286084175

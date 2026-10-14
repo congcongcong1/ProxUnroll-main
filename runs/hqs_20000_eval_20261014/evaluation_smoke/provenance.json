@@ -1,0 +1,158 @@
+{
+  "arguments": {
+    "manifest": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/test_fresh.json",
+    "data_dir": null,
+    "output": "/workspace/ProxUnroll-main/runs/hqs_20000_eval_20261014/evaluation_smoke",
+    "device": "cuda",
+    "hqs_checkpoint": "/workspace/ProxUnroll-main/weight/hqs_proxunroll.pth",
+    "admm_checkpoint": "/workspace/ProxUnroll-main/weight/admm_proxunroll.pth",
+    "extra_checkpoint": [
+      "hqs_10000=/workspace/ProxUnroll-main/runs/lab244_10000_20261009/finetune/best.pth",
+      "hqs_12000=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/continuation/best.pth",
+      "hqs_20000=/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/best.pth",
+      "last_20000=/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/last.pth"
+    ],
+    "methods": "hqs,hqs_10000,hqs_12000,hqs_20000,last_20000",
+    "rates": "0.01,0.04,0.1,0.25,0.5",
+    "noise": "0.01,0.05",
+    "seeds": "2026,2027,2028",
+    "smoke": true,
+    "threads": 4
+  },
+  "platform": "Linux-6.5.0-18-generic-x86_64-with-glibc2.35",
+  "device": "cuda",
+  "torch_version": "2.6.0+cu124",
+  "cuda_version": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "packages": {
+    "tifffile": "2026.3.3",
+    "pluggy": "1.6.0",
+    "nvidia-cuda-runtime-cu12": "12.4.127",
+    "torchvision": "0.21.0+cu124",
+    "Jinja2": "3.1.6",
+    "fonttools": "4.66.1",
+    "hf-xet": "1.7.0",
+    "pypdf": "5.6.0",
+    "nvidia-nvjitlink-cu12": "12.4.127",
+    "nvidia-cudnn-cu12": "9.1.0.70",
+    "contourpy": "1.3.3",
+    "iniconfig": "2.3.1",
+    "pillow": "11.2.1",
+    "six": "1.17.0",
+    "nvidia-cuda-cupti-cu12": "12.4.127",
+    "h11": "0.16.0",
+    "opencv-python-headless": "4.11.0.86",
+    "nvidia-nvtx-cu12": "12.4.127",
+    "packaging": "26.3",
+    "kiwisolver": "1.5.1",
+    "setuptools": "65.5.0",
+    "scipy": "1.15.3",
+    "reportlab": "4.4.1",
+    "pytest": "8.3.5",
+    "pyparsing": "3.3.3",
+    "timm": "1.0.16",
+    "anyio": "4.15.1",
+    "httpcore2": "2.13.1",
+    "lazy-loader": "0.6",
+    "cycler": "0.12.1",
+    "nvidia-cuda-nvrtc-cu12": "12.4.127",
+    "scikit-image": "0.25.2",
+    "tqdm": "4.70.1",
+    "nvidia-cublas-cu12": "12.4.5.8",
+    "nvidia-curand-cu12": "10.3.5.147",
+    "pip": "24.0",
+    "httpx2": "2.13.1",
+    "PyYAML": "6.0.3",
+    "mpmath": "1.3.0",
+    "einops": "0.8.1",
+    "truststore": "0.10.4",
+    "networkx": "3.6.1",
+    "filelock": "3.32.3",
+    "chardet": "7.6.0",
+    "idna": "3.20",
+    "nvidia-cusparselt-cu12": "0.6.2",
+    "nvidia-cusparse-cu12": "12.3.1.170",
+    "fsspec": "2026.7.0",
+    "typing_extensions": "4.16.0",
+    "huggingface_hub": "2.1.1",
+    "MarkupSafe": "3.0.3",
+    "nvidia-cufft-cu12": "11.2.1.3",
+    "triton": "3.2.0",
+    "python-dateutil": "2.9.0.post0",
+    "ImageIO": "2.38.1",
+    "numpy": "1.26.4",
+    "nvidia-cusolver-cu12": "11.6.1.9",
+    "nvidia-nccl-cu12": "2.21.5",
+    "matplotlib": "3.10.3",
+    "safetensors": "0.8.0",
+    "torch": "2.6.0+cu124",
+    "click": "8.5.0",
+    "sympy": "1.13.1"
+  },
+  "manifest_sha256": "9cfcbc04a8be7e94aa741244db452de431bffab1f9e657d463133db166c99384",
+  "data": [
+    {
+      "name": "holdout10000_div2k_0803",
+      "dataset": "DIV2K_holdout_10000",
+      "sequence": "holdout10000_div2k_0803",
+      "split": "test",
+      "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/holdout10000_div2k_0803.png",
+      "source": "/datasets/DIV2K_valid_HR/0803.png",
+      "source_sha256": "4b0148a9a1ff877ad9f76e65736a50cc36e10822b5d8ccd2abb2988ff4e1782b",
+      "sha256": "be3e0384a0d342eb1cc37bb3a31090f440127d701e098dc39e058ad295a601cb",
+      "source_dimensions": [
+        2040,
+        1536
+      ],
+      "crop_xywh": [
+        252,
+        0,
+        1536,
+        1536
+      ],
+      "preprocessing": "OpenCV RGB2YCrCb Y; center maximal square; INTER_AREA 256x256; uint8 /255",
+      "role": "not used in project training, validation selection or any previous project evaluation; released pretraining exposure unknown"
+    }
+  ],
+  "checkpoints": {
+    "hqs": {
+      "path": "/workspace/ProxUnroll-main/weight/hqs_proxunroll.pth",
+      "sha256": "848c263ac54d44ef74374b6fa686af6b8dfa7240720499d174ff135ab1959be6"
+    },
+    "hqs_10000": {
+      "path": "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/finetune/best.pth",
+      "sha256": "78601d24cabff4dc884c1b129a0643491098cf84bf54dc5c93dbf02e38fd2ed3"
+    },
+    "hqs_12000": {
+      "path": "/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/continuation/best.pth",
+      "sha256": "668bb36e066d4a26b193d74661f05d1f95983206a0315e1e09857618f483700a"
+    },
+    "hqs_20000": {
+      "path": "/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/best.pth",
+      "sha256": "1464249fc38656689f0ee3baa59e6be0a3d8948ad5400b76160b53049aad8731"
+    },
+    "last_20000": {
+      "path": "/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/last.pth",
+      "sha256": "e921c0b60a00abc794d14f3420a3e6b3efdaa3565e4b19d80c9bae4f089b6f9b"
+    }
+  },
+  "conditions": [
+    [
+      0.1,
+      0.0,
+      2026
+    ]
+  ],
+  "source_hashes": {
+    "coursework/evaluate_manifest.py": "25341c2e497848fd0a0893191008e4084d1f1c4eeed4d9e7c39b9b39c403eecd",
+    "coursework/run_experiments.py": "1fee5f2cf74878acf409ac05a91d6e6ec53066ad018c81f79ab8dcf0aba5eff7",
+    "coursework/baselines.py": "891bb958c1f960034a591a7f2d8ac911e07045b87cc381234798e156abcfeb5c",
+    "model/proxunroll.py": "41bc5e34c2c98694e8aa540d51800ae2ea988989e44c9423a74653dbe79e55ab"
+  },
+  "matrix_sha256": "f143332cb20b8d4cf139f46ad066597b47aa4f48bfe50c19cb97d3170b3af75b",
+  "fista_lambda": 0.001,
+  "fista_lambda_source": "original disjoint skimage validation; frozen before external test",
+  "metric_contract": "clip predictions [0,1]; data_range=1; skimage PSNR/SSIM; no border crop; float metrics before PNG; relative RMS measurement noise",
+  "model_scope": "single-image reconstruction on independent frames; no temporal model",
+  "timing": "synchronized wall time after warmup; FISTA/adjoint CPU, neural CUDA; one sample per condition"
+}

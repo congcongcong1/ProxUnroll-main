@@ -1,0 +1,12 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"command": ["/workspace/ProxUnroll-main/.venv-linux/bin/python", "-m", "coursework.evaluate_manifest", "--manifest", "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/test_fresh.json", "--output", "/workspace/ProxUnroll-main/runs/hqs_20000_eval_20261014/evaluation_smoke", "--methods", "hqs,hqs_10000,hqs_12000,hqs_20000,last_20000", "--extra-checkpoint", "hqs_10000=/workspace/ProxUnroll-main/runs/lab244_10000_20261009/finetune/best.pth", "--extra-checkpoint", "hqs_12000=/workspace/ProxUnroll-main/runs/hqs_ablation_20261013/continuation/best.pth", "--extra-checkpoint", "hqs_20000=/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/best.pth", "--extra-checkpoint", "last_20000=/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/last.pth", "--smoke"]}
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+holdout10000_div2k_0803: 5 rows, 2.0s
+COMPLETE
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"rows": 5, "stages": 30, "paired_conditions": 1, "float_arrays_recomputed": 5, "max_metric_error": 0.0, "data_checkpoint_matrix_source_hashes_verified": true, "measurement_hashes_recomputed": true}

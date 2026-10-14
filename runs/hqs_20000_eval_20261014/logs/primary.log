@@ -1,0 +1,63 @@
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"command": ["/workspace/ProxUnroll-main/.venv-linux/bin/python", "-m", "coursework.evaluate_manifest", "--manifest", "/workspace/ProxUnroll-main/runs/lab244_10000_20261009/data/test_fresh.json", "--output", "/workspace/ProxUnroll-main/runs/hqs_20000_eval_20261014/evaluation_primary", "--methods", "hqs_20000,last_20000", "--extra-checkpoint", "hqs_20000=/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/best.pth", "--extra-checkpoint", "last_20000=/workspace/ProxUnroll-main/runs/hqs_20000_20261013/finetune/last.pth"]}
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/torch/functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:3637.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+holdout10000_div2k_0803: 22 rows, 8.8s
+holdout10000_div2k_0805: 44 rows, 18.1s
+holdout10000_div2k_0806: 66 rows, 27.0s
+holdout10000_div2k_0809: 88 rows, 35.7s
+holdout10000_div2k_0810: 110 rows, 44.3s
+holdout10000_div2k_0812: 132 rows, 53.5s
+holdout10000_div2k_0815: 154 rows, 62.7s
+holdout10000_div2k_0816: 176 rows, 71.2s
+holdout10000_div2k_0818: 198 rows, 80.0s
+holdout10000_div2k_0819: 220 rows, 88.7s
+holdout10000_div2k_0822: 242 rows, 97.5s
+holdout10000_div2k_0824: 264 rows, 106.5s
+holdout10000_div2k_0825: 286 rows, 115.6s
+holdout10000_div2k_0828: 308 rows, 124.7s
+holdout10000_div2k_0829: 330 rows, 133.7s
+holdout10000_div2k_0831: 352 rows, 142.7s
+holdout10000_div2k_0833: 374 rows, 151.7s
+holdout10000_div2k_0835: 396 rows, 160.5s
+holdout10000_div2k_0837: 418 rows, 169.6s
+holdout10000_div2k_0838: 440 rows, 179.0s
+holdout10000_div2k_0841: 462 rows, 187.8s
+holdout10000_div2k_0843: 484 rows, 196.9s
+holdout10000_div2k_0844: 506 rows, 206.3s
+holdout10000_div2k_0846: 528 rows, 215.8s
+holdout10000_div2k_0848: 550 rows, 225.5s
+holdout10000_div2k_0850: 572 rows, 235.2s
+holdout10000_div2k_0852: 594 rows, 245.4s
+holdout10000_div2k_0854: 616 rows, 254.8s
+holdout10000_div2k_0856: 638 rows, 264.5s
+holdout10000_div2k_0857: 660 rows, 273.8s
+holdout10000_div2k_0859: 682 rows, 283.1s
+holdout10000_div2k_0862: 704 rows, 292.8s
+holdout10000_div2k_0863: 726 rows, 302.4s
+holdout10000_div2k_0865: 748 rows, 311.9s
+holdout10000_div2k_0866: 770 rows, 321.4s
+holdout10000_div2k_0869: 792 rows, 330.6s
+holdout10000_div2k_0871: 814 rows, 340.2s
+holdout10000_div2k_0872: 836 rows, 349.5s
+holdout10000_div2k_0875: 858 rows, 359.1s
+holdout10000_div2k_0876: 880 rows, 368.9s
+holdout10000_div2k_0878: 902 rows, 378.5s
+holdout10000_div2k_0881: 924 rows, 388.4s
+holdout10000_div2k_0882: 946 rows, 398.1s
+holdout10000_div2k_0884: 968 rows, 407.8s
+holdout10000_div2k_0885: 990 rows, 417.6s
+holdout10000_div2k_0888: 1012 rows, 427.7s
+holdout10000_div2k_0890: 1034 rows, 437.4s
+holdout10000_div2k_0891: 1056 rows, 447.0s
+holdout10000_div2k_0894: 1078 rows, 457.4s
+holdout10000_div2k_0895: 1100 rows, 467.2s
+holdout10000_div2k_0897: 1122 rows, 477.1s
+holdout10000_div2k_0898: 1144 rows, 487.6s
+COMPLETE
+/workspace/ProxUnroll-main/.venv-linux/lib/python3.11/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"rows": 1144, "stages": 6864, "paired_conditions": 572, "float_arrays_recomputed": 1144, "max_metric_error": 0.0, "data_checkpoint_matrix_source_hashes_verified": true, "measurement_hashes_recomputed": true}

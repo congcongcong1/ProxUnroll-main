@@ -1,0 +1,85 @@
+{
+  "method": "Content bounds from PDF chars and images; excludes header above top=42 and footer top>=747; bottom blank relative to y=749; includes natural final-page whitespace. Not a measure of every internal gap.",
+  "reports": {
+    "output/pdf/technical_report_ablation_20261013.pdf": {
+      "sha256": "509a2bd62abc031a55e18216af0a07fd859add26ce9e85b2b58e379a35329c54",
+      "pages": [
+        {
+          "page": 1,
+          "bottom_blank_pt": {
+            "left": 252.8,
+            "right": 132.8
+          }
+        },
+        {
+          "page": 2,
+          "bottom_blank_pt": {
+            "left": 358.6,
+            "right": 337.6
+          }
+        },
+        {
+          "page": 3,
+          "bottom_blank_pt": {
+            "left": 305.38,
+            "right": 310.58
+          }
+        },
+        {
+          "page": 4,
+          "bottom_blank_pt": {
+            "left": 183.18,
+            "right": 261.98
+          }
+        },
+        {
+          "page": 5,
+          "bottom_blank_pt": {
+            "left": 188.03,
+            "right": 321.23
+          }
+        },
+        {
+          "page": 6,
+          "bottom_blank_pt": {
+            "left": 187.35,
+            "right": 163.55
+          }
+        }
+      ]
+    },
+    "output/pdf/technical_report_flow_20261014.pdf": {
+      "sha256": "0f0028156403b8c3fc16e98f2a3712d41af88f8df8533b0fca27767258dbd374",
+      "pages": [
+        {
+          "page": 1,
+          "bottom_blank_pt": {
+            "left": 1.99,
+            "right": 9.19
+          }
+        },
+        {
+          "page": 2,
+          "bottom_blank_pt": {
+            "left": 24.98,
+            "right": 16.19
+          }
+        },
+        {
+          "page": 3,
+          "bottom_blank_pt": {
+            "left": 55.26,
+            "right": 18.36
+          }
+        },
+        {
+          "page": 4,
+          "bottom_blank_pt": {
+            "left": 98.19,
+            "right": 82.63
+          }
+        }
+      ]
+    }
+  }
+}

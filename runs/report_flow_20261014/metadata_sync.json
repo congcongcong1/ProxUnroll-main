@@ -1,0 +1,15 @@
+{
+  "server": "244",
+  "root": "/workspace/ProxUnroll-main",
+  "non_deleting": true,
+  "existing_different_file_policy": "abort before any write",
+  "files": {
+    "runs/report_flow_20261014/audit_20000_eval.remote.log": "f400f62445bdf6cf916bc73a08babb55d472361118e48786e1d6e26296c2d787",
+    "runs/report_flow_20261014/audit_flow_report.remote.log": "21dcc0f50eef3d8374840aa746e211d6ed09bb776887f553bd192273268d33ac",
+    "runs/report_flow_20261014/final_sync.json": "99d3f7abc409004724f504f043a99a992ebf0a123984df800c413a131ddb2f0b",
+    "runs/report_flow_20261014/final_file_list.json": "69f1a115d65f813f7eeb2f3290b41a29b27e97f0cb4996646a43c8586fa6d46d",
+    "runs/report_flow_20261014/remote_validation.json": "35050bae7befc92d1b3b4d5644b8701a7ee55d4982bc76460fa0a22e0b2a18dd"
+  },
+  "compressed_bytes": 5683,
+  "archive_sha256": "23ba3f7528ed0e3277440b21730d8918b60ee38f3439871dfb99bb51af1ebfb5"
+}

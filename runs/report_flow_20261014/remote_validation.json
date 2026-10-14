@@ -1,0 +1,13 @@
+{
+  "verified_indexes": {
+    "coursework/repository_evidence.json": 288,
+    "runs/hqs_ablation_20261013/final_evidence.json": 262,
+    "runs/report_flow_20261014/final_evidence.json": 81
+  },
+  "audits_passed": [
+    "audit_20000_eval",
+    "audit_flow_report"
+  ],
+  "server": "192.168.1.244",
+  "container": "luozc_mlvc"
+}
