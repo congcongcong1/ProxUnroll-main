@@ -1,0 +1,8 @@
+{
+  "server": "192.168.1.244",
+  "container": "luozc_mlvc",
+  "all_synced_evidence_hashes_match": 37,
+  "material_audit_exit": 0,
+  "archive_members_verified": 26,
+  "remote_log": "runs/materials_final_20261014/remote_validation.log"
+}

@@ -1,8 +1,15 @@
 {
-  "status": "pending_ssh_authentication",
+  "status": "complete",
   "target": "192.168.1.244",
   "container": "luozc_mlvc",
-  "reason": "Prior /tmp/mlvc-244-sync.sock absent; BatchMode reconnection returns Permission denied (publickey,password); no usable SSH agent identity. No remote upload occurred.",
-  "local_materials": "complete and verified",
-  "user_question": "Restore the existing authorized SSH path; no password requested in chat."
+  "remote_root": "/workspace/ProxUnroll-main",
+  "uploaded_and_hash_verified_files": 38,
+  "remote_material_audit_exit": 0,
+  "archive_members_hash_verified": 26,
+  "prior_authentication_failure": "Resolved after user restored the SSH control connection. No password or key recorded.",
+  "receipts": [
+    "final_sync.json",
+    "remote_validation.json",
+    "remote_validation.log"
+  ]
 }

@@ -1,0 +1,16 @@
+{
+  "server": "244",
+  "root": "/workspace/ProxUnroll-main",
+  "non_deleting": true,
+  "existing_different_file_policy": "abort before any write",
+  "files": {
+    "runs/materials_final_20261014/final_file_list.json": "92826dda7a2e257e33901d59cf3adbaccec594bbceef620dc48d34a2cf1f6846",
+    "runs/materials_final_20261014/final_sync.json": "2e50f8577e1e8f7dc3da679fd78467a62de6bc827dffecf0edb082a38b19ea58",
+    "runs/materials_final_20261014/remote_validation.json": "47d9e8299c2b7a49d368e0a60e4344c64e8b9666e3d4e92c7b852943d9da809a",
+    "runs/materials_final_20261014/remote_validation.log": "04b591514d440b54f55e2f26bddb376f34202c0c4f5b9b43d9e56b46a7a108b1",
+    "runs/materials_final_20261014/remote_sync_status.json": "7fe296cac11c16de9ae0613571e550a0f9ca0b4180cfaede3380aa8601e50ec1",
+    "runs/materials_final_20261014/metadata_file_list.json": "9724437233cbc1232c2a1dea9924f934887f0b1b6e60c176e492fe242305ba1a"
+  },
+  "compressed_bytes": 4102,
+  "archive_sha256": "2bf193efa211746a05817b17f983b508b237821ef2b757afe0a6c19a5bd27e0a"
+}
