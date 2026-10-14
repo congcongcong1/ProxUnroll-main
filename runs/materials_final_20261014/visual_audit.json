@@ -1,0 +1,114 @@
+{
+  "ppt_sha256": "cc01c2ff07824601cc4ef3d5b45478d12739b098d425eb07b6ed88ea0b268d20",
+  "literature_sha256": "31ba7b762a497c4e0aa19c4f9a9343f2ad52ed86b7ab079a893008f5261dca89",
+  "slides": [
+    {
+      "page": 1,
+      "path": "runs/materials_final_20261014/slides/slide-1.png",
+      "sha256": "2b2cd2ac99ab79a498414a8c01cd23741f7cc6ccf5db0c4ca5631008384a5f65",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 2,
+      "path": "runs/materials_final_20261014/slides/slide-2.png",
+      "sha256": "55479fdbd0060f939b244d3056e6a7767d6b3b7c180450be2426b405c8b928a6",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 3,
+      "path": "runs/materials_final_20261014/slides/slide-3.png",
+      "sha256": "50fbfb38e28384ce123411b6652fcfe025a97b36cbe49a43fbcc4c9e1a8a64e0",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 4,
+      "path": "runs/materials_final_20261014/slides/slide-4.png",
+      "sha256": "dc2e46387c04a698a2929cb1476ab5b72abfbde1cf3922970843e4938a52319f",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 5,
+      "path": "runs/materials_final_20261014/slides/slide-5.png",
+      "sha256": "08defa98b0bd9bc266f6eae232c6abac4a68532eb51e5fd610fb05335813675c",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 6,
+      "path": "runs/materials_final_20261014/slides/slide-6.png",
+      "sha256": "1171c24b4af9ac04247321a691d37777f07483cec43faaa5798c93d6b627d1c5",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 7,
+      "path": "runs/materials_final_20261014/slides/slide-7.png",
+      "sha256": "b10c9d6ccacd01d04e9617951a1b3d4cbdd75b689ec3115271c7b5d3cf151204",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 8,
+      "path": "runs/materials_final_20261014/slides/slide-8.png",
+      "sha256": "f0fcd9a54202ae72309419bf470fa6f7a79b20160792d04184a7a0f10e30a9a6",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 9,
+      "path": "runs/materials_final_20261014/slides/slide-9.png",
+      "sha256": "c229a6aeabebe29b0d0bf4f25d3bd337e054519e10b7423e2daa90f8e305a58a",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 10,
+      "path": "runs/materials_final_20261014/slides/slide-10.png",
+      "sha256": "1c411489893c413098e1ffcc6e39fa7950327f544f59b9209eb7e92a1a025214",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 11,
+      "path": "runs/materials_final_20261014/slides/slide-11.png",
+      "sha256": "d78dd1436fd63b65798ea8e4fed4193180effd73be08f3bc4a82d10f1b3a81ee",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 12,
+      "path": "runs/materials_final_20261014/slides/slide-12.png",
+      "sha256": "8f1b59d17791a8e06c728eb2365010416181ad552f176f9d476ec351f5e93442",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    }
+  ],
+  "literature_pages": [
+    {
+      "page": 1,
+      "path": "runs/materials_final_20261014/literature-page-1.png",
+      "sha256": "04ac62d1cb7158be9d23b1d5fd00ee672c0f8c2f069e6c8deb2f054e23df08c5",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 2,
+      "path": "runs/materials_final_20261014/literature-page-2.png",
+      "sha256": "d20295681c90ba7572ddb6153c8f9108f9c39f1a04c52896efb41342b7474493",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    },
+    {
+      "page": 3,
+      "path": "runs/materials_final_20261014/literature-page-3.png",
+      "sha256": "ce9fd8b84c6e6cc528caa8f5a19ea2cf580e9a63518e7455225e833060e96b4d",
+      "individually_inspected": true,
+      "no_clipping_or_overlap": true
+    }
+  ],
+  "source_comparison": "All source slides inspected; preserved source styles, photos and restorer diagram. Final twelve slides and three literature pages individually inspected. No native PowerPoint application test claimed."
+}

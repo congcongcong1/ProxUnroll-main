@@ -1,0 +1,47 @@
+{
+  "ppt_sha256": "cc01c2ff07824601cc4ef3d5b45478d12739b098d425eb07b6ed88ea0b268d20",
+  "technical_sha256": "0f0028156403b8c3fc16e98f2a3712d41af88f8df8533b0fca27767258dbd374",
+  "literature_sha256": "31ba7b762a497c4e0aa19c4f9a9343f2ad52ed86b7ab079a893008f5261dca89",
+  "slides": 12,
+  "technical_pages": 4,
+  "literature_pages": 3,
+  "planned_speaking_seconds": 600,
+  "native_charts": {
+    "6": {
+      "chart_part": "ppt/slides/charts/chart1.xml",
+      "max_absolute_error": 4.787538305350836e-06,
+      "series_checked": 4
+    },
+    "8": {
+      "chart_part": "ppt/slides/charts/chart2.xml",
+      "max_absolute_error": 4.7483091097488134e-08,
+      "series_checked": 3
+    },
+    "9": {
+      "chart_part": "ppt/slides/charts/chart3.xml",
+      "max_absolute_error": 4.805298210210085e-08,
+      "series_checked": 2
+    },
+    "10": {
+      "chart_part": "ppt/slides/charts/chart4.xml",
+      "max_absolute_error": 4.9445733339248225e-08,
+      "series_checked": 2
+    }
+  },
+  "regression_table_rows_checked": 6,
+  "source_csv_hashes": {
+    "runs/nanjing_web30_20261009/comparison/dataset_summary.csv": "4e9227998777de43d5a6263e36940ecef2071dd92a7ad1494e59989904d92f53",
+    "runs/hqs_ablation_20261013/evaluation_primary/paired_summary.csv": "03cdd1fb24777565f5eb3ecb13c6af4195695d87794921dc5f9e1445947878be",
+    "runs/hqs_20000_eval_20261014/evaluation_primary/paired_summary.csv": "1c0e235a234e1b1c499e7c7bb25a448712614a92204efecbfc6c77204a41306f",
+    "runs/hqs_20000_eval_20261014/evaluation_regression/paired_summary.csv": "6421dd19f8bae9d7df2d91068b920df0095c1b8da7610367abd8a4f79e75ee07"
+  },
+  "source_notes_credits_retained": true,
+  "checkpoint_names_references_and_negative_cases_consistent": true,
+  "historical_evidence_unchanged": {
+    "coursework/repository_evidence.json": 288,
+    "runs/hqs_ablation_20261013/final_evidence.json": 262,
+    "runs/report_flow_20261014/final_evidence.json": 81
+  },
+  "all_final_slides_and_literature_pages_inspected": true,
+  "native_powerpoint_app_verification": false
+}

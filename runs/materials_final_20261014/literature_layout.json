@@ -1,0 +1,24 @@
+{
+  "pages": 3,
+  "report_sha256": "31ba7b762a497c4e0aa19c4f9a9343f2ad52ed86b7ab079a893008f5261dca89",
+  "source_sha256": "43a268baa6497a634472acc73ad74379f98f2fb915a801af0feab1c5306eea00",
+  "preserved_original_pdf_sha256": "359cd0620b39460faec83dfba6fa4947e422b1707e68959423565d053849d718",
+  "body_font_pt": 10.6,
+  "leading_pt": 13.1,
+  "last_page_balanced": true,
+  "column_used_height_pt": {
+    "1": {
+      "left": 625.4,
+      "right": 631.3000000000001
+    },
+    "2": {
+      "left": 703.9,
+      "right": 709.9
+    },
+    "3": {
+      "left": 676.7,
+      "right": 618.1999999999999
+    }
+  },
+  "results_sha256": "5d532852107dc6ef938e3429da664c060feaa603b452d1191a1eb0b9273469e7"
+}
