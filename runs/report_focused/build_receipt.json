@@ -1,0 +1,39 @@
+{
+  "pdf_sha256": "c1e58aaea8eb14d480052ade0b87c135ca4e54fcf48fedb6fd2b1ba6890bb301",
+  "markdown_sha256": "9b16c49f8a60862110b590a0da59f25406064bd026635cdae9f2a8d126704452",
+  "pages": 5,
+  "figures": 3,
+  "tables": 6,
+  "numeric_cells_checked": 69,
+  "inputs": {
+    "runs/hqs_20000_eval_20261014/evaluation_primary/all_model_summary.csv": "505a520ea21a156ea2c10234e1dafedab237d3f4638840c7c5b27c429dac3331",
+    "runs/hqs_20000_eval_20261014/evaluation_regression/all_model_summary.csv": "c51909a7996c8e4035892d3074cc43aefcc5bebe91fb528128cc1c35c973a70e",
+    "runs/hqs_ablation_20261013/evaluation_primary/paired_summary.csv": "03cdd1fb24777565f5eb3ecb13c6af4195695d87794921dc5f9e1445947878be",
+    "runs/hqs_ablation_20261013/evaluation_primary/all_model_summary.csv": "c9d341e44d03bcb938d57d8bebe245ff3f6b49ba14c68c5e1e3f80c46cc1635b",
+    "runs/hqs_ablation_20261013/evaluation_primary/factorial_effects.csv": "565ff1b72cd827165e6651cc84e45159acc799f832acc697a09e0472c52e09b4",
+    "runs/hqs_20000_eval_20261014/evaluation_primary/paired_image_deltas.csv": "1780af82d49c0f035adc453fafc76a6ecd2309f850421926e4caa7f4cc307695"
+  },
+  "column_used_height_pt": {
+    "1": {
+      "left": 588.2,
+      "right": 596.9000000000001
+    },
+    "2": {
+      "left": 677.8000000000001,
+      "right": 630.0
+    },
+    "3": {
+      "left": 640.3714285714286,
+      "right": 674.7
+    },
+    "4": {
+      "left": 705.4428571428572,
+      "right": 691.7428571428572
+    },
+    "5": {
+      "left": 330.5,
+      "right": 439.30000000000007
+    }
+  },
+  "visual_review": "passed"
+}

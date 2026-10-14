@@ -1,0 +1,35 @@
+{
+  "pdf_sha256": "c1e58aaea8eb14d480052ade0b87c135ca4e54fcf48fedb6fd2b1ba6890bb301",
+  "pages": [
+    {
+      "path": "runs/report_focused/previews/page-1.png",
+      "sha256": "401f612cf973bbf4f02c1dc4bbca62f2785a97fd992f863c255c1cb0da6e7200",
+      "inspected": true,
+      "no_overlap_clipping_or_orphan_headings": true
+    },
+    {
+      "path": "runs/report_focused/previews/page-2.png",
+      "sha256": "a6f60ac4b4e9281d817a1e2a44f229df407bcedda8315ef6890660f077c478bb",
+      "inspected": true,
+      "no_overlap_clipping_or_orphan_headings": true
+    },
+    {
+      "path": "runs/report_focused/previews/page-3.png",
+      "sha256": "36594c36f4d99f0ad9ec6045856de7ccb6e6c0a8ca321f1f97a203b4b4c24215",
+      "inspected": true,
+      "no_overlap_clipping_or_orphan_headings": true
+    },
+    {
+      "path": "runs/report_focused/previews/page-4.png",
+      "sha256": "7b0c7e6842f3808477b42041dc25b70d21d1424eda341a0ba3506c48a91ba026",
+      "inspected": true,
+      "no_overlap_clipping_or_orphan_headings": true
+    },
+    {
+      "path": "runs/report_focused/previews/page-5.png",
+      "sha256": "e76c60ee0e0f6ae472599b0e4a6837d00ae5bce7a2949161de0075b2b544aee1",
+      "inspected": true,
+      "no_overlap_clipping_or_orphan_headings": true
+    }
+  ]
+}

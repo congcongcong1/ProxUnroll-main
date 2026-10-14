@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "pages": 5,
+  "figures": 3,
+  "tables": 6,
+  "independent_numeric_checks": 1253,
+  "pdf_sha256": "c1e58aaea8eb14d480052ade0b87c135ca4e54fcf48fedb6fd2b1ba6890bb301",
+  "all_pages_visually_reviewed": true,
+  "dates_and_operational_paths_removed": true
+}

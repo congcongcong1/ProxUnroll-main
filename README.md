@@ -2,6 +2,9 @@
 
 > **Course project (Topic 7):** See [COURSEWORK.md](COURSEWORK.md) for the
 > reproducible comparison experiments, English reports, presentation, and scope.
+> **Latest technical report:** [PDF](output/pdf/technical_report_20000_ablation.pdf) |
+> [Editable text](output/pdf/technical_report_20000_ablation.md).
+> Five-page study of 20,000-update HQS adaptation and controlled training ablations.
 > The original project documentation is preserved below.
 
 **CVPR 2025** — [[Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Wang_Proximal_Algorithm_Unrolling_Flexible_and_Efficient_Reconstruction_Networks_for_Single-Pixel_CVPR_2025_paper.html)] [[arXiv](https://arxiv.org/abs/2505.23180)]
